@@ -2,12 +2,15 @@
 ##fileDate=20200505
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
+##INFO=<Description="Initials of submitter"
+## 	NDM = Nicola De Maio
 ##EXC=<Description="list of reasons for suggested exclusion">
 ##	homoplasic = highly homoplasic site
 ##	no_sig = no phylogenetic signal as inferred by the delta statistic
 ##	single_src = only observed in samples from a single laboratory
 ##	seq_end = alignment ends are affected by low coverage and high error rates
 ##SRC=<Description="source laboratory of samples showing the variant">
+## 	KUL = KU Leuven
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC
 MN908947.3	1	.	A	.	.	.	.	seq_end	.
 MN908947.3	2	.	T	.	.	.	.	seq_end	.
@@ -64,55 +67,55 @@ MN908947.3	52	.	T	.	.	.	.	seq_end	.
 MN908947.3	53	.	G	.	.	.	.	seq_end	.
 MN908947.3	54	.	T	.	.	.	.	seq_end	.
 MN908947.3	55	.	A	.	.	.	.	seq_end	.
-MN908947.3	187	.	A	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	241	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	335	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	1059	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	2094	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	3037	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	3130	.	C	T	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	3145	.	G	.	.	.	ndm	homoplasic	.
-MN908947.3	4050	.	A	C	.	.	ndm	homoplasic,single_src	KULeuven
-MN908947.3	6255	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	6990	.	C	T	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	8022	.	T	G	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	8782	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	9223	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	10323	.	A	G	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	10741	.	C	T	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	11074	.	C	T,-	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	11083	.	G	T,-	.	.	ndm	homoplasic	.
-MN908947.3	11704	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	13402	.	T	G	.	.	ndm	homoplasic,single_src	KULeuven
-MN908947.3	13408	.	T	C,G,A	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	14408	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	14724	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	14786	.	C	T	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	14805	.	C	.	.	.	ndm	homoplasic	.
-MN908947.3	15324	.	C	T	.	.	ndm	homoplasic	.
-MN908947.3	16887	.	C	T	.	.	ndm	homoplasic	.
-MN908947.3	17247	.	T	.	.	.	ndm	homoplasic	.
-MN908947.3	19684	.	G	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	20148	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	21137	.	A	G	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	21575	.	C	T	.	.	ndm	homoplasic	.
-MN908947.3	23403	.	A	.	.	.	ndm	homoplasic	.
-MN908947.3	24034	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	24378	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	24389	.	A	.	.	.	ndm	homoplasic,single_src	.
-MN908947.3	24390	.	G	.	.	.	ndm	homoplasic,single_src	.
-MN908947.3	25563	.	G	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	26144	.	G	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	26461	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	26681	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	27384	.	T	.	.	.	ndm	homoplasic	.
-MN908947.3	28077	.	G	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	28826	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	28854	.	C	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	29353	.	C	T	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	29700	.	A	.	.	.	ndm	homoplasic,no_sig	.
-MN908947.3	29736	.	G	.	.	.	ndm	homoplasic	.
-MN908947.3	29774	.	C	T	.	.	ndm	homoplasic,no_sig	.
+MN908947.3	187	.	A	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	241	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	335	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	1059	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	2094	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	3037	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	3130	.	C	T	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	3145	.	G	.	.	.	NDM	homoplasic	.
+MN908947.3	4050	.	A	C	.	.	NDM	homoplasic,single_src	KUL
+MN908947.3	6255	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	6990	.	C	T	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	8022	.	T	G	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	8782	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	9223	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	10323	.	A	G	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	10741	.	C	T	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	11074	.	C	T,-	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	11083	.	G	T,-	.	.	NDM	homoplasic	.
+MN908947.3	11704	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	13402	.	T	G	.	.	NDM	homoplasic,single_src	KUL
+MN908947.3	13408	.	T	C,G,A	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	14408	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	14724	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	14786	.	C	T	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	14805	.	C	.	.	.	NDM	homoplasic	.
+MN908947.3	15324	.	C	T	.	.	NDM	homoplasic	.
+MN908947.3	16887	.	C	T	.	.	NDM	homoplasic	.
+MN908947.3	17247	.	T	.	.	.	NDM	homoplasic	.
+MN908947.3	19684	.	G	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	20148	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	21137	.	A	G	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	21575	.	C	T	.	.	NDM	homoplasic	.
+MN908947.3	23403	.	A	.	.	.	NDM	homoplasic	.
+MN908947.3	24034	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	24378	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	24389	.	A	.	.	.	NDM	homoplasic,single_src	.
+MN908947.3	24390	.	G	.	.	.	NDM	homoplasic,single_src	.
+MN908947.3	25563	.	G	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	26144	.	G	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	26461	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	26681	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	27384	.	T	.	.	.	NDM	homoplasic	.
+MN908947.3	28077	.	G	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	28826	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	28854	.	C	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	29353	.	C	T	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	29700	.	A	.	.	.	NDM	homoplasic,no_sig	.
+MN908947.3	29736	.	G	.	.	.	NDM	homoplasic	.
+MN908947.3	29774	.	C	T	.	.	NDM	homoplasic,no_sig	.
 MN908947.3	29804	.	T	.	.	.	.	seq_end	.
 MN908947.3	29805	.	A	.	.	.	.	seq_end	.
 MN908947.3	29806	.	A	.	.	.	.	seq_end	.
