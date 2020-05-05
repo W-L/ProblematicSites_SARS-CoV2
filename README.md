@@ -3,7 +3,28 @@
 A collection of sites described in the virological post [Issues with SARS-CoV-2 sequencing data](http://virological.org/t/issues-with-sars-cov-2-sequencing-data/473).
 The information presented here is also [available as a .vcf formatted file](https://github.com/W-L/ProblematicSites_SARS-CoV2/blob/master/problematic_sites_sarsCov2.vcf).
 
-Description of adapted vcf format
+The adapted vcf format contains all 8 mandatory as well as two additional columns.
+
+| Header | Description |
+|--------|-------------|
+|CHROM   |Name of the reference sequence |
+|POS     |1-based position of the variation on the reference |
+|ID      | NA |
+|REF     | Reference base |
+|ALT     | List of alternative alleles at the position |
+|QUAL    | NA |
+|FILTER  | NA |
+|INFO    | Initials of submitter |
+|EXC     | List of reasons for suggested exclusion (tags described in separate table) |
+|SRC     | Source laboratory of samples showing the variant |
+
+
+| Tag | Description |
+|------|-------------|
+| homoplasic | highly homoplasic site |
+| no_sig | no phylogenetic signal as inferred by the delta statistic |
+| single_src | only observed in samples from a single laboratory |
+| seq_end | alignment ends are affected by low coverage and high error rates |
 
 Suggestions, additions and issues are very greatfully received.
 
