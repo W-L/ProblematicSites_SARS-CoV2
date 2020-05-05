@@ -26,7 +26,7 @@ The adapted vcf format contains all 8 mandatory as well as two additional column
 | single_src | only observed in samples from a single laboratory |
 | seq_end | alignment ends are affected by low coverage and high error rates |
 
-Suggestions, additions and issues are very greatfully received.
+Suggestions, additions and issues are very gratefully received.
 
 
 # Problematic sites in SARS-CoV-2 sequencing data
