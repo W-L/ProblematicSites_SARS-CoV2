@@ -29,6 +29,9 @@ The adapted vcf format contains all 8 mandatory as well as two additional column
 Suggestions, additions and issues are very greatfully received.
 
 
+# Human readable version
+
+
 
 |    POS    |         EXC         |  SRC   |
 |-----------|---------------------|--------|
