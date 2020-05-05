@@ -29,60 +29,58 @@ The adapted vcf format contains all 8 mandatory as well as two additional column
 Suggestions, additions and issues are very greatfully received.
 
 
-# Human readable version
+# Problematic sites in SARS-CoV-2 sequencing data
 
-
-
-|    POS    |         EXC         |  SRC   |
-|-----------|---------------------|--------|
-|1-55       |seq_end              |.       |
-|187        |homoplasic,no_sig    |.       |
-|241        |homoplasic           |.       |
-|335        |homoplasic           |.       |
-|1059       |homoplasic,no_sig    |.       |
-|2094       |homoplasic,no_sig    |.       |
-|3037       |homoplasic,no_sig    |.       |
-|3130       |homoplasic,no_sig    |.       |
-|3145       |homoplasic           |.       |
-|4050       |homoplasic,single_src|KULeuven|
-|6255       |homoplasic           |.       |
-|6990       |homoplasic,no_sig    |.       |
-|8022       |homoplasic,no_sig    |.       |
-|8782       |homoplasic           |.       |
-|9223       |homoplasic           |.       |
-|10323      |homoplasic,no_sig    |.       |
-|10741      |homoplasic,no_sig    |.       |
-|11074      |homoplasic,no_sig    |.       |
-|11083      |homoplasic           |.       |
-|11704      |homoplasic           |.       |
-|13402      |homoplasic,single_src|KULeuven|
-|13408      |homoplasic,no_sig    |.       |
-|14408      |homoplasic           |.       |
-|14724      |homoplasic           |.       |
-|14786      |homoplasic,no_sig    |.       |
-|14805      |homoplasic           |.       |
-|15324      |homoplasic           |.       |
-|16887      |homoplasic           |.       |
-|17247      |homoplasic           |.       |
-|19684      |homoplasic,no_sig    |.       |
-|20148      |homoplasic,no_sig    |.       |
-|21137      |homoplasic,no_sig    |.       |
-|21575      |homoplasic           |.       |
-|23403      |homoplasic           |.       |
-|24034      |homoplasic,no_sig    |.       |
-|24378      |homoplasic,no_sig    |.       |
-|24389      |homoplasic,single_src|.       |
-|24390      |homoplasic,single_src|.       |
-|25563      |homoplasic,no_sig    |.       |
-|26144      |homoplasic,no_sig    |.       |
-|26461      |homoplasic,no_sig    |.       |
-|26681      |homoplasic,no_sig    |.       |
-|27384      |homoplasic           |.       |
-|28077      |homoplasic,no_sig    |.       |
-|28826      |homoplasic,no_sig    |.       |
-|28854      |homoplasic,no_sig    |.       |
-|29353      |homoplasic,no_sig    |.       |
-|29700      |homoplasic,no_sig    |.       |
-|29736      |homoplasic           |.       |
-|29774      |homoplasic,no_sig    |.       |
-|29804-29903|seq_end              |.       |
+|    POS    |REF| ALT |         EXC         |
+|-----------|---|-----|---------------------|
+|1-55       |.  |.    |seq_end              |
+|187        |A  |.    |homoplasic,no_sig    |
+|241        |C  |.    |homoplasic           |
+|335        |C  |.    |homoplasic           |
+|1059       |C  |.    |homoplasic,no_sig    |
+|2094       |C  |.    |homoplasic,no_sig    |
+|3037       |C  |.    |homoplasic,no_sig    |
+|3130       |C  |T    |homoplasic,no_sig    |
+|3145       |G  |.    |homoplasic           |
+|4050       |A  |C    |homoplasic,single_src|
+|6255       |C  |.    |homoplasic           |
+|6990       |C  |T    |homoplasic,no_sig    |
+|8022       |T  |G    |homoplasic,no_sig    |
+|8782       |C  |.    |homoplasic           |
+|9223       |C  |.    |homoplasic           |
+|10323      |A  |G    |homoplasic,no_sig    |
+|10741      |C  |T    |homoplasic,no_sig    |
+|11074      |C  |T,-  |homoplasic,no_sig    |
+|11083      |G  |T,-  |homoplasic           |
+|11704      |C  |.    |homoplasic           |
+|13402      |T  |G    |homoplasic,single_src|
+|13408      |T  |C,G,A|homoplasic,no_sig    |
+|14408      |C  |.    |homoplasic           |
+|14724      |C  |.    |homoplasic           |
+|14786      |C  |T    |homoplasic,no_sig    |
+|14805      |C  |.    |homoplasic           |
+|15324      |C  |T    |homoplasic           |
+|16887      |C  |T    |homoplasic           |
+|17247      |T  |.    |homoplasic           |
+|19684      |G  |.    |homoplasic,no_sig    |
+|20148      |C  |.    |homoplasic,no_sig    |
+|21137      |A  |G    |homoplasic,no_sig    |
+|21575      |C  |T    |homoplasic           |
+|23403      |A  |.    |homoplasic           |
+|24034      |C  |.    |homoplasic,no_sig    |
+|24378      |C  |.    |homoplasic,no_sig    |
+|24389      |A  |.    |homoplasic,single_src|
+|24390      |G  |.    |homoplasic,single_src|
+|25563      |G  |.    |homoplasic,no_sig    |
+|26144      |G  |.    |homoplasic,no_sig    |
+|26461      |C  |.    |homoplasic,no_sig    |
+|26681      |C  |.    |homoplasic,no_sig    |
+|27384      |T  |.    |homoplasic           |
+|28077      |G  |.    |homoplasic,no_sig    |
+|28826      |C  |.    |homoplasic,no_sig    |
+|28854      |C  |.    |homoplasic,no_sig    |
+|29353      |C  |T    |homoplasic,no_sig    |
+|29700      |A  |.    |homoplasic,no_sig    |
+|29736      |G  |.    |homoplasic           |
+|29774      |C  |T    |homoplasic,no_sig    |
+|29804-29903|.  |.    |seq_end              |
