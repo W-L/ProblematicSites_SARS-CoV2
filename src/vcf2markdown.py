@@ -27,15 +27,15 @@ def main():
 
     # name of the vcf file to parse and which columns to select from the file
     filename = "problematic_sites_sarsCov2.vcf"
-    keep = [1,3,4,8]
+    keep = [1,3,4,8,10,11]
     # title of the table - printed as markdown header before the table
     writer.table_name = "Problematic sites in SARS-CoV-2 sequencing data"
 
     header, data = readCustomVCF(fname=filename, keep_cols=keep)
     # the markdown table does not need a single line for every site at the ends of the sequence
     # so insert the beginning and append the ends
-    data.insert(0, ["1-55", ".", ".", "seq_end"])
-    data.append(["29804-29903", ".", ".", "seq_end"])
+    data.insert(0, ["1-55", ".", ".", "seq_end",".", "."])
+    data.append(["29804-29903", ".", ".", "seq_end",".", "."])
 
     writer.headers = header
     writer.value_matrix = data
