@@ -13,208 +13,210 @@
 ## 	KUL = *
 ##GENE=<Decription="Position falls into range of this gene">
 ##AAPOS=<Description="Position of amino acid residue within gene">
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC	GENE	AAPOS
-MN908947.3	1	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	2	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	3	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	4	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	5	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	6	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	7	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	8	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	9	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	10	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	11	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	12	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	13	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	14	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	15	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	16	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	17	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	18	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	19	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	20	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	21	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	22	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	23	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	24	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	25	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	26	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	27	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	28	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	30	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	31	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	32	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	33	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	34	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	35	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	36	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	37	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	38	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	39	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	40	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	41	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	42	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	43	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	44	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	45	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	46	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	47	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	48	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	49	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	50	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	51	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	52	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	53	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	54	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	55	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	187	.	A	.	.	.	NDM	homoplasic,no_sig	.	.	.
-MN908947.3	241	.	C	.	.	.	NDM	homoplasic	.	.	.
-MN908947.3	335	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	24
-MN908947.3	1059	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	265
-MN908947.3	2094	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	610
-MN908947.3	3037	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	924
-MN908947.3	3130	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	955
-MN908947.3	3145	.	G	.	.	.	NDM	homoplasic	.	gene-orf1ab	960
-MN908947.3	4050	.	A	C	.	.	NDM	homoplasic,single_src	KUL	gene-orf1ab	1262
-MN908947.3	6255	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	1997
-MN908947.3	6990	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	2242
-MN908947.3	8022	.	T	G	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	2586
-MN908947.3	8782	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	2839
-MN908947.3	9223	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	2986
-MN908947.3	10323	.	A	G	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3353
-MN908947.3	10741	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3492
-MN908947.3	11074	.	C	T,-	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3603
-MN908947.3	11083	.	G	T,-	.	.	NDM	homoplasic	.	gene-orf1ab	3606
-MN908947.3	11704	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	3813
-MN908947.3	13402	.	T	G	.	.	NDM	homoplasic,single_src	KUL	gene-orf1ab	4379
-MN908947.3	13408	.	T	C,G,A	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	4381
-MN908947.3	14408	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	4715
-MN908947.3	14724	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	4820
-MN908947.3	14786	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	4841
-MN908947.3	14805	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	4847
-MN908947.3	15324	.	C	T	.	.	NDM	homoplasic	.	gene-orf1ab	5020
-MN908947.3	16887	.	C	T	.	.	NDM	homoplasic	.	gene-orf1ab	5541
-MN908947.3	17247	.	T	.	.	.	NDM	homoplasic	.	gene-orf1ab	5661
-MN908947.3	19684	.	G	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6473
-MN908947.3	20148	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6628
-MN908947.3	21137	.	A	G	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6958
-MN908947.3	21575	.	C	T	.	.	NDM	homoplasic	.	gene-S	5
-MN908947.3	23403	.	A	.	.	.	NDM	homoplasic	.	gene-S	614
-MN908947.3	24034	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-S	824
-MN908947.3	24378	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-S	939
-MN908947.3	24389	.	A	.	.	.	NDM	homoplasic,single_src	.	gene-S	943
-MN908947.3	24390	.	G	.	.	.	NDM	homoplasic,single_src	.	gene-S	943
-MN908947.3	25563	.	G	.	.	.	NDM	homoplasic,no_sig	.	gene-ORF3a	57
-MN908947.3	26144	.	G	.	.	.	NDM	homoplasic,no_sig	.	gene-ORF3a	251
-MN908947.3	26461	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-E	73
-MN908947.3	26681	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-M	53
-MN908947.3	27384	.	T	.	.	.	NDM	homoplasic	.	gene-ORF6	61
-MN908947.3	28077	.	G	.	.	.	NDM	homoplasic,no_sig	.	gene-ORF8	62
-MN908947.3	28826	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-N	185
-MN908947.3	28854	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-N	194
-MN908947.3	29353	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-N	360
-MN908947.3	29700	.	A	.	.	.	NDM	homoplasic,no_sig	.	.	.
-MN908947.3	29736	.	G	.	.	.	NDM	homoplasic	.	.	.
-MN908947.3	29774	.	C	T	.	.	NDM	homoplasic,no_sig	.	.	.
-MN908947.3	29804	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29805	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29806	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29807	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29808	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29809	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29810	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29811	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29812	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29813	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29814	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29815	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29816	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29817	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29818	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29819	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29820	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29821	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29822	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29823	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29824	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29825	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29826	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29827	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29828	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29829	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29830	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29831	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29832	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29833	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29834	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29835	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29836	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29837	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29838	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29839	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29840	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29841	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29842	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29843	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29844	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29845	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29846	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29847	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29848	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29849	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29850	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29851	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29852	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29853	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29854	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29855	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29856	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29857	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29858	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29859	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29860	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29861	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29862	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29863	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29864	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29865	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29866	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29867	.	T	.	.	.	.	seq_end	.	.	.
-MN908947.3	29868	.	G	.	.	.	.	seq_end	.	.	.
-MN908947.3	29869	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29870	.	C	.	.	.	.	seq_end	.	.	.
-MN908947.3	29871	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29872	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29873	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29874	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29875	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29876	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29877	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29878	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29879	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29880	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29881	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29882	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29883	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29884	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29885	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29886	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29887	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29888	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29889	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29890	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29891	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29892	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29893	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29894	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29895	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29896	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29897	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29898	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29899	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29900	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29901	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29902	.	A	.	.	.	.	seq_end	.	.	.
-MN908947.3	29903	.	A	.	.	.	.	seq_end	.	.	.
+##REFAA=<Description="Reference amino acid residue">
+##ALTAA=<Description="List of alternative amino acid residues">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC	GENE	AAPOS	REFAA	ALTAA
+MN908947.3	1	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	2	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	3	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	4	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	5	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	6	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	7	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	8	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	9	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	10	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	11	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	12	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	13	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	14	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	15	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	16	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	17	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	18	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	19	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	20	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	21	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	22	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	23	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	24	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	25	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	26	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	27	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	28	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	30	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	31	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	32	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	33	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	34	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	35	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	36	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	37	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	38	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	39	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	40	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	41	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	42	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	43	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	44	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	45	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	46	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	47	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	48	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	49	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	50	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	51	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	52	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	53	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	54	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	55	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	187	.	A	.	.	.	NDM	homoplasic,no_sig	.	.	.	.	.
+MN908947.3	241	.	C	.	.	.	NDM	homoplasic	.	.	.	.	.
+MN908947.3	335	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	24	R	.
+MN908947.3	1059	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	265	T	.
+MN908947.3	2094	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	610	S	.
+MN908947.3	3037	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	924	F	.
+MN908947.3	3130	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	955	Y	.
+MN908947.3	3145	.	G	.	.	.	NDM	homoplasic	.	gene-orf1ab	960	L	.
+MN908947.3	4050	.	A	C	.	.	NDM	homoplasic,single_src	KUL	gene-orf1ab	1262	N	.
+MN908947.3	6255	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	1997	A	.
+MN908947.3	6990	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	2242	S	.
+MN908947.3	8022	.	T	G	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	2586	V	.
+MN908947.3	8782	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	2839	S	.
+MN908947.3	9223	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	2986	H	.
+MN908947.3	10323	.	A	G	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3353	K	.
+MN908947.3	10741	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3492	D	.
+MN908947.3	11074	.	C	T,-	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3603	F	.
+MN908947.3	11083	.	G	T,-	.	.	NDM	homoplasic	.	gene-orf1ab	3606	L	.
+MN908947.3	11704	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	3813	Y	.
+MN908947.3	13402	.	T	G	.	.	NDM	homoplasic,single_src	KUL	gene-orf1ab	4379	Y	.
+MN908947.3	13408	.	T	C,G,A	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	4381	C	.
+MN908947.3	14408	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	4715	P	.
+MN908947.3	14724	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	4820	F	.
+MN908947.3	14786	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	4841	A	.
+MN908947.3	14805	.	C	.	.	.	NDM	homoplasic	.	gene-orf1ab	4847	Y	.
+MN908947.3	15324	.	C	T	.	.	NDM	homoplasic	.	gene-orf1ab	5020	N	.
+MN908947.3	16887	.	C	T	.	.	NDM	homoplasic	.	gene-orf1ab	5541	Y	.
+MN908947.3	17247	.	T	.	.	.	NDM	homoplasic	.	gene-orf1ab	5661	R	.
+MN908947.3	19684	.	G	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6473	E	.
+MN908947.3	20148	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6628	F	.
+MN908947.3	21137	.	A	G	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6958	K	.
+MN908947.3	21575	.	C	T	.	.	NDM	homoplasic	.	gene-S	5	L	.
+MN908947.3	23403	.	A	.	.	.	NDM	homoplasic	.	gene-S	614	D	.
+MN908947.3	24034	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-S	824	N	.
+MN908947.3	24378	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-S	939	S	.
+MN908947.3	24389	.	A	.	.	.	NDM	homoplasic,single_src	.	gene-S	943	S	.
+MN908947.3	24390	.	G	.	.	.	NDM	homoplasic,single_src	.	gene-S	943	S	.
+MN908947.3	25563	.	G	.	.	.	NDM	homoplasic,no_sig	.	gene-ORF3a	57	Q	.
+MN908947.3	26144	.	G	.	.	.	NDM	homoplasic,no_sig	.	gene-ORF3a	251	G	.
+MN908947.3	26461	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-E	73	L	.
+MN908947.3	26681	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-M	53	F	.
+MN908947.3	27384	.	T	.	.	.	NDM	homoplasic	.	gene-ORF6	61	D	.
+MN908947.3	28077	.	G	.	.	.	NDM	homoplasic,no_sig	.	gene-ORF8	62	V	.
+MN908947.3	28826	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-N	185	R	.
+MN908947.3	28854	.	C	.	.	.	NDM	homoplasic,no_sig	.	gene-N	194	S	.
+MN908947.3	29353	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-N	360	Y	.
+MN908947.3	29700	.	A	.	.	.	NDM	homoplasic,no_sig	.	.	.	.	.
+MN908947.3	29736	.	G	.	.	.	NDM	homoplasic	.	.	.	.	.
+MN908947.3	29774	.	C	T	.	.	NDM	homoplasic,no_sig	.	.	.	.	.
+MN908947.3	29804	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29805	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29806	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29807	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29808	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29809	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29810	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29811	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29812	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29813	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29814	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29815	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29816	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29817	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29818	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29819	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29820	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29821	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29822	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29823	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29824	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29825	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29826	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29827	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29828	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29829	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29830	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29831	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29832	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29833	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29834	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29835	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29836	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29837	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29838	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29839	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29840	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29841	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29842	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29843	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29844	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29845	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29846	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29847	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29848	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29849	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29850	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29851	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29852	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29853	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29854	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29855	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29856	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29857	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29858	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29859	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29860	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29861	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29862	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29863	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29864	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29865	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29866	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29867	.	T	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29868	.	G	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29869	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29870	.	C	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29871	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29872	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29873	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29874	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29875	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29876	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29877	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29878	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29879	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29880	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29881	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29882	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29883	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29884	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29885	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29886	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29887	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29888	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29889	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29890	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29891	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29892	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29893	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29894	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29895	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29896	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29897	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29898	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29899	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29900	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29901	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29902	.	A	.	.	.	.	seq_end	.	.	.	.	.
+MN908947.3	29903	.	A	.	.	.	.	seq_end	.	.	.	.	.

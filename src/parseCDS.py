@@ -1,23 +1,32 @@
 #!/usr/local/bin/python
 
 from BCBio import GFF
-
-
+from Bio import SeqIO
 
 def readGFF(gff):
 
     with open(gff, 'r') as gff_file:
         for rec in GFF.parse(gff_file, limit_info=dict(gff_type = ["gene"])):
             genes = rec.features
-
     return genes
+
+
+def readFA(fa):
+    proteins = dict()
+    record_dict = SeqIO.to_dict(SeqIO.parse(fa, "fasta"))
+    for id, vals in record_dict.items():
+        name = record_dict[id].description.split(' ')[1][1:-1].replace('=', '-')
+        proteins[name] = vals.seq
+    return proteins
 
 
 def main():
     # parse gff
-    gff = "MN908947_3.gff3"
+    gff = "data/MN908947_3.gff3"
     vcf = "problematic_sites_sarsCov2.vcf"
+    prot = "data/MN908947_3.prot.fa"
     genes = readGFF(gff)
+    proteins = readFA(prot)
 
 
     vcf_rebuild = []
@@ -31,14 +40,18 @@ def main():
                 for gene in genes:
                     if gene.location.nofuzzy_start <= pos <= gene.location.nofuzzy_end:
                         vcf_aa = str(int((pos - gene.location.nofuzzy_start + 2) / 3))
-                        vcf_line.append(gene.id)
-                        vcf_line.append(vcf_aa)
+                        vcf_line[10] = gene.id                                  # gene name
+                        vcf_line[11] = vcf_aa                                   # aa position
+                        vcf_line[12] = proteins[gene.id][int(vcf_aa) - 1]       # reference aa
+                        vcf_line[13] = '.'                                      # alternative aa
                         ingene = True
                         break
 
                 if not ingene:
-                    vcf_line.append('.')
-                    vcf_line.append('.')
+                    vcf_line[10] = '.'  # gene name
+                    vcf_line[11] = '.'  # aa position
+                    vcf_line[12] = '.'  # reference aa
+                    vcf_line[13] = '.'  # alternative aa
 
                 vcf_rebuild.append("\t".join(vcf_line))
 
