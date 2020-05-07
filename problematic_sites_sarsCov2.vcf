@@ -14,7 +14,7 @@
 ##GENE=<Decription="Position falls into range of this gene">
 ##AAPOS=<Description="Position of amino acid residue within gene">
 ##REFAA=<Description="Reference amino acid residue">
-##ALTAA=<Description="List of alternative amino acid residues">
+##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC	GENE	AAPOS	REFAA	ALTAA
 MN908947.3	1	.	A	.	.	.	.	seq_end	.	.	.	.	.
 MN908947.3	2	.	T	.	.	.	.	seq_end	.	.	.	.	.

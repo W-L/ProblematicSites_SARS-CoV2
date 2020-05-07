@@ -11,7 +11,7 @@ The adapted vcf format contains all 8 mandatory as well as two additional column
 |POS     |1-based position of the variation on the reference |
 |ID      | NA |
 |REF     | Reference base |
-|ALT     | List of alternative alleles at the position |
+|ALT     | List of alternative alleles at the position (IUPAC ambiguity code) |
 |QUAL    | NA |
 |FILTER  | NA |
 |INFO    | Initials of submitter |
@@ -20,7 +20,7 @@ The adapted vcf format contains all 8 mandatory as well as two additional column
 |GENE    | Position falls into range of this gene |
 |AAPOS   | Position of amino acid residue within gene |
 |REFAA   | Reference amino acid residue |
-|ALTAA   | List of alternative amino acid residues |
+|ALTAA   | List of alternative amino acid residues (IUPAC ambiguity code) |
 
 
 
