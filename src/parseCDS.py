@@ -2,6 +2,11 @@
 
 from BCBio import GFF
 from Bio import SeqIO
+from Bio.Alphabet import IUPAC
+from copy import copy
+from Bio.Seq import Seq
+
+#%%
 
 def readGFF(gff):
 
@@ -20,13 +25,74 @@ def readFA(fa):
     return proteins
 
 
+
+def readFasta(fasta):
+    with open(fasta, 'r') as fa:
+        for line in fa:
+            if not line.startswith('>'):
+                return line
+
+
+def getCodonPos(pos, gene_start):
+    mod = (pos - gene_start + 2) / 3
+    rest = round(mod % 1, 1)
+    if rest == 0:
+        codon_pos = 0
+    elif rest == 0.3:
+        codon_pos = 1
+    elif rest == 0.7:
+        codon_pos = 2
+    else:
+        print("codon pos not determined")
+        codon_pos = 'NA'
+    return codon_pos
+
+
+def getCodon(genome, pos, codon_pos):
+    # convert from 1 based
+    pos -= 1
+    if codon_pos == 0:
+        codon = genome[pos: pos + 3]
+    elif codon_pos == 1:
+        codon = genome[pos - 1: pos + 2]
+    elif codon_pos == 2:
+        codon = genome[pos - 2: pos + 1]
+    else:
+        print("broken codon")
+
+    if len(codon) != 3:
+        print("weird codon")
+
+    return codon
+
+
+def getAltAA(codon, codon_pos, alt_nuc):
+    # produce all combos
+    pot_codon = []
+    for n in alt_nuc:
+        codon_copy = list(copy(codon))
+        codon_copy[codon_pos] = n
+        pot_codon.append(''.join(codon_copy))
+
+    alt_AAs = []
+    for c in pot_codon:
+        cod = Seq(c, IUPAC.ambiguous_dna)
+        alt_aa = cod.translate()
+        alt_AAs.append(str(alt_aa))
+
+    alt_AAs = ','.join(alt_AAs)
+    return alt_AAs
+
+
 def main():
     # parse gff
     gff = "data/MN908947_3.gff3"
     vcf = "problematic_sites_sarsCov2.vcf"
     prot = "data/MN908947_3.prot.fa"
+    fasta = "data/SARS-CoV-2.fa.unwrapped"
     genes = readGFF(gff)
     proteins = readFA(prot)
+    genome = readFasta(fasta)
 
 
     vcf_rebuild = []
@@ -39,11 +105,17 @@ def main():
                 ingene = False
                 for gene in genes:
                     if gene.location.nofuzzy_start <= pos <= gene.location.nofuzzy_end:
-                        vcf_aa = str(int((pos - gene.location.nofuzzy_start + 2) / 3))
+                        gene_start = gene.location.nofuzzy_start
+                        vcf_aa = str(int((pos - gene_start + 2) / 3))
+                        codon_pos = getCodonPos(pos=pos, gene_start=gene_start)
+                        codon = getCodon(genome=genome, pos=pos, codon_pos=codon_pos)
+                        alt_nuc = vcf_line[4].split(',')
+                        alt_aa = getAltAA(codon=codon, codon_pos=codon_pos, alt_nuc=alt_nuc)
+
                         vcf_line[10] = gene.id                                  # gene name
                         vcf_line[11] = vcf_aa                                   # aa position
                         vcf_line[12] = proteins[gene.id][int(vcf_aa) - 1]       # reference aa
-                        vcf_line[13] = '.'                                      # alternative aa
+                        vcf_line[13] = alt_aa                                      # alternative aa
                         ingene = True
                         break
 

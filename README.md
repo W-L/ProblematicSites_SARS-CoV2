@@ -40,50 +40,50 @@ Suggestions, additions and issues are very gratefully received.
 |1-55       |.  |.    |seq_end              |.          |.    |     |     |
 |187        |A  |G    |homoplasic,no_sig    |.          |.    |.    |.    |
 |241        |C  |T,Y  |homoplasic           |.          |.    |.    |.    |
-|335        |C  |T    |homoplasic           |gene-orf1ab|24   |R    |.    |
-|1059       |C  |T,Y  |homoplasic,no_sig    |gene-orf1ab|265  |T    |.    |
-|2094       |C  |T    |homoplasic,no_sig    |gene-orf1ab|610  |S    |.    |
-|3037       |C  |T,Y  |homoplasic,no_sig    |gene-orf1ab|924  |F    |.    |
-|3130       |C  |T    |homoplasic,no_sig    |gene-orf1ab|955  |Y    |.    |
-|3145       |G  |T    |homoplasic           |gene-orf1ab|960  |L    |.    |
-|4050       |A  |C    |homoplasic,single_src|gene-orf1ab|1262 |N    |.    |
-|6255       |C  |T    |homoplasic           |gene-orf1ab|1997 |A    |.    |
-|6990       |C  |T    |homoplasic,no_sig    |gene-orf1ab|2242 |S    |.    |
-|8022       |T  |G    |homoplasic,no_sig    |gene-orf1ab|2586 |V    |.    |
-|8782       |C  |T,Y  |homoplasic           |gene-orf1ab|2839 |S    |.    |
-|9223       |C  |T,M,Y|homoplasic           |gene-orf1ab|2986 |H    |.    |
-|10323      |A  |G    |homoplasic,no_sig    |gene-orf1ab|3353 |K    |.    |
-|10741      |C  |T    |homoplasic,no_sig    |gene-orf1ab|3492 |D    |.    |
-|11074      |C  |T    |homoplasic,no_sig    |gene-orf1ab|3603 |F    |.    |
-|11083      |G  |T,K  |homoplasic           |gene-orf1ab|3606 |L    |.    |
-|11704      |C  |T    |homoplasic           |gene-orf1ab|3813 |Y    |.    |
-|13402      |T  |W,G  |homoplasic,single_src|gene-orf1ab|4379 |Y    |.    |
-|13408      |T  |A,G,C|homoplasic,no_sig    |gene-orf1ab|4381 |C    |.    |
-|14408      |C  |T,Y  |homoplasic           |gene-orf1ab|4715 |P    |.    |
-|14724      |C  |Y,T  |homoplasic           |gene-orf1ab|4820 |F    |.    |
-|14786      |C  |T    |homoplasic,no_sig    |gene-orf1ab|4841 |A    |.    |
-|14805      |C  |T,Y  |homoplasic           |gene-orf1ab|4847 |Y    |.    |
-|15324      |C  |T,Y  |homoplasic           |gene-orf1ab|5020 |N    |.    |
-|16887      |C  |T    |homoplasic           |gene-orf1ab|5541 |Y    |.    |
-|17247      |T  |C,Y,G|homoplasic           |gene-orf1ab|5661 |R    |.    |
-|19684      |G  |T    |homoplasic,no_sig    |gene-orf1ab|6473 |E    |.    |
-|20148      |C  |T    |homoplasic,no_sig    |gene-orf1ab|6628 |F    |.    |
-|21137      |A  |G,R  |homoplasic,no_sig    |gene-orf1ab|6958 |K    |.    |
-|21575      |C  |T,Y  |homoplasic           |gene-S     |5    |L    |.    |
-|23403      |A  |G,R  |homoplasic           |gene-S     |614  |D    |.    |
-|24034      |C  |T,Y  |homoplasic,no_sig    |gene-S     |824  |N    |.    |
-|24378      |C  |T,Y  |homoplasic,no_sig    |gene-S     |939  |S    |.    |
-|24389      |A  |C    |homoplasic,single_src|gene-S     |943  |S    |.    |
-|24390      |G  |C    |homoplasic,single_src|gene-S     |943  |S    |.    |
-|25563      |G  |T,K  |homoplasic,no_sig    |gene-ORF3a |57   |Q    |.    |
-|26144      |G  |T,K  |homoplasic,no_sig    |gene-ORF3a |251  |G    |.    |
-|26461      |C  |T    |homoplasic,no_sig    |gene-E     |73   |L    |.    |
-|26681      |C  |T,Y  |homoplasic,no_sig    |gene-M     |53   |F    |.    |
-|27384      |T  |C    |homoplasic           |gene-ORF6  |61   |D    |.    |
-|28077      |G  |C,T,S|homoplasic,no_sig    |gene-ORF8  |62   |V    |.    |
-|28826      |C  |T    |homoplasic,no_sig    |gene-N     |185  |R    |.    |
-|28854      |C  |T,Y  |homoplasic,no_sig    |gene-N     |194  |S    |.    |
-|29353      |C  |T    |homoplasic,no_sig    |gene-N     |360  |Y    |.    |
+|335        |C  |T    |homoplasic           |gene-orf1ab|24   |R    |C    |
+|1059       |C  |T,Y  |homoplasic,no_sig    |gene-orf1ab|265  |T    |I,X  |
+|2094       |C  |T    |homoplasic,no_sig    |gene-orf1ab|610  |S    |L    |
+|3037       |C  |T,Y  |homoplasic,no_sig    |gene-orf1ab|924  |F    |F,F  |
+|3130       |C  |T    |homoplasic,no_sig    |gene-orf1ab|955  |Y    |Y    |
+|3145       |G  |T    |homoplasic           |gene-orf1ab|960  |L    |F    |
+|4050       |A  |C    |homoplasic,single_src|gene-orf1ab|1262 |N    |T    |
+|6255       |C  |T    |homoplasic           |gene-orf1ab|1997 |A    |V    |
+|6990       |C  |T    |homoplasic,no_sig    |gene-orf1ab|2242 |S    |F    |
+|8022       |T  |G    |homoplasic,no_sig    |gene-orf1ab|2586 |V    |G    |
+|8782       |C  |T,Y  |homoplasic           |gene-orf1ab|2839 |S    |S,S  |
+|9223       |C  |T,M,Y|homoplasic           |gene-orf1ab|2986 |H    |H,X,H|
+|10323      |A  |G    |homoplasic,no_sig    |gene-orf1ab|3353 |K    |R    |
+|10741      |C  |T    |homoplasic,no_sig    |gene-orf1ab|3492 |D    |D    |
+|11074      |C  |T    |homoplasic,no_sig    |gene-orf1ab|3603 |F    |F    |
+|11083      |G  |T,K  |homoplasic           |gene-orf1ab|3606 |L    |F,X  |
+|11704      |C  |T    |homoplasic           |gene-orf1ab|3813 |Y    |Y    |
+|13402      |T  |W,G  |homoplasic,single_src|gene-orf1ab|4379 |Y    |X,*  |
+|13408      |T  |A,G,C|homoplasic,no_sig    |gene-orf1ab|4381 |C    |*,W,C|
+|14408      |C  |T,Y  |homoplasic           |gene-orf1ab|4715 |P    |L,L  |
+|14724      |C  |Y,T  |homoplasic           |gene-orf1ab|4820 |F    |X,F  |
+|14786      |C  |T    |homoplasic,no_sig    |gene-orf1ab|4841 |A    |L    |
+|14805      |C  |T,Y  |homoplasic           |gene-orf1ab|4847 |Y    |I,X  |
+|15324      |C  |T,Y  |homoplasic           |gene-orf1ab|5020 |N    |I,X  |
+|16887      |C  |T    |homoplasic           |gene-orf1ab|5541 |Y    |I    |
+|17247      |T  |C,Y,G|homoplasic           |gene-orf1ab|5661 |R    |A,X,G|
+|19684      |G  |T    |homoplasic,no_sig    |gene-orf1ab|6473 |E    |N    |
+|20148      |C  |T    |homoplasic,no_sig    |gene-orf1ab|6628 |F    |L    |
+|21137      |A  |G,R  |homoplasic,no_sig    |gene-orf1ab|6958 |K    |G,X  |
+|21575      |C  |T,Y  |homoplasic           |gene-S     |5    |L    |F,X  |
+|23403      |A  |G,R  |homoplasic           |gene-S     |614  |D    |G,X  |
+|24034      |C  |T,Y  |homoplasic,no_sig    |gene-S     |824  |N    |N,N  |
+|24378      |C  |T,Y  |homoplasic,no_sig    |gene-S     |939  |S    |F,X  |
+|24389      |A  |C    |homoplasic,single_src|gene-S     |943  |S    |R    |
+|24390      |G  |C    |homoplasic,single_src|gene-S     |943  |S    |T    |
+|25563      |G  |T,K  |homoplasic,no_sig    |gene-ORF3a |57   |Q    |H,X  |
+|26144      |G  |T,K  |homoplasic,no_sig    |gene-ORF3a |251  |G    |V,X  |
+|26461      |C  |T    |homoplasic,no_sig    |gene-E     |73   |L    |F    |
+|26681      |C  |T,Y  |homoplasic,no_sig    |gene-M     |53   |F    |F,F  |
+|27384      |T  |C    |homoplasic           |gene-ORF6  |61   |D    |D    |
+|28077      |G  |C,T,S|homoplasic,no_sig    |gene-ORF8  |62   |V    |L,L,X|
+|28826      |C  |T    |homoplasic,no_sig    |gene-N     |185  |R    |C    |
+|28854      |C  |T,Y  |homoplasic,no_sig    |gene-N     |194  |S    |L,X  |
+|29353      |C  |T    |homoplasic,no_sig    |gene-N     |360  |Y    |Y    |
 |29700      |A  |G    |homoplasic,no_sig    |.          |.    |.    |.    |
 |29736      |G  |T    |homoplasic           |.          |.    |.    |.    |
 |29774      |C  |T    |homoplasic,no_sig    |.          |.    |.    |.    |
