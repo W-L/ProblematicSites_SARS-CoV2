@@ -4,11 +4,13 @@
 ##contig=<ID=MN908947.3,length=29903>
 ##INFO=<Description="Initials of submitter"
 ## 	NDM = Nicola De Maio
+## 	MP = Matthew Parker
 ##EXC=<Description="list of reasons for suggested exclusion">
-##	homoplasic = highly homoplasic site
-##	no_sig = no phylogenetic signal as inferred by the delta statistic
-##	single_src = only observed in samples from a single laboratory
-##	seq_end = alignment ends are affected by low coverage and high error rates
+##	homoplasic = homoplasic site (not necessarily to be masked in itself)
+##	highlyHomoplasic = highly homoplasic site (recommended to be masked)
+##	no_sig = no phylogenetic signal as inferred by the delta statistic (recommended to be masked)
+##	single_src = only observed in samples from a single laboratory (recommended to be masked)
+##	seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)
 ##SRC=<Description="source laboratory of samples showing the variant">
 ## 	KUL = *
 ##GENE=<Decription="Position falls into range of this gene">
@@ -88,7 +90,7 @@ MN908947.3	9223	.	C	T,M,Y	.	.	NDM	homoplasic	.	gene-orf1ab	2986	H	H,X,H
 MN908947.3	10323	.	A	G	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3353	K	R
 MN908947.3	10741	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3492	D	D
 MN908947.3	11074	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	3603	F	F
-MN908947.3	11083	.	G	T,K	.	.	NDM	homoplasic	.	gene-orf1ab	3606	L	F,X
+MN908947.3	11083	.	G	T,K	.	.	NDM	highlyHomoplasic	.	gene-orf1ab	3606	L	F,X
 MN908947.3	11704	.	C	T	.	.	NDM	homoplasic	.	gene-orf1ab	3813	Y	Y
 MN908947.3	13402	.	T	W,G	.	.	NDM	homoplasic,single_src	KUL	gene-orf1ab	4379	Y	X,*
 MN908947.3	13408	.	T	A,G,C	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	4381	C	*,W,C
@@ -96,18 +98,18 @@ MN908947.3	14408	.	C	T,Y	.	.	NDM	homoplasic	.	gene-orf1ab	4715	P	L,L
 MN908947.3	14724	.	C	Y,T	.	.	NDM	homoplasic	.	gene-orf1ab	4820	F	X,F
 MN908947.3	14786	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	4841	A	L
 MN908947.3	14805	.	C	T,Y	.	.	NDM	homoplasic	.	gene-orf1ab	4847	Y	I,X
-MN908947.3	15324	.	C	T,Y	.	.	NDM	homoplasic	.	gene-orf1ab	5020	N	I,X
+MN908947.3	15324	.	C	T,Y	.	.	NDM	highlyHomoplasic	.	gene-orf1ab	5020	N	I,X
 MN908947.3	16887	.	C	T	.	.	NDM	homoplasic	.	gene-orf1ab	5541	Y	I
 MN908947.3	17247	.	T	C,Y,G	.	.	NDM	homoplasic	.	gene-orf1ab	5661	R	A,X,G
 MN908947.3	19684	.	G	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6473	E	N
 MN908947.3	20148	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6628	F	L
 MN908947.3	21137	.	A	G,R	.	.	NDM	homoplasic,no_sig	.	gene-orf1ab	6958	K	G,X
-MN908947.3	21575	.	C	T,Y	.	.	NDM	homoplasic	.	gene-S	5	L	F,X
+MN908947.3	21575	.	C	T,Y	.	.	NDM	highlyHomoplasic	.	gene-S	5	L	F,X
 MN908947.3	23403	.	A	G,R	.	.	NDM	homoplasic	.	gene-S	614	D	G,X
 MN908947.3	24034	.	C	T,Y	.	.	NDM	homoplasic,no_sig	.	gene-S	824	N	N,N
 MN908947.3	24378	.	C	T,Y	.	.	NDM	homoplasic,no_sig	.	gene-S	939	S	F,X
-MN908947.3	24389	.	A	C	.	.	NDM	homoplasic,single_src	.	gene-S	943	S	R
-MN908947.3	24390	.	G	C	.	.	NDM	homoplasic,single_src	.	gene-S	943	S	T
+MN908947.3	24389	.	A	C	.	.	MP	homoplasic,single_src	.	gene-S	943	S	R
+MN908947.3	24390	.	G	C	.	.	MP	homoplasic,single_src	.	gene-S	943	S	T
 MN908947.3	25563	.	G	T,K	.	.	NDM	homoplasic,no_sig	.	gene-ORF3a	57	Q	H,X
 MN908947.3	26144	.	G	T,K	.	.	NDM	homoplasic,no_sig	.	gene-ORF3a	251	G	V,X
 MN908947.3	26461	.	C	T	.	.	NDM	homoplasic,no_sig	.	gene-E	73	L	F
