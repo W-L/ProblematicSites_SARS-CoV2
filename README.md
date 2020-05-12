@@ -26,10 +26,11 @@ The adapted vcf format contains all 8 mandatory as well as two additional column
 
 | Tag | Description |
 |------|-------------|
-| homoplasic | highly homoplasic site |
-| no_sig | no phylogenetic signal as inferred by the delta statistic |
-| single_src | only observed in samples from a single laboratory |
-| seq_end | alignment ends are affected by low coverage and high error rates |
+| homoplasic | homoplasic site (not necessarily to be masked in itself) |
+| highly_hom | highly homoplasic site (recommended to be masked)
+| no_sig | no phylogenetic signal as inferred by the delta statistic (recommended to be masked) |
+| single_src | only observed in samples from a single laboratory (recommended to be masked) |
+| seq_end | alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary) |
 
 Suggestions, additions and issues are very gratefully received.
 
@@ -55,7 +56,7 @@ Suggestions, additions and issues are very gratefully received.
 |10323      |A  |G    |homoplasic,no_sig    |gene-orf1ab|3353 |K    |R    |
 |10741      |C  |T    |homoplasic,no_sig    |gene-orf1ab|3492 |D    |D    |
 |11074      |C  |T    |homoplasic,no_sig    |gene-orf1ab|3603 |F    |F    |
-|11083      |G  |T,K  |homoplasic           |gene-orf1ab|3606 |L    |F,X  |
+|11083      |G  |T,K  |highly_hom           |gene-orf1ab|3606 |L    |F,X  |
 |11704      |C  |T    |homoplasic           |gene-orf1ab|3813 |Y    |Y    |
 |13402      |T  |W,G  |homoplasic,single_src|gene-orf1ab|4379 |Y    |X,*  |
 |13408      |T  |A,G,C|homoplasic,no_sig    |gene-orf1ab|4381 |C    |*,W,C|
@@ -63,18 +64,18 @@ Suggestions, additions and issues are very gratefully received.
 |14724      |C  |Y,T  |homoplasic           |gene-orf1ab|4820 |F    |X,F  |
 |14786      |C  |T    |homoplasic,no_sig    |gene-orf1ab|4841 |A    |L    |
 |14805      |C  |T,Y  |homoplasic           |gene-orf1ab|4847 |Y    |I,X  |
-|15324      |C  |T,Y  |homoplasic           |gene-orf1ab|5020 |N    |I,X  |
+|15324      |C  |T,Y  |highly_hom           |gene-orf1ab|5020 |N    |I,X  |
 |16887      |C  |T    |homoplasic           |gene-orf1ab|5541 |Y    |I    |
 |17247      |T  |C,Y,G|homoplasic           |gene-orf1ab|5661 |R    |A,X,G|
 |19684      |G  |T    |homoplasic,no_sig    |gene-orf1ab|6473 |E    |N    |
 |20148      |C  |T    |homoplasic,no_sig    |gene-orf1ab|6628 |F    |L    |
 |21137      |A  |G,R  |homoplasic,no_sig    |gene-orf1ab|6958 |K    |G,X  |
-|21575      |C  |T,Y  |homoplasic           |gene-S     |5    |L    |F,X  |
+|21575      |C  |T,Y  |highly_hom           |gene-S     |5    |L    |F,X  |
 |23403      |A  |G,R  |homoplasic           |gene-S     |614  |D    |G,X  |
 |24034      |C  |T,Y  |homoplasic,no_sig    |gene-S     |824  |N    |N,N  |
 |24378      |C  |T,Y  |homoplasic,no_sig    |gene-S     |939  |S    |F,X  |
-|24389      |A  |C    |homoplasic,single_src|gene-S     |943  |S    |R    |
-|24390      |G  |C    |homoplasic,single_src|gene-S     |943  |S    |T    |
+|24389      |A  |C    |seq_err              |gene-S     |943  |S    |R    |
+|24390      |G  |C    |seq_err              |gene-S     |943  |S    |T    |
 |25563      |G  |T,K  |homoplasic,no_sig    |gene-ORF3a |57   |Q    |H,X  |
 |26144      |G  |T,K  |homoplasic,no_sig    |gene-ORF3a |251  |G    |V,X  |
 |26461      |C  |T    |homoplasic,no_sig    |gene-E     |73   |L    |F    |
@@ -88,3 +89,4 @@ Suggestions, additions and issues are very gratefully received.
 |29736      |G  |T    |homoplasic           |.          |.    |.    |.    |
 |29774      |C  |T    |homoplasic,no_sig    |.          |.    |.    |.    |
 |29804-29903|.  |.    |seq_end              |.          |.    |     |     |
+
