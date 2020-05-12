@@ -1,41 +1,9 @@
-# List of sites with issues in SARS-CoV-2 sequencing data
+- [Human-friendly version of the vcf file](#human-friendly-version-of-the-vcf-file)
+- [Description of the columns in the vcf-version](#description-of-the-columns-in-the-vcf-version)
 
-A collection of sites described in the virological post [Issues with SARS-CoV-2 sequencing data](http://virological.org/t/issues-with-sars-cov-2-sequencing-data/473).
-The information presented here is also [available as a .vcf formatted file](https://github.com/W-L/ProblematicSites_SARS-CoV2/blob/master/problematic_sites_sarsCov2.vcf).
-
-The adapted vcf format contains all 8 mandatory as well as two additional columns.
-
-| Header | Description |
-|--------|-------------|
-|CHROM   |Name of the reference sequence |
-|POS     |1-based position of the variation on the reference |
-|ID      | NA |
-|REF     | Reference base |
-|ALT     | List of alternative alleles at the position (IUPAC ambiguity code) |
-|QUAL    | NA |
-|FILTER  | NA |
-|INFO    | Initials of submitter |
-|EXC     | List of reasons for suggested exclusion (tags described in separate table) |
-|SRC     | Source laboratory of samples showing the variant |
-|GENE    | Position falls into range of this gene |
-|AAPOS   | Position of amino acid residue within gene |
-|REFAA   | Reference amino acid residue |
-|ALTAA   | List of alternative amino acid residues (IUPAC ambiguity code) |
+# Human-friendly version of the vcf file
 
 
-
-| Tag | Description |
-|------|-------------|
-| homoplasic | homoplasic site (not necessarily to be masked in itself) |
-| highly_hom | highly homoplasic site (recommended to be masked)
-| no_sig | no phylogenetic signal as inferred by the delta statistic (recommended to be masked) |
-| single_src | only observed in samples from a single laboratory (recommended to be masked) |
-| seq_end | alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary) |
-
-Suggestions, additions and issues are very gratefully received.
-
-
-# Problematic sites in SARS-CoV-2 sequencing data
 |    POS    |REF| ALT |         EXC         |   GENE    |AAPOS|REFAA|ALTAA|
 |-----------|---|-----|---------------------|-----------|-----|-----|-----|
 |1-55       |.  |.    |seq_end              |.          |.    |     |     |
@@ -90,3 +58,39 @@ Suggestions, additions and issues are very gratefully received.
 |29774      |C  |T    |homoplasic,no_sig    |.          |.    |.    |.    |
 |29804-29903|.  |.    |seq_end              |.          |.    |     |     |
 
+
+# Description of the columns in the vcf-version
+
+The information presented in the table above is also [available as a .vcf formatted file](https://raw.githubusercontent.com/W-L/ProblematicSites_SARS-CoV2/master/problematic_sites_sarsCov2.vcf).
+
+The adapted vcf format contains all 8 mandatory as well as several additional columns.
+
+| Header | Description |
+|--------|-------------|
+|CHROM   |Name of the reference sequence |
+|POS     |1-based position of the variation on the reference |
+|ID      | NA |
+|REF     | Reference base |
+|ALT     | List of alternative alleles at the position (IUPAC ambiguity code) |
+|QUAL    | NA |
+|FILTER  | NA |
+|INFO    | Initials of submitter |
+|EXC     | List of reasons for suggested exclusion (tags described in separate table) |
+|SRC     | Source laboratory of samples showing the variant |
+|GENE    | Position falls into range of this gene |
+|AAPOS   | Position of amino acid residue within gene |
+|REFAA   | Reference amino acid residue |
+|ALTAA   | List of alternative amino acid residues (IUPAC ambiguity code) |
+
+
+
+| Tag | Description |
+|------|-------------|
+| homoplasic | homoplasic site (not necessarily to be masked in itself) |
+| highly_hom | highly homoplasic site (recommended to be masked)
+| no_sig | no phylogenetic signal as inferred by the delta statistic (recommended to be masked) |
+| single_src | only observed in samples from a single laboratory (recommended to be masked) |
+| seq_end | alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary) |
+
+
+Suggestions, additions and issues are very gratefully received.
