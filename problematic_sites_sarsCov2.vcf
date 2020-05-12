@@ -85,7 +85,7 @@ MN908947.3	2094	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	610	S	L
 MN908947.3	3037	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	924	F	F,F
 MN908947.3	3130	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	955	Y	Y
 MN908947.3	3145	.	G	T	.	caution	NDM	homoplasic	.	gene-orf1ab	960	L	F
-MN908947.3	4050	.	A	C	.	caution	NDM	homoplasic,single_src	KUL	gene-orf1ab	1262	N	T
+MN908947.3	4050	.	A	C	.	mask	NDM	homoplasic,single_src	KUL	gene-orf1ab	1262	N	T
 MN908947.3	6255	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	1997	A	V
 MN908947.3	6990	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	2242	S	F
 MN908947.3	8022	.	T	G	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	2586	V	G
@@ -96,7 +96,7 @@ MN908947.3	10741	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	3492	D	D
 MN908947.3	11074	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	3603	F	F
 MN908947.3	11083	.	G	T,K	.	mask	NDM	highly_hom	.	gene-orf1ab	3606	L	F,X
 MN908947.3	11704	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	3813	Y	Y
-MN908947.3	13402	.	T	W,G	.	caution	NDM	homoplasic,single_src	KUL	gene-orf1ab	4379	Y	X,*
+MN908947.3	13402	.	T	W,G	.	mask	NDM	homoplasic,single_src	KUL	gene-orf1ab	4379	Y	X,*
 MN908947.3	13408	.	T	A,G,C	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	4381	C	*,W,C
 MN908947.3	14408	.	C	T,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	4715	P	L,L
 MN908947.3	14724	.	C	Y,T	.	caution	NDM	homoplasic	.	gene-orf1ab	4820	F	X,F
