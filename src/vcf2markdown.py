@@ -29,7 +29,7 @@ def main():
     filename = "problematic_sites_sarsCov2.vcf"
     keep = [1, 3, 4, 8, 10, 11, 12, 13]
     # title of the table - printed as markdown header before the table
-    writer.table_name = "Problematic sites in SARS-CoV-2 sequencing data"
+    writer.table_name = "Human-friendly version of the vcf file"
 
     header, data = readCustomVCF(fname=filename, keep_cols=keep)
     # the markdown table does not need a single line for every site at the ends of the sequence

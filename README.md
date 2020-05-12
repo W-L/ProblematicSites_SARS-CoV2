@@ -3,7 +3,6 @@
 
 # Human-friendly version of the vcf file
 
-
 |    POS    |REF| ALT |         EXC         |   GENE    |AAPOS|REFAA|ALTAA|
 |-----------|---|-----|---------------------|-----------|-----|-----|-----|
 |1-55       |.  |.    |seq_end              |.          |.    |     |     |
@@ -52,12 +51,14 @@
 |28077      |G  |C,T,S|homoplasic,no_sig    |gene-ORF8  |62   |V    |L,L,X|
 |28826      |C  |T    |homoplasic,no_sig    |gene-N     |185  |R    |C    |
 |28854      |C  |T,Y  |homoplasic,no_sig    |gene-N     |194  |S    |L,X  |
+|28881      |G  |A,R,K|MNM                  |gene-N     |203  |R    |K,X,X|
+|28882      |G  |A,R  |MNM                  |gene-N     |203  |R    |R,R  |
+|28883      |G  |C,S,A|MNM                  |gene-N     |204  |G    |R,X,R|
 |29353      |C  |T    |homoplasic,no_sig    |gene-N     |360  |Y    |Y    |
 |29700      |A  |G    |homoplasic,no_sig    |.          |.    |.    |.    |
 |29736      |G  |T    |homoplasic           |.          |.    |.    |.    |
 |29774      |C  |T    |homoplasic,no_sig    |.          |.    |.    |.    |
 |29804-29903|.  |.    |seq_end              |.          |.    |     |     |
-
 
 # Description of the columns in the vcf-version
 
