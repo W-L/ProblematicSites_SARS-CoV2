@@ -122,9 +122,9 @@ MN908947.3	27384	.	T	C	.	caution	NDM	homoplasic	.	gene-ORF6	61	D	D
 MN908947.3	28077	.	G	C,T,S	.	mask	NDM	homoplasic,no_sig	.	gene-ORF8	62	V	L,L,X
 MN908947.3	28826	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-N	185	R	C
 MN908947.3	28854	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-N	194	S	L,X
-MN908947.3	28881	.	.	.	.	mask	NDM	MNM	.	gene-N	.	.	.
-MN908947.3	28882	.	.	.	.	mask	NDM	MNM	.	gene-N	.	.	.
-MN908947.3	28883	.	.	.	.	mask	NDM	MNM	.	gene-N	.	.	.
+MN908947.3	28881	.	G	A,R,K	.	mask	NDM	MNM	.	gene-N	.	.	.
+MN908947.3	28882	.	G	A,R	.	mask	NDM	MNM	.	gene-N	.	.	.
+MN908947.3	28883	.	G	C,S,A	.	mask	NDM	MNM	.	gene-N	.	.	.
 MN908947.3	29353	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-N	360	Y	Y
 MN908947.3	29700	.	A	G	.	mask	NDM	homoplasic,no_sig	.	.	.	.	.
 MN908947.3	29736	.	G	T	.	caution	NDM	homoplasic	.	.	.	.	.
