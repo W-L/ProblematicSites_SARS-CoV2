@@ -1,5 +1,6 @@
 ##fileformat=VCFv4.3
 ##fileDate=20200505
+##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
 ##FILTER=<Description="Masking recommendation"
