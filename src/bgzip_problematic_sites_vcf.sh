@@ -7,6 +7,6 @@
 header_lines=$(grep "#" ../problematic_sites_sarsCov2.vcf | wc -l);
 body_lines=$((header_lines+1))
 
-(head -n "$header_lines" ../problematic_sites_sarsCov2.vcf && tail -n +"$body_lines" ../problematic_sites_sarsCov2.vcf | sort -k2 -n) | bgzip -c > ../problematic_sites_sarsCov2.vcf.gz
-tabix -p vcf ../problematic_sites_sarsCov2.vcf.gz
-tabix --csi ../problematic_sites_sarsCov2.vcf.gz
+(head -n "$header_lines" ../problematic_sites_sarsCov2.vcf && tail -n +"$body_lines" ../problematic_sites_sarsCov2.vcf | sort -k2 -n) | bgzip -c > ../compressed_vcf/problematic_sites_sarsCov2.vcf.gz
+tabix -p vcf ../compressed_vcf/problematic_sites_sarsCov2.vcf.gz
+tabix --csi ../compressed_vcf/problematic_sites_sarsCov2.vcf.gz
