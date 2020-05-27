@@ -1,5 +1,5 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-05-27-11:37
+##fileDate=2020-05-27-11:55
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
@@ -7,33 +7,33 @@
 ##	caution = apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
 ##	mask = sites we recommend to always mask
 ##INFO=<Description="Initials of submitter"
-## 	NDM = Nicola De Maio
 ## 	MP = Matthew Parker
+## 	NDM = Nicola De Maio
 ##EXC=<Description="List of reasons for suggested exclusion">
 ##	seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)
-##	highly_homoplasic = Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts (masking recommended)
-##	homoplasic = Apparent homoplasic site (masking recommended unless identified from multiple sources)
-##	single_src = Only observed in samples from a single laboratory (masking recommended)
 ##	neighbour_linked = Proximal variants displaying near perfect linkage (caution recommended)
 ##	MNM = Apparent multinucleotide mutations (caution recommended)
+##	homoplasic = Apparent homoplasic site (masking recommended unless identified from multiple sources)
+##	single_src = Only observed in samples from a single laboratory (masking recommended)
 ##	highly_ambiguous = Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory (masking recommended)
+##	highly_homoplasic = Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts (masking recommended)
 ##SRC=<Description="Source laboratory or study of samples showing the variant">
-##	USA_California-Chan-Zuckerberg-Biohub = USA, Chan Zuckerberg Biohub
-##	Turkey_Ministry-of-Health = Turkey, Ministry of Health
 ##	Belgium_KU-Leuven = Belgium, KU-Leuven
+##	UK_COG-UK = UK, COVID-19 Genomics UK Consortium
 ##	USA_Washington-UW = USA, University of Washington
 ##	USA_Seattle_Flu_Study = USA, Seattle Flu Study
+##	India_NCDC = India, National Centre for Disease Control
+##	USA_California-Chan-Zuckerberg-Biohub = USA, Chan Zuckerberg Biohub
+##	Turkey_Ministry-of-Health = Turkey, Ministry of Health
+##	Australia_VIDRL = Australia, Victorian Infectious Diseases Reference Laboratory
 ##	Netherlands_Erasmus = Netherlands, Erasmus University Rotterdam
 ##	Italy_IZSAM = Italy, Istituto zooprofilattico sperimentale dell'Abruzzo e del Molise
-##	UK_COG-UK = UK, COVID-19 Genomics UK Consortium
-##	India_NCDC = India, National Centre for Disease Control
 ##	Luxembourg = Luxembourg, Laboratoire National de Sante
-##	Australia_VIDRL = Australia, Victorian Infectious Diseases Reference Laboratory
 ##GENE=<Decription="Position falls into range of this gene">
 ##AAPOS=<Description="Position of amino acid residue within gene">
 ##REFAA=<Description="Reference amino acid residue">
 ##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
-#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    EXC     SRC     GENE    AAPOS   REFAA   ALTAA
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC	GENE	AAPOS	REFAA	ALTAA
 MN908947.3	1	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	2	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	3	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.

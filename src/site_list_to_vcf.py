@@ -13,13 +13,13 @@ def generate_vcf_header(current_date, submitters,
     ##reference=MN908947.3
     ##contig=<ID=MN908947.3,length=29903>
     ##FILTER=<Description="Masking recommendation"
-    ##	caution = apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
-    ##	mask = sites we recommend to always mask
+    ##\tcaution = Apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
+    ##\tmask = Sites we recommend to always mask
     ##INFO=<Description="Initials of submitter"
     '''.replace("\n    ", "\n")[:-1]
     subs = submitters
     fixed3 = '##EXC=<Description="List of reasons for suggested exclusion">'
-    seq_end = '##	seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)'
+    seq_end = '##\tseq_end = Alignment ends are affected by low coverage and high error rates (masking recommended, but might be more stringent than necessary)'
     exc_desc = exclusions
     fixed4 = '##SRC=<Description="Source laboratory or study of samples showing the variant">'
     exc_labs = labs
@@ -27,7 +27,7 @@ def generate_vcf_header(current_date, submitters,
     ##AAPOS=<Description="Position of amino acid residue within gene">
     ##REFAA=<Description="Reference amino acid residue">
     ##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
-    #CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    EXC     SRC     GENE    AAPOS   REFAA   ALTAA
+    #CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tEXC\tSRC\tGENE\tAAPOS\tREFAA\tALTAA
     '''.replace("\n    ", "\n")[:-1]
     full_header = "\n".join([fixed1,
                              fidate,

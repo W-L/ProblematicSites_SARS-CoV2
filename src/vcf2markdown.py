@@ -9,7 +9,7 @@ def readCustomVCF(fname, keep_cols):
                 continue
             # get the header line but only keep the ones for the md table
             elif line.startswith('#C'):
-                header_line = line.rstrip('\n').split(sep='\t')
+                header_line = line.rstrip('\n').split('\t')
                 header = [header_line[i] for i in keep_cols]
             # all other lines that contain data
             elif len(line) != 0:

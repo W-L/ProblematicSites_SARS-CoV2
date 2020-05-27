@@ -3,62 +3,67 @@
 
 # Human-friendly version of the vcf file
 
-|    POS    |REF| ALT |         EXC         |   GENE    |AAPOS|REFAA|ALTAA|
-|-----------|---|-----|---------------------|-----------|-----|-----|-----|
-|1-55       |.  |.    |seq_end              |.          |.    |     |     |
-|187        |A  |G    |homoplasic,no_sig    |.          |.    |.    |.    |
-|241        |C  |T,Y  |homoplasic           |.          |.    |.    |.    |
-|335        |C  |T    |homoplasic           |gene-orf1ab|24   |R    |C    |
-|1059       |C  |T,Y  |homoplasic,no_sig    |gene-orf1ab|265  |T    |I,X  |
-|2094       |C  |T    |homoplasic,no_sig    |gene-orf1ab|610  |S    |L    |
-|3037       |C  |T,Y  |homoplasic,no_sig    |gene-orf1ab|924  |F    |F,F  |
-|3130       |C  |T    |homoplasic,no_sig    |gene-orf1ab|955  |Y    |Y    |
-|3145       |G  |T    |homoplasic           |gene-orf1ab|960  |L    |F    |
-|4050       |A  |C    |homoplasic,single_src|gene-orf1ab|1262 |N    |T    |
-|6255       |C  |T    |homoplasic           |gene-orf1ab|1997 |A    |V    |
-|6990       |C  |T    |homoplasic,no_sig    |gene-orf1ab|2242 |S    |F    |
-|8022       |T  |G    |homoplasic,no_sig    |gene-orf1ab|2586 |V    |G    |
-|8782       |C  |T,Y  |homoplasic           |gene-orf1ab|2839 |S    |S,S  |
-|9223       |C  |T,M,Y|homoplasic           |gene-orf1ab|2986 |H    |H,X,H|
-|10323      |A  |G    |homoplasic,no_sig    |gene-orf1ab|3353 |K    |R    |
-|10741      |C  |T    |homoplasic,no_sig    |gene-orf1ab|3492 |D    |D    |
-|11074      |C  |T    |homoplasic,no_sig    |gene-orf1ab|3603 |F    |F    |
-|11083      |G  |T,K  |highly_hom           |gene-orf1ab|3606 |L    |F,X  |
-|11704      |C  |T    |homoplasic           |gene-orf1ab|3813 |Y    |Y    |
-|13402      |T  |W,G  |homoplasic,single_src|gene-orf1ab|4379 |Y    |X,*  |
-|13408      |T  |A,G,C|homoplasic,no_sig    |gene-orf1ab|4381 |C    |*,W,C|
-|14408      |C  |T,Y  |homoplasic           |gene-orf1ab|4715 |P    |L,L  |
-|14724      |C  |Y,T  |homoplasic           |gene-orf1ab|4820 |F    |X,F  |
-|14786      |C  |T    |homoplasic,no_sig    |gene-orf1ab|4841 |A    |L    |
-|14805      |C  |T,Y  |homoplasic           |gene-orf1ab|4847 |Y    |I,X  |
-|15324      |C  |T,Y  |highly_hom           |gene-orf1ab|5020 |N    |I,X  |
-|16887      |C  |T    |homoplasic           |gene-orf1ab|5541 |Y    |I    |
-|17247      |T  |C,Y,G|homoplasic           |gene-orf1ab|5661 |R    |A,X,G|
-|19684      |G  |T    |homoplasic,no_sig    |gene-orf1ab|6473 |E    |N    |
-|20148      |C  |T    |homoplasic,no_sig    |gene-orf1ab|6628 |F    |L    |
-|21137      |A  |G,R  |homoplasic,no_sig    |gene-orf1ab|6958 |K    |G,X  |
-|21575      |C  |T,Y  |highly_hom           |gene-S     |5    |L    |F,X  |
-|23403      |A  |G,R  |homoplasic           |gene-S     |614  |D    |G,X  |
-|24034      |C  |T,Y  |homoplasic,no_sig    |gene-S     |824  |N    |N,N  |
-|24378      |C  |T,Y  |homoplasic,no_sig    |gene-S     |939  |S    |F,X  |
-|24389      |A  |C    |seq_err              |gene-S     |943  |S    |R    |
-|24390      |G  |C    |seq_err              |gene-S     |943  |S    |T    |
-|25563      |G  |T,K  |homoplasic,no_sig    |gene-ORF3a |57   |Q    |H,X  |
-|26144      |G  |T,K  |homoplasic,no_sig    |gene-ORF3a |251  |G    |V,X  |
-|26461      |C  |T    |homoplasic,no_sig    |gene-E     |73   |L    |F    |
-|26681      |C  |T,Y  |homoplasic,no_sig    |gene-M     |53   |F    |F,F  |
-|27384      |T  |C    |homoplasic           |gene-ORF6  |61   |D    |D    |
-|28077      |G  |C,T,S|homoplasic,no_sig    |gene-ORF8  |62   |V    |L,L,X|
-|28826      |C  |T    |homoplasic,no_sig    |gene-N     |185  |R    |C    |
-|28854      |C  |T,Y  |homoplasic,no_sig    |gene-N     |194  |S    |L,X  |
-|28881      |G  |A,R,K|MNM                  |gene-N     |203  |R    |K,X,X|
-|28882      |G  |A,R  |MNM                  |gene-N     |203  |R    |R,R  |
-|28883      |G  |C,S,A|MNM                  |gene-N     |204  |G    |R,X,R|
-|29353      |C  |T    |homoplasic,no_sig    |gene-N     |360  |Y    |Y    |
-|29700      |A  |G    |homoplasic,no_sig    |.          |.    |.    |.    |
-|29736      |G  |T    |homoplasic           |.          |.    |.    |.    |
-|29774      |C  |T    |homoplasic,no_sig    |.          |.    |.    |.    |
-|29804-29903|.  |.    |seq_end              |.          |.    |     |     |
+|    POS    |REF|  ALT  |            EXC            |   GENE    |AAPOS|REFAA| ALTAA |
+|-----------|---|-------|---------------------------|-----------|-----|-----|-------|
+|1-55       |.  |.      |seq_end                    |.          |.    |     |       |
+|635        |C  |Y,T    |highly_ambiguous           |gene-orf1ab|124  |R    |X,C    |
+|2091       |C  |T,Y    |highly_ambiguous           |gene-orf1ab|609  |T    |I,X    |
+|2094       |C  |T,Y    |highly_ambiguous           |gene-orf1ab|610  |S    |L,X    |
+|3145       |G  |T      |homoplasic;single_src      |gene-orf1ab|960  |L    |F      |
+|3564       |G  |T,K    |highly_ambiguous           |gene-orf1ab|1100 |G    |V,X    |
+|4050       |A  |C      |homoplasic;single_src      |gene-orf1ab|1262 |N    |T      |
+|5736       |C  |T,Y    |homoplasic;single_src      |gene-orf1ab|1824 |A    |V,X    |
+|6309       |G  |T,A,R  |neighbour_linked           |gene-orf1ab|2015 |S    |I,N,X  |
+|6310       |C  |T,A,M  |neighbour_linked           |gene-orf1ab|2015 |S    |S,R,X  |
+|6312       |C  |A,T,G,M|neighbour_linked           |gene-orf1ab|2016 |T    |K,I,R,X|
+|6869       |A  |T,W,R  |highly_ambiguous           |gene-orf1ab|2202 |T    |S,X,X  |
+|6971       |T  |C      |neighbour_linked;single_src|gene-orf1ab|2236 |L    |L      |
+|6975       |G  |T      |neighbour_linked;single_src|gene-orf1ab|2237 |S    |I      |
+|6977       |G  |A      |neighbour_linked;single_src|gene-orf1ab|2238 |V    |I      |
+|8022       |T  |K,G    |highly_ambiguous           |gene-orf1ab|2586 |V    |X,G    |
+|8790       |G  |K,T    |highly_ambiguous           |gene-orf1ab|2842 |G    |X,V    |
+|10129      |T  |C,Y    |highly_ambiguous           |gene-orf1ab|3288 |T    |T,T    |
+|11074      |C  |Y,T    |highly_homoplasic          |gene-orf1ab|3603 |F    |F,F    |
+|11083      |G  |T,K,A  |highly_homoplasic          |gene-orf1ab|3606 |L    |F,X,L  |
+|11535      |G  |T,K    |homoplasic;single_src      |gene-orf1ab|3757 |G    |V,X    |
+|13402      |T  |G,K    |homoplasic;single_src      |gene-orf1ab|4379 |Y    |*,X    |
+|13408      |T  |C,K    |homoplasic;single_src      |gene-orf1ab|4381 |C    |C,X    |
+|13476      |C  |Y,T    |highly_ambiguous           |gene-orf1ab|4404 |C    |X,V    |
+|13512      |A  |T      |neighbour_linked           |gene-orf1ab|4416 |T    |L      |
+|13513      |G  |T      |neighbour_linked           |gene-orf1ab|4416 |T    |H      |
+|13514      |G  |A      |neighbour_linked           |gene-orf1ab|4417 |G    |T      |
+|13571      |G  |K,T    |highly_ambiguous           |gene-orf1ab|4436 |G    |X,F    |
+|13686      |T  |Y,A    |neighbour_linked           |gene-orf1ab|4474 |H    |X,K    |
+|13687      |G  |T      |neighbour_linked           |gene-orf1ab|4474 |H    |I      |
+|13693      |A  |T      |neighbour_linked           |gene-orf1ab|4476 |E    |N      |
+|14277      |G  |T,K    |homoplasic;single_src      |gene-orf1ab|4671 |R    |V,X    |
+|15922      |T  |C,Y    |highly_ambiguous           |gene-orf1ab|5219 |V    |C,C    |
+|16887      |C  |T      |highly_homoplasic          |gene-orf1ab|5541 |Y    |I      |
+|19484      |C  |T,Y    |highly_ambiguous           |gene-orf1ab|6407 |A    |L,L    |
+|21302      |C  |T      |neighbour_linked           |gene-orf1ab|7013 |P    |Y      |
+|21304      |C  |Y,A,T  |neighbour_linked           |gene-orf1ab|7013 |P    |H,Q,H  |
+|21305      |G  |A      |neighbour_linked           |gene-orf1ab|7014 |R    |T      |
+|21575      |C  |T,Y    |highly_homoplasic          |gene-S     |5    |L    |F,X    |
+|22335      |G  |T      |highly_ambiguous           |gene-S     |258  |W    |L      |
+|24389      |A  |M,C    |homoplasic;single_src      |gene-S     |943  |S    |X,R    |
+|24390      |G  |S,C,T  |homoplasic;single_src      |gene-S     |943  |S    |X,T,I  |
+|24933      |G  |K,T    |highly_ambiguous           |gene-S     |1124 |G    |X,V    |
+|26549      |C  |T,Y    |homoplasic;single_src      |gene-M     |9    |T    |T,T    |
+|27382      |G  |C,T,K  |neighbour_linked           |gene-ORF6  |61   |D    |H,Y,X  |
+|27383      |A  |T      |neighbour_linked           |gene-ORF6  |61   |D    |V      |
+|27384      |T  |C,Y    |neighbour_linked           |gene-ORF6  |61   |D    |D,D    |
+|28004      |T  |C      |neighbour_linked;single_src|gene-ORF8  |37   |C    |C      |
+|28005      |C  |T,G    |neighbour_linked;single_src|gene-ORF8  |38   |P    |S,A    |
+|28006      |C  |T      |neighbour_linked;single_src|gene-ORF8  |38   |P    |L      |
+|28007      |T  |       |neighbour_linked;single_src|gene-ORF8  |38   |P    |       |
+|28008      |A  |G      |neighbour_linked;single_src|gene-ORF8  |39   |I    |V      |
+|28009      |T  |       |neighbour_linked;single_src|gene-ORF8  |39   |I    |       |
+|28881      |G  |A,R,T,K|MNM                        |gene-N     |203  |R    |K,X,M,X|
+|28882      |G  |A,R,T  |MNM                        |gene-N     |203  |R    |R,R,S  |
+|28883      |G  |C,S,A  |MNM                        |gene-N     |204  |G    |R,X,R  |
+|29037      |C  |T,Y    |homoplasic;single_src      |gene-N     |255  |S    |F,X    |
+|29553      |G  |A      |homoplasic;single_src      |.          |.    |.    |.      |
+|29804-29903|.  |.      |seq_end                    |.          |.    |     |       |
 
 # Description of the columns in the vcf-version
 
@@ -87,11 +92,12 @@ The adapted vcf format contains all 8 mandatory as well as several additional co
 
 | Tag | Description |
 |------|-------------|
-| homoplasic | homoplasic site (not necessarily to be masked in itself) |
-| highly_hom | highly homoplasic site (recommended to be masked)
-| no_sig | no phylogenetic signal as inferred by the delta statistic (recommended to be masked) |
-| single_src | only observed in samples from a single laboratory (recommended to be masked) |
-| seq_end | alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary) |
-
+| seq_end |Aalignment ends are affected by low coverage and high error rates (masking recommended, but might be more stringent than necessary) |
+| highly_homoplasic | Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts (masking recommended) |
+| highly_ambiguous | Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory (masking recommended) |
+| homoplasic | Apparent homoplasic site (masking recommended unless identified from multiple sources) |
+| single_src | Only observed in samples from a single laboratory (masking recommended) |
+| MNM | Apparent multinucleotide mutations (caution recommended) |
+| neighbour_linked | Proximal variants displaying near perfect linkage (caution recommended) |
 
 Suggestions, additions and issues are very gratefully received.
