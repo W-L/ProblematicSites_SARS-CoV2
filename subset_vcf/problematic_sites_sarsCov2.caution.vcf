@@ -1,34 +1,34 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-05-27-11:55
+##fileDate=2020-05-27-16:21
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
 ##FILTER=<Description="Masking recommendation"
-##	caution = apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
-##	mask = sites we recommend to always mask
+##	caution = Apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
+##	mask = Sites we recommend to always mask
 ##INFO=<Description="Initials of submitter"
-## 	MP = Matthew Parker
 ## 	NDM = Nicola De Maio
+## 	MP = Matthew Parker
 ##EXC=<Description="List of reasons for suggested exclusion">
-##	seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)
+##	seq_end = Alignment ends are affected by low coverage and high error rates (masking recommended, but might be more stringent than necessary)
 ##	neighbour_linked = Proximal variants displaying near perfect linkage (caution recommended)
-##	MNM = Apparent multinucleotide mutations (caution recommended)
+##	highly_homoplasic = Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts (masking recommended)
+##	highly_ambiguous = Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory (masking recommended)
 ##	homoplasic = Apparent homoplasic site (masking recommended unless identified from multiple sources)
 ##	single_src = Only observed in samples from a single laboratory (masking recommended)
-##	highly_ambiguous = Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory (masking recommended)
-##	highly_homoplasic = Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts (masking recommended)
+##	MNM = Apparent multinucleotide mutations (caution recommended)
 ##SRC=<Description="Source laboratory or study of samples showing the variant">
+##	India_NCDC = India, National Centre for Disease Control
+##	Turkey_Ministry-of-Health = Turkey, Ministry of Health
 ##	Belgium_KU-Leuven = Belgium, KU-Leuven
+##	Australia_VIDRL = Australia, Victorian Infectious Diseases Reference Laboratory
 ##	UK_COG-UK = UK, COVID-19 Genomics UK Consortium
+##	Italy_IZSAM = Italy, Istituto zooprofilattico sperimentale dell'Abruzzo e del Molise
 ##	USA_Washington-UW = USA, University of Washington
 ##	USA_Seattle_Flu_Study = USA, Seattle Flu Study
-##	India_NCDC = India, National Centre for Disease Control
 ##	USA_California-Chan-Zuckerberg-Biohub = USA, Chan Zuckerberg Biohub
-##	Turkey_Ministry-of-Health = Turkey, Ministry of Health
-##	Australia_VIDRL = Australia, Victorian Infectious Diseases Reference Laboratory
+##	Luxembourg_LNS = Luxembourg, Laboratoire National de Sante
 ##	Netherlands_Erasmus = Netherlands, Erasmus University Rotterdam
-##	Italy_IZSAM = Italy, Istituto zooprofilattico sperimentale dell'Abruzzo e del Molise
-##	Luxembourg = Luxembourg, Laboratoire National de Sante
 ##GENE=<Decription="Position falls into range of this gene">
 ##AAPOS=<Description="Position of amino acid residue within gene">
 ##REFAA=<Description="Reference amino acid residue">
@@ -52,12 +52,10 @@ MN908947.3	21305	.	G	A	.	caution	NDM	neighbour_linked	.	gene-orf1ab	7014	R	T
 MN908947.3	27382	.	G	C,T,K	.	caution	NDM	neighbour_linked	.	gene-ORF6	61	D	H,Y,X
 MN908947.3	27383	.	A	T	.	caution	NDM	neighbour_linked	.	gene-ORF6	61	D	V
 MN908947.3	27384	.	T	C,Y	.	caution	NDM	neighbour_linked	.	gene-ORF6	61	D	D,D
-MN908947.3	28004	.	T	C	.	caution	NDM	neighbour_linked;single_src	Luxembourg	gene-ORF8	37	C	C
-MN908947.3	28005	.	C	T,G	.	caution	NDM	neighbour_linked;single_src	Luxembourg	gene-ORF8	38	P	S,A
-MN908947.3	28006	.	C	T	.	caution	NDM	neighbour_linked;single_src	Luxembourg	gene-ORF8	38	P	L
-MN908947.3	28007	.	T		.	caution	NDM	neighbour_linked;single_src	Luxembourg	gene-ORF8	38	P	
-MN908947.3	28008	.	A	G	.	caution	NDM	neighbour_linked;single_src	Luxembourg	gene-ORF8	39	I	V
-MN908947.3	28009	.	T		.	caution	NDM	neighbour_linked;single_src	Luxembourg	gene-ORF8	39	I	
+MN908947.3	28004	.	T	C	.	caution	NDM	neighbour_linked;single_src	Luxembourg_LNS	gene-ORF8	37	C	C
+MN908947.3	28005	.	C	T,G	.	caution	NDM	neighbour_linked;single_src	Luxembourg_LNS	gene-ORF8	38	P	S,A
+MN908947.3	28006	.	C	T	.	caution	NDM	neighbour_linked;single_src	Luxembourg_LNS	gene-ORF8	38	P	L
+MN908947.3	28008	.	A	G	.	caution	NDM	neighbour_linked;single_src	Luxembourg_LNS	gene-ORF8	39	I	V
 MN908947.3	28881	.	G	A,R,T,K	.	caution	NDM	MNM	.	gene-N	203	R	K,X,M,X
 MN908947.3	28882	.	G	A,R,T	.	caution	NDM	MNM	.	gene-N	203	R	R,R,S
 MN908947.3	28883	.	G	C,S,A	.	caution	NDM	MNM	.	gene-N	204	G	R,X,R

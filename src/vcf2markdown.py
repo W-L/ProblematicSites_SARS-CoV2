@@ -27,7 +27,7 @@ def main():
 
     # name of the vcf file to parse and which columns to select from the file
     filename = "problematic_sites_sarsCov2.vcf"
-    keep = [1, 3, 4, 8, 10, 11, 12, 13]
+    keep = [1, 3, 4, 6, 8, 10, 11, 12, 13]
     # title of the table - printed as markdown header before the table
     writer.table_name = "Human-friendly version of the vcf file"
 

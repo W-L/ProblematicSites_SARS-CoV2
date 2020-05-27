@@ -55,9 +55,7 @@
 |28004      |T  |C      |caution|neighbour_linked;single_src|gene-ORF8  |   37|C    |C      |
 |28005      |C  |T,G    |caution|neighbour_linked;single_src|gene-ORF8  |   38|P    |S,A    |
 |28006      |C  |T      |caution|neighbour_linked;single_src|gene-ORF8  |   38|P    |L      |
-|28007      |T  |       |caution|neighbour_linked;single_src|gene-ORF8  |   38|P    |       |
 |28008      |A  |G      |caution|neighbour_linked;single_src|gene-ORF8  |   39|I    |V      |
-|28009      |T  |       |caution|neighbour_linked;single_src|gene-ORF8  |   39|I    |       |
 |28881      |G  |A,R,T,K|caution|MNM                        |gene-N     |  203|R    |K,X,M,X|
 |28882      |G  |A,R,T  |caution|MNM                        |gene-N     |  203|R    |R,R,S  |
 |28883      |G  |C,S,A  |caution|MNM                        |gene-N     |  204|G    |R,X,R  |

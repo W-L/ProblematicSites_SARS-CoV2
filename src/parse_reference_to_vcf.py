@@ -23,7 +23,7 @@ def main():
 
     # store alt bases at each site
     bases_per_ref_site = []
-
+    
     # determine all bases in each alignment column (slow, works as needed)
     for i, ref_base in enumerate(ref_align_seq):
         if ref_base == "-":

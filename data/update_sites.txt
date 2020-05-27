@@ -29,12 +29,10 @@ position,masking_rec,exclusion_reason,source,submitter
 26549,mask,homoplasic;single_src,Turkey_Ministry-of-Health,NDM
 29037,mask,homoplasic;single_src,Australia_VIDRL,NDM
 29553,mask,homoplasic;single_src,USA_Washington-UW;USA_Seattle_Flu_Study,NDM
-28004,caution,neighbour_linked;single_src,Luxembourg,NDM
-28005,caution,neighbour_linked;single_src,Luxembourg,NDM
-28006,caution,neighbour_linked;single_src,Luxembourg,NDM
-28007,caution,neighbour_linked;single_src,Luxembourg,NDM
-28008,caution,neighbour_linked;single_src,Luxembourg,NDM
-28009,caution,neighbour_linked;single_src,Luxembourg,NDM
+28004,caution,neighbour_linked;single_src,Luxembourg_LNS,NDM
+28005,caution,neighbour_linked;single_src,Luxembourg_LNS,NDM
+28006,caution,neighbour_linked;single_src,Luxembourg_LNS,NDM
+28008,caution,neighbour_linked;single_src,Luxembourg_LNS,NDM
 27382,caution,neighbour_linked,0,NDM
 27383,caution,neighbour_linked,0,NDM
 27384,caution,neighbour_linked,0,NDM
