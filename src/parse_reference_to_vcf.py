@@ -2,7 +2,7 @@
 
 import numpy as np
 from Bio import SeqIO, AlignIO
-from six.moves import urllib
+#from six.moves import urllib
 from collections import Counter
 from sys import argv
 
@@ -39,17 +39,20 @@ def main():
             bases_per_ref_site.append(",".join(bases_at_position))
 
     # parse MN908947.3 sequence
-    ref_fasta = "SARS-CoV-2.fa"
+    ref_fasta = "data/SARS-CoV-2.fa"
     ref_seq = str(SeqIO.read(ref_fasta, "fasta").seq)
 
     # retrieve vcf
-    cov_vcf = urllib.request.urlopen("https://raw.githubusercontent.com/W-L/ProblematicSites_SARS-CoV2/master/problematic_sites_sarsCov2.vcf")
+    #cov_vcf = urllib.request.urlopen("https://raw.githubusercontent.com/W-L/ProblematicSites_SARS-CoV2/master/problematic_sites_sarsCov2.vcf")
+    cov_vcf = "problematic_sites_sarsCov2.vcf"
 
     # hold ref positions
     vcf_lines = []
 
     # parse vcf from github
-    vcf_contents = cov_vcf.read().decode("utf-8").split("\n")
+    #vcf_contents = cov_vcf.read().decode("utf-8").split("\n")
+    with open(cov_vcf, "r") as f:
+        vcf_contents = [i.strip() for i in f.readlines()]
 
     # don't report alt variants if in genome end
     genome_ends = [i+1 for i in range(55)] + [i+1 for i in range(29803,29903)]
