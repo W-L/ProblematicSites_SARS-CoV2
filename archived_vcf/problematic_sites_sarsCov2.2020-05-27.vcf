@@ -1,0 +1,232 @@
+##fileformat=VCFv4.3
+##fileDate=20200505
+##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
+##reference=MN908947.3
+##contig=<ID=MN908947.3,length=29903>
+##FILTER=<Description="Masking recommendation"
+## 	caution = apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
+## 	mask = sites we recommend to always mask
+##INFO=<Description="Initials of submitter"
+## 	NDM = Nicola De Maio
+## 	MP = Matthew Parker
+##EXC=<Description="list of reasons for suggested exclusion">
+##	homoplasic = homoplasic site (not necessarily to be masked in itself)
+##	highly_hom = highly homoplasic site (recommended to be masked)
+##	no_sig = no phylogenetic signal as inferred by the delta statistic (recommended to be masked)
+##	single_src = only observed in samples from a single laboratory (recommended to be masked)
+##	seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)
+##	MNM = apparent multinucleotide mutation
+##SRC=<Description="source laboratory of samples showing the variant">
+## 	KUL = *
+##GENE=<Decription="Position falls into range of this gene">
+##AAPOS=<Description="Position of amino acid residue within gene">
+##REFAA=<Description="Reference amino acid residue">
+##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC	GENE	AAPOS	REFAA	ALTAA
+MN908947.3	1	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	2	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	3	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	4	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	5	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	6	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	7	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	8	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	9	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	10	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	11	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	12	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	13	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	14	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	15	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	16	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	17	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	18	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	19	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	20	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	21	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	22	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	23	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	24	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	25	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	26	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	27	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	28	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	30	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	31	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	32	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	33	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	34	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	35	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	36	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	37	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	38	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	39	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	40	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	41	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	42	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	43	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	44	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	45	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	46	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	47	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	48	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	49	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	50	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	51	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	52	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	53	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	54	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	55	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	187	.	A	G	.	mask	NDM	homoplasic,no_sig	.	.	.	.	.
+MN908947.3	241	.	C	T,Y	.	caution	NDM	homoplasic	.	.	.	.	.
+MN908947.3	335	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	24	R	C
+MN908947.3	1059	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	265	T	I,X
+MN908947.3	2094	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	610	S	L
+MN908947.3	3037	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	924	F	F,F
+MN908947.3	3130	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	955	Y	Y
+MN908947.3	3145	.	G	T	.	caution	NDM	homoplasic	.	gene-orf1ab	960	L	F
+MN908947.3	4050	.	A	C	.	mask	NDM	homoplasic,single_src	KUL	gene-orf1ab	1262	N	T
+MN908947.3	6255	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	1997	A	V
+MN908947.3	6990	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	2242	S	F
+MN908947.3	8022	.	T	G	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	2586	V	G
+MN908947.3	8782	.	C	T,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	2839	S	S,S
+MN908947.3	9223	.	C	T,M,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	2986	H	H,X,H
+MN908947.3	10323	.	A	G	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	3353	K	R
+MN908947.3	10741	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	3492	D	D
+MN908947.3	11074	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	3603	F	F
+MN908947.3	11083	.	G	T,K	.	mask	NDM	highly_hom	.	gene-orf1ab	3606	L	F,X
+MN908947.3	11704	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	3813	Y	Y
+MN908947.3	13402	.	T	W,G	.	mask	NDM	homoplasic,single_src	KUL	gene-orf1ab	4379	Y	X,*
+MN908947.3	13408	.	T	A,G,C	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	4381	C	*,W,C
+MN908947.3	14408	.	C	T,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	4715	P	L,L
+MN908947.3	14724	.	C	Y,T	.	caution	NDM	homoplasic	.	gene-orf1ab	4820	F	X,F
+MN908947.3	14786	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	4841	A	L
+MN908947.3	14805	.	C	T,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	4847	Y	I,X
+MN908947.3	15324	.	C	T,Y	.	mask	NDM	highly_hom	.	gene-orf1ab	5020	N	I,X
+MN908947.3	16887	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	5541	Y	I
+MN908947.3	17247	.	T	C,Y,G	.	caution	NDM	homoplasic	.	gene-orf1ab	5661	R	A,X,G
+MN908947.3	19684	.	G	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	6473	E	N
+MN908947.3	20148	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	6628	F	L
+MN908947.3	21137	.	A	G,R	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	6958	K	G,X
+MN908947.3	21575	.	C	T,Y	.	mask	NDM	highly_hom	.	gene-S	5	L	F,X
+MN908947.3	23403	.	A	G,R	.	caution	NDM	homoplasic	.	gene-S	614	D	G,X
+MN908947.3	24034	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-S	824	N	N,N
+MN908947.3	24378	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-S	939	S	F,X
+MN908947.3	24389	.	A	C	.	mask	MP	seq_err	.	gene-S	943	S	R
+MN908947.3	24390	.	G	C	.	mask	MP	seq_err	.	gene-S	943	S	T
+MN908947.3	25563	.	G	T,K	.	mask	NDM	homoplasic,no_sig	.	gene-ORF3a	57	Q	H,X
+MN908947.3	26144	.	G	T,K	.	mask	NDM	homoplasic,no_sig	.	gene-ORF3a	251	G	V,X
+MN908947.3	26461	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-E	73	L	F
+MN908947.3	26681	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-M	53	F	F,F
+MN908947.3	27384	.	T	C	.	caution	NDM	homoplasic	.	gene-ORF6	61	D	D
+MN908947.3	28077	.	G	C,T,S	.	mask	NDM	homoplasic,no_sig	.	gene-ORF8	62	V	L,L,X
+MN908947.3	28826	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-N	185	R	C
+MN908947.3	28854	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-N	194	S	L,X
+MN908947.3	28881	.	G	A,R,K	.	mask	NDM	MNM	.	gene-N	203	R	K,X,X
+MN908947.3	28882	.	G	A,R	.	mask	NDM	MNM	.	gene-N	203	R	R,R
+MN908947.3	28883	.	G	C,S,A	.	mask	NDM	MNM	.	gene-N	204	G	R,X,R
+MN908947.3	29353	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-N	360	Y	Y
+MN908947.3	29700	.	A	G	.	mask	NDM	homoplasic,no_sig	.	.	.	.	.
+MN908947.3	29736	.	G	T	.	caution	NDM	homoplasic	.	.	.	.	.
+MN908947.3	29774	.	C	T	.	mask	NDM	homoplasic,no_sig	.	.	.	.	.
+MN908947.3	29804	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29805	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29806	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29807	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29808	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29809	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29810	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29811	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29812	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29813	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29814	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29815	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29816	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29817	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29818	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29819	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29820	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29821	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29822	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29823	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29824	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29825	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29826	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29827	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29828	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29829	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29830	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29831	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29832	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29833	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29834	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29835	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29836	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29837	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29838	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29839	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29840	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29841	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29842	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29843	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29844	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29845	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29846	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29847	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29848	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29849	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29850	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29851	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29852	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29853	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29854	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29855	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29856	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29857	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29858	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29859	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29860	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29861	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29862	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29863	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29864	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29865	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29866	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29867	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29868	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29869	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29870	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29871	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29872	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29873	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29874	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29875	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29876	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29877	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29878	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29879	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29880	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29881	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29882	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29883	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29884	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29885	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29886	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29887	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29888	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29889	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29890	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29891	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29892	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29893	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29894	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29895	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29896	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29897	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29898	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29899	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29900	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29901	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29902	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29903	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
