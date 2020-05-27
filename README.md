@@ -5,7 +5,7 @@
 
 |    POS    |REF|  ALT  |FILTER |            EXC            |   GENE    |AAPOS|REFAA| ALTAA |
 |-----------|---|-------|-------|---------------------------|-----------|-----|-----|-------|
-|1-55       |.  |.      |seq_end|.                          |.          |     |     |       |
+|1-55       |.  |.      |mask   |seq_end                    |.          |.    |.    |.      |
 |635        |C  |Y,T    |mask   |highly_ambiguous           |gene-orf1ab|  124|R    |X,C    |
 |2091       |C  |T,Y    |mask   |highly_ambiguous           |gene-orf1ab|  609|T    |I,X    |
 |2094       |C  |T,Y    |mask   |highly_ambiguous           |gene-orf1ab|  610|S    |L,X    |
@@ -63,7 +63,7 @@
 |28883      |G  |C,S,A  |caution|MNM                        |gene-N     |  204|G    |R,X,R  |
 |29037      |C  |T,Y    |mask   |homoplasic;single_src      |gene-N     |  255|S    |F,X    |
 |29553      |G  |A      |mask   |homoplasic;single_src      |.          |.    |.    |.      |
-|29804-29903|.  |.      |seq_end|.                          |.          |     |     |       |
+|29804-29903|.  |.      |mask   |seq_end                    |.          |.    |.    |.      |
 
 
 # Description of the columns in the vcf-version
