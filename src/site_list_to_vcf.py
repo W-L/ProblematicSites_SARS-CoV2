@@ -13,14 +13,14 @@ def generate_vcf_header(current_date, submitters,
     ##reference=MN908947.3
     ##contig=<ID=MN908947.3,length=29903>
     ##FILTER=<Description="Masking recommendation"
-    ##      caution = apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
-    ##      mask = sites we recommend to always mask
+    ##	caution = apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
+    ##	mask = sites we recommend to always mask
     ##INFO=<Description="Initials of submitter"
     '''.replace("\n    ", "\n")[:-1]
     subs = submitters
     fixed3 = '##EXC=<Description="List of reasons for suggested exclusion">'
-    seq_end = '##      seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)'
-    exc_desc = exclusions[:-1]
+    seq_end = '##	seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)'
+    exc_desc = exclusions
     fixed4 = '##SRC=<Description="Source laboratory or study of samples showing the variant">'
     exc_labs = labs
     fixed5 = '''##GENE=<Decription="Position falls into range of this gene">
@@ -48,6 +48,8 @@ def generate_descriptions(vcf_header, unique_descriptions, context):
     seen = []
     for desc_val in unique_descriptions or desc_val in seen:
         for desc in desc_val.split(";"):
+            if desc in seen:
+                continue
             seen.append(desc)
             if str(desc) == "0":
                 continue
@@ -110,7 +112,7 @@ def main():
         out_vcf.write(updated_header + "\n")
         for line in genome_end_lines:
             out_vcf.write(line + "\n")
-        for line in update_lines[1:]:
+        for line in update_lines:
             pos = line[0]
             mask_rec = line[1]
             exc_reason = line[2]
