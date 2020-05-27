@@ -68,8 +68,8 @@ def generate_descriptions(vcf_header, unique_descriptions, context):
 
 def main():
     # create VCF archive directory if it doesn't exist
-    if not path.exists("archived_VCFs"):
-        makedirs("archived_VCFs")
+    if not path.exists("archived_vcf"):
+        makedirs("archived_vcf")
     
     # files used to create new VCF
     current_vcf = "problematic_sites_sarsCov2.vcf"
@@ -78,7 +78,7 @@ def main():
     # back up VCF with dated filename
     date_suffix = datetime.now().strftime("%Y-%m-%d-%H:%M")
     backup_vcf = current_vcf.split(".")[0] + "." + date_suffix + ".vcf"
-    copyfile(current_vcf, "archived_VCFs/" + backup_vcf)
+    copyfile(current_vcf, "archived_vcf/" + backup_vcf)
     
     # get vcf header as list
     vcf_header = []
