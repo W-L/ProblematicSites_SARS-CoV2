@@ -92,7 +92,7 @@ The adapted vcf format contains all 8 mandatory as well as several additional co
 
 | Tag | Description |
 |------|-------------|
-| seq_end |Aalignment ends are affected by low coverage and high error rates (masking recommended, but might be more stringent than necessary) |
+| seq_end |Alignment ends are affected by low coverage and high error rates (masking recommended, but might be more stringent than necessary) |
 | highly_homoplasic | Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts (masking recommended) |
 | highly_ambiguous | Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory (masking recommended) |
 | homoplasic | Apparent homoplasic site (masking recommended unless identified from multiple sources) |
