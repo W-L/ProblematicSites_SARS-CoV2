@@ -1,39 +1,28 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-05-27-08:02
+##fileDate=20200505
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
 ##FILTER=<Description="Masking recommendation"
-##      caution = apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
-##      mask = sites we recommend to always mask
+## 	caution = apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
+## 	mask = sites we recommend to always mask
 ##INFO=<Description="Initials of submitter"
 ## 	NDM = Nicola De Maio
 ## 	MP = Matthew Parker
-##EXC=<Description="List of reasons for suggested exclusion">
-##      seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)
-##	highly_ambiguous = Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory
-##	MNM = apparent multinucleotide mutations
-##	highly_homoplasic = Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts
-##	homoplasic_lab_specific = Positions which appear highly homoplasic relative to their prevalence, and are mostly found in samples sequenced in a single laboratory
-##SRC=<Description="Source laboratory or study of samples showing the variant">
-##	Turkey_Ministry-of-Health = Turkey, Ministry of Health
-##	Netherlands_Erasmus = Netherlands, Erasmus University Rotterdam
-##	India_NCDC = India, National Centre for Disease Control
-##	UK_COG-UK = UK, COVID-19 Genomics UK Consortium
-##	India_NCDC = India, National Centre for Disease Control
-##	Belgium_KU-Leuven = Belgium, KU-Leuven
-##	USA_California-Chan-Zuckerberg-Biohub = USA, Chan Zuckerberg Biohub
-##	Luxembourg = Luxembourg
-##	USA_Washington-UW = USA, University of Washington
-##	USA_Seattle_Flu_Study = USA, Seattle Flu Study
-##	Australia_VIDRL = Australia, Victorian Infectious Diseases Reference Laboratory
-##	Italy_Caporale = Italy, ?Corporal? - a specific lab?
-##	Belgium_KU-Leuven = Belgium, KU-Leuven
+##EXC=<Description="list of reasons for suggested exclusion">
+##	homoplasic = homoplasic site (not necessarily to be masked in itself)
+##	highly_hom = highly homoplasic site (recommended to be masked)
+##	no_sig = no phylogenetic signal as inferred by the delta statistic (recommended to be masked)
+##	single_src = only observed in samples from a single laboratory (recommended to be masked)
+##	seq_end = alignment ends are affected by low coverage and high error rates (recommended to be masked, but might be more stringent than necessary)
+##	MNM = apparent multinucleotide mutation
+##SRC=<Description="source laboratory of samples showing the variant">
+## 	KUL = *
 ##GENE=<Decription="Position falls into range of this gene">
 ##AAPOS=<Description="Position of amino acid residue within gene">
 ##REFAA=<Description="Reference amino acid residue">
 ##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
-#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    EXC     SRC     GENE    AAPOS   REFAA   ALTAA
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC	GENE	AAPOS	REFAA	ALTAA
 MN908947.3	1	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	2	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	3	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
@@ -89,56 +78,58 @@ MN908947.3	52	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	53	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	54	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	55	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
-MN908947.3	635	.	C	Y,T	.	mask	NDM	highly_ambiguous	UK_COG-UK	gene-orf1ab	124	R	X,C
-MN908947.3	2091	.	C	T,Y	.	mask	NDM	highly_ambiguous	India_NCDC	gene-orf1ab	609	T	I,X
-MN908947.3	2094	.	C	T,Y	.	mask	NDM	highly_ambiguous	Belgium_KU-Leuven	gene-orf1ab	610	S	L,X
-MN908947.3	3145	.	G	T	.	mask	NDM	homoplasic_lab_specific	Netherlands_Erasmus	gene-orf1ab	960	L	F
-MN908947.3	3564	.	G	T,K	.	mask	NDM	highly_ambiguous	Australia_VIDRL	gene-orf1ab	1100	G	V,X
-MN908947.3	4050	.	A	C	.	mask	NDM	homoplasic_lab_specific	Belgium_KU-Leuven	gene-orf1ab	1262	N	T
-MN908947.3	5736	.	C	T,Y	.	mask	NDM	homoplasic_lab_specific	Turkey_Ministry-of-Health	gene-orf1ab	1824	A	V,X
-MN908947.3	6869	.	A	T,W,R	.	mask	NDM	highly_ambiguous	Italy_Caporale	gene-orf1ab	2202	T	S,X,X
-MN908947.3	6971	.	T	C	.	mask	NDM	MNM	Australia_VIDRL	gene-orf1ab	2236	L	L
-MN908947.3	6975	.	G	T	.	mask	NDM	MNM	Australia_VIDRL	gene-orf1ab	2237	S	I
-MN908947.3	6977	.	G	A	.	mask	NDM	MNM	Australia_VIDRL	gene-orf1ab	2238	V	I
-MN908947.3	8022	.	T	K,G	.	mask	NDM	highly_ambiguous	India_NCDC;Belgium_KU-Leuven	gene-orf1ab	2586	V	X,G
-MN908947.3	8790	.	G	K,T	.	mask	NDM	highly_ambiguous	Australia_VIDRL	gene-orf1ab	2842	G	X,V
-MN908947.3	10129	.	T	C,Y	.	mask	NDM	highly_ambiguous	USA_California-Chan-Zuckerberg-Biohub	gene-orf1ab	3288	T	T,T
-MN908947.3	11083	.	G	T,K,A	.	mask	NDM	highly_homoplasic	.	gene-orf1ab	3606	L	F,X,L
-MN908947.3	11535	.	G	T,K	.	mask	NDM	homoplasic_lab_specific	Australia_VIDRL	gene-orf1ab	3757	G	V,X
-MN908947.3	13402	.	T	G,K	.	mask	NDM	homoplasic_lab_specific	Belgium_KU-Leuven	gene-orf1ab	4379	Y	*,X
-MN908947.3	13408	.	T	C,K	.	mask	NDM	homoplasic_lab_specific	Belgium_KU-Leuven	gene-orf1ab	4381	C	C,X
-MN908947.3	13476	.	C	Y,T	.	mask	NDM	highly_ambiguous	Turkey_Ministry-of-Health	gene-orf1ab	4404	C	X,V
-MN908947.3	13512	.	A	T	.	mask	NDM	MNM	.	gene-orf1ab	4416	T	L
-MN908947.3	13513	.	G	T	.	mask	NDM	MNM	.	gene-orf1ab	4416	T	H
-MN908947.3	13514	.	G	A	.	mask	NDM	MNM	.	gene-orf1ab	4417	G	T
-MN908947.3	13571	.	G	K,T	.	mask	NDM	highly_ambiguous	Australia_VIDRL	gene-orf1ab	4436	G	X,F
-MN908947.3	13686	.	T	Y,A	.	mask	NDM	MNM	.	gene-orf1ab	4474	H	X,K
-MN908947.3	13687	.	G	T	.	mask	NDM	MNM	.	gene-orf1ab	4474	H	I
-MN908947.3	13693	.	A	T	.	mask	NDM	MNM	.	gene-orf1ab	4476	E	N
-MN908947.3	14277	.	G	T,K	.	mask	NDM	homoplasic_lab_specific	Australia_VIDRL	gene-orf1ab	4671	R	V,X
-MN908947.3	15922	.	T	C,Y	.	mask	NDM	highly_ambiguous	USA_California-Chan-Zuckerberg-Biohub	gene-orf1ab	5219	V	C,C
-MN908947.3	16887	.	C	T	.	mask	NDM	highly_homoplasic	.	gene-orf1ab	5541	Y	I
-MN908947.3	19484	.	C	T,Y	.	mask	NDM	highly_ambiguous	UK_COG-UK	gene-orf1ab	6407	A	L,L
-MN908947.3	21302	.	C	T	.	mask	NDM	MNM	.	gene-orf1ab	7013	P	Y
-MN908947.3	21304	.	C	Y,A,T	.	mask	NDM	MNM	.	gene-orf1ab	7013	P	H,Q,H
-MN908947.3	21305	.	G	A	.	mask	NDM	MNM	.	gene-orf1ab	7014	R	T
-MN908947.3	21575	.	C	T,Y	.	mask	NDM	highly_homoplasic	.	gene-S	5	L	F,X
-MN908947.3	22335	.	G	T	.	mask	NDM	highly_ambiguous	UK_COG-UK	gene-S	258	W	L
-MN908947.3	24389	.	A	M,C	.	mask	MP	homoplasic_lab_specific	Belgium_KU-Leuven	gene-S	943	S	X,R
-MN908947.3	24390	.	G	S,C,T	.	mask	MP	homoplasic_lab_specific	Belgium_KU-Leuven	gene-S	943	S	X,T,I
-MN908947.3	24933	.	G	K,T	.	mask	NDM	highly_ambiguous	Australia_VIDRL	gene-S	1124	G	X,V
-MN908947.3	26549	.	C	T,Y	.	mask	NDM	homoplasic_lab_specific	Turkey_Ministry-of-Health	gene-M	9	T	T,T
-MN908947.3	27382	.	G	C,T,K	.	mask	NDM	MNM	.	gene-ORF6	61	D	H,Y,X
-MN908947.3	27383	.	A	T	.	mask	NDM	MNM	.	gene-ORF6	61	D	V
-MN908947.3	27384	.	T	C,Y	.	mask	NDM	MNM	.	gene-ORF6	61	D	D,D
-MN908947.3	28004	.	T	C	.	mask	NDM	MNM	Luxembourg	gene-ORF8	37	C	C
-MN908947.3	28005	.	C	T,G	.	mask	NDM	MNM	Luxembourg	gene-ORF8	38	P	S,A
-MN908947.3	28006	.	C	T	.	mask	NDM	MNM	Luxembourg	gene-ORF8	38	P	L
-MN908947.3	28007	.	T		.	mask	NDM	MNM	Luxembourg	gene-ORF8	38	P	
-MN908947.3	28008	.	A	G	.	mask	NDM	MNM	Luxembourg	gene-ORF8	39	I	V
-MN908947.3	28009	.	T		.	mask	NDM	MNM	Luxembourg	gene-ORF8	39	I	
-MN908947.3	29037	.	C	T,Y	.	mask	NDM	homoplasic_lab_specific	Australia_VIDRL	gene-N	255	S	F,X
-MN908947.3	29553	.	G	A	.	mask	NDM	homoplasic_lab_specific	USA_Washington-UW;USA_Seattle_Flu_Study	.	.	.	.
+MN908947.3	187	.	A	G	.	mask	NDM	homoplasic,no_sig	.	.	.	.	.
+MN908947.3	241	.	C	T,Y	.	caution	NDM	homoplasic	.	.	.	.	.
+MN908947.3	335	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	24	R	C
+MN908947.3	1059	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	265	T	I,X
+MN908947.3	2094	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	610	S	L
+MN908947.3	3037	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	924	F	F,F
+MN908947.3	3130	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	955	Y	Y
+MN908947.3	3145	.	G	T	.	caution	NDM	homoplasic	.	gene-orf1ab	960	L	F
+MN908947.3	4050	.	A	C	.	mask	NDM	homoplasic,single_src	KUL	gene-orf1ab	1262	N	T
+MN908947.3	6255	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	1997	A	V
+MN908947.3	6990	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	2242	S	F
+MN908947.3	8022	.	T	G	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	2586	V	G
+MN908947.3	8782	.	C	T,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	2839	S	S,S
+MN908947.3	9223	.	C	T,M,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	2986	H	H,X,H
+MN908947.3	10323	.	A	G	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	3353	K	R
+MN908947.3	10741	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	3492	D	D
+MN908947.3	11074	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	3603	F	F
+MN908947.3	11083	.	G	T,K	.	mask	NDM	highly_hom	.	gene-orf1ab	3606	L	F,X
+MN908947.3	11704	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	3813	Y	Y
+MN908947.3	13402	.	T	W,G	.	mask	NDM	homoplasic,single_src	KUL	gene-orf1ab	4379	Y	X,*
+MN908947.3	13408	.	T	A,G,C	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	4381	C	*,W,C
+MN908947.3	14408	.	C	T,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	4715	P	L,L
+MN908947.3	14724	.	C	Y,T	.	caution	NDM	homoplasic	.	gene-orf1ab	4820	F	X,F
+MN908947.3	14786	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	4841	A	L
+MN908947.3	14805	.	C	T,Y	.	caution	NDM	homoplasic	.	gene-orf1ab	4847	Y	I,X
+MN908947.3	15324	.	C	T,Y	.	mask	NDM	highly_hom	.	gene-orf1ab	5020	N	I,X
+MN908947.3	16887	.	C	T	.	caution	NDM	homoplasic	.	gene-orf1ab	5541	Y	I
+MN908947.3	17247	.	T	C,Y,G	.	caution	NDM	homoplasic	.	gene-orf1ab	5661	R	A,X,G
+MN908947.3	19684	.	G	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	6473	E	N
+MN908947.3	20148	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	6628	F	L
+MN908947.3	21137	.	A	G,R	.	mask	NDM	homoplasic,no_sig	.	gene-orf1ab	6958	K	G,X
+MN908947.3	21575	.	C	T,Y	.	mask	NDM	highly_hom	.	gene-S	5	L	F,X
+MN908947.3	23403	.	A	G,R	.	caution	NDM	homoplasic	.	gene-S	614	D	G,X
+MN908947.3	24034	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-S	824	N	N,N
+MN908947.3	24378	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-S	939	S	F,X
+MN908947.3	24389	.	A	C	.	mask	MP	seq_err	.	gene-S	943	S	R
+MN908947.3	24390	.	G	C	.	mask	MP	seq_err	.	gene-S	943	S	T
+MN908947.3	25563	.	G	T,K	.	mask	NDM	homoplasic,no_sig	.	gene-ORF3a	57	Q	H,X
+MN908947.3	26144	.	G	T,K	.	mask	NDM	homoplasic,no_sig	.	gene-ORF3a	251	G	V,X
+MN908947.3	26461	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-E	73	L	F
+MN908947.3	26681	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-M	53	F	F,F
+MN908947.3	27384	.	T	C	.	caution	NDM	homoplasic	.	gene-ORF6	61	D	D
+MN908947.3	28077	.	G	C,T,S	.	mask	NDM	homoplasic,no_sig	.	gene-ORF8	62	V	L,L,X
+MN908947.3	28826	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-N	185	R	C
+MN908947.3	28854	.	C	T,Y	.	mask	NDM	homoplasic,no_sig	.	gene-N	194	S	L,X
+MN908947.3	28881	.	G	A,R,K	.	mask	NDM	MNM	.	gene-N	203	R	K,X,X
+MN908947.3	28882	.	G	A,R	.	mask	NDM	MNM	.	gene-N	203	R	R,R
+MN908947.3	28883	.	G	C,S,A	.	mask	NDM	MNM	.	gene-N	204	G	R,X,R
+MN908947.3	29353	.	C	T	.	mask	NDM	homoplasic,no_sig	.	gene-N	360	Y	Y
+MN908947.3	29700	.	A	G	.	mask	NDM	homoplasic,no_sig	.	.	.	.	.
+MN908947.3	29736	.	G	T	.	caution	NDM	homoplasic	.	.	.	.	.
+MN908947.3	29774	.	C	T	.	mask	NDM	homoplasic,no_sig	.	.	.	.	.
 MN908947.3	29804	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	29805	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
 MN908947.3	29806	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
