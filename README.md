@@ -91,12 +91,12 @@ The adapted vcf format contains all 8 mandatory as well as several additional co
 
 | Tag | Description |
 |------|-------------|
-| seq_end |Alignment ends are affected by low coverage and high error rates (masking recommended, but might be more stringent than necessary) |
-| highly_homoplasic | Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts (masking recommended) |
-| highly_ambiguous | Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory (masking recommended) |
-| homoplasic | Apparent homoplasic site (masking recommended unless identified from multiple sources) |
-| single_src | Only observed in samples from a single laboratory (masking recommended) |
-| MNM | Apparent multinucleotide mutations (caution recommended) |
-| neighbour_linked | Proximal variants displaying near perfect linkage (caution recommended) |
+| seq_end |Alignment ends are affected by low coverage and high error rates |
+| highly_homoplasic | Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts |
+| highly_ambiguous | Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory |
+| homoplasic | Apparent homoplasic site |
+| single_src | Only observed in samples from a single laboratory |
+| MNM | Apparent multinucleotide mutations |
+| neighbour_linked | Proximal variants displaying near perfect linkage |
 
 Suggestions, additions and issues are very gratefully received.
