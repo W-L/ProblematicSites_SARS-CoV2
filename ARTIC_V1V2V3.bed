@@ -1,3 +1,4 @@
+# See ARTIC protocol info at https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/
 track	name="ARTIC1"	description=""	itemRgb="On"
 MN908947.3	30	54	primer_01_LEFT	24	+	30	54	255,0,0
 MN908947.3	54	385	amplicon_01(V1V2V3)	331	+	54	385	140,70,20
