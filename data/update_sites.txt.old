@@ -54,13 +54,3 @@ position,masking_rec,exclusion_reason,source,submitter
 6309,caution,neighbour_linked,0,NDM
 6310,caution,neighbour_linked,0,NDM
 6312,caution,neighbour_linked,0,NDM
-153,mask,homoplasic;single_src,TBC,RCD
-1149,TBC,homoplasic;single_src,TBC,RCD
-2198,mask,homoplasic;single_src,TBC,RCD
-3037,TBC,TBC,TBC,RL
-3778,mask,homoplasic;single_src,TBC,RCD
-6255,mask,highly_homoplasic_TBC,0,RCD
-13947,TBC,homoplasic;single_src,TBC,RCD
-21711,mask,highly_homoplasic,0,RCD
-22802,mask,contamination;single_src,TBC,RCD
-28887,mask,highly_homoplasic,0,RCD
