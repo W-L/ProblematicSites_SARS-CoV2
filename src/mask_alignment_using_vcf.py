@@ -26,7 +26,8 @@ def read_fasta_keep_name(file, cli_args):
                 seq += line.replace("\n","")
                 line = file.readline()
             sample_headers.append(name)
-            sample_sequences.append(seq.lower())
+            #sample_sequences.append(seq.lower())
+            sample_sequences.append(seq)
         else:
             print("problem with fasta format: line not recognised")
             print(line)
