@@ -112,7 +112,6 @@ def main():
             range_split = [int(i) for i in line_coord.split("-")]
             start_pos, end_pos = range_split[0], range_split[1]
             line_content = site_line[1:]
-            print(start_pos, end_pos)
             for i in range(start_pos, end_pos+1):
                 update_lines.append([str(i)] + line_content)
         else:
