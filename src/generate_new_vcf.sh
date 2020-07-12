@@ -1,5 +1,6 @@
 # path to alignment as first argument
 alignment_path=$1;
+alt_sites_vcf=$2;
 
 # path variables
 subset_caution=subset_vcf/problematic_sites_sarsCov2.caution.vcf;
@@ -10,7 +11,8 @@ compressed_mask=compressed_vcf/problematic_sites_sarsCov2.mask.vcf.gz;
 
 # generate new vcf
 python src/site_list_to_vcf.py
-python src/parse_reference_to_vcf.py $alignment_path
+#python src/parse_reference_to_vcf.py "$alignment_path"
+python src/fill_alt_positions_from_vcf.py problematic_sites_sarsCov2.vcf "$alt_sites_vcf"
 python src/parseCDS.py
 
 # sort vcf, put into if statement to prevent accidental deletion
@@ -21,21 +23,21 @@ if [ -f problematic_sites_sarsCov2_genes.vcf ]; then
     rm problematic_sites_sarsCov2_genes.vcf
 fi
 
-# subset vcfs
-egrep -h "#|caution" problematic_sites_sarsCov2.vcf > $subset_caution
-egrep -h "#|mask" problematic_sites_sarsCov2.vcf > $subset_mask
-
-# compress vcfs
-bgzip -c problematic_sites_sarsCov2.vcf > compressed_vcf/problematic_sites_sarsCov2.vcf.gz
-bgzip -c $subset_caution > $compressed_caution
-bgzip -c $subset_mask > $compressed_mask
-
-# tabix index vcfs
-tabix -f compressed_vcf/problematic_sites_sarsCov2.vcf.gz
-tabix -f --csi compressed_vcf/problematic_sites_sarsCov2.vcf.gz
-
-tabix -f $compressed_caution
-tabix -f --csi $compressed_caution
-
-tabix -f $compressed_mask
-tabix -f --csi $compressed_mask
+## subset vcfs
+#egrep -h "#|caution" problematic_sites_sarsCov2.vcf > $subset_caution
+#egrep -h "#|mask" problematic_sites_sarsCov2.vcf > $subset_mask
+#
+## compress vcfs
+#bgzip -c problematic_sites_sarsCov2.vcf > compressed_vcf/problematic_sites_sarsCov2.vcf.gz
+#bgzip -c $subset_caution > $compressed_caution
+#bgzip -c $subset_mask > $compressed_mask
+#
+## tabix index vcfs
+#tabix -f compressed_vcf/problematic_sites_sarsCov2.vcf.gz
+#tabix -f --csi compressed_vcf/problematic_sites_sarsCov2.vcf.gz
+#
+#tabix -f $compressed_caution
+#tabix -f --csi $compressed_caution
+#
+#tabix -f $compressed_mask
+#tabix -f --csi $compressed_mask
