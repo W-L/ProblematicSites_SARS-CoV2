@@ -89,10 +89,11 @@ def main():
     gff = "data/MN908947_3.gff3"
     vcf = "problematic_sites_sarsCov2.vcf"
     prot = "data/MN908947_3.prot.fa"
-    fasta = "data/SARS-CoV-2.fa.unwrapped"
+    #fasta = "data/SARS-CoV-2.fa.unwrapped"
     genes = readGFF(gff)
     proteins = readFA(prot)
-    genome = readFasta(fasta)
+    #genome = readFasta(fasta)
+    genome = str(SeqIO.read("data/SARS-CoV-2.fa", "fasta").seq)
 
 
     vcf_rebuild = []
@@ -112,18 +113,20 @@ def main():
                         alt_nuc = vcf_line[4].split(',')
                         alt_aa = getAltAA(codon=codon, codon_pos=codon_pos, alt_nuc=alt_nuc)
 
-                        vcf_line[10] = gene.id                                  # gene name
-                        vcf_line[11] = vcf_aa                                   # aa position
-                        vcf_line[12] = proteins[gene.id][int(vcf_aa) - 1]       # reference aa
-                        vcf_line[13] = alt_aa                                      # alternative aa
+                        vcf_line[11] = gene.id                                  # gene name
+                        vcf_line[12] = vcf_aa                                   # aa position
+                        vcf_line[13] = proteins[gene.id][int(vcf_aa) - 1]       # reference aa
+                        vcf_line[14] = alt_aa                                      # alternative aa
                         ingene = True
                         break
-
+                
                 if not ingene:
-                    vcf_line[10] = '.'  # gene name
-                    vcf_line[11] = '.'  # aa position
-                    vcf_line[12] = '.'  # reference aa
-                    vcf_line[13] = '.'  # alternative aa
+                    print("len:", len(vcf_line))
+                    print("line:", vcf_line)
+                    vcf_line[11] = '.'  # gene name
+                    vcf_line[12] = '.'  # aa position
+                    vcf_line[13] = '.'  # reference aa
+                    vcf_line[14] = '.'  # alternative aa
 
                 vcf_rebuild.append("\t".join(vcf_line))
 
