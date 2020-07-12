@@ -121,8 +121,6 @@ def main():
                         break
                 
                 if not ingene:
-                    print("len:", len(vcf_line))
-                    print("line:", vcf_line)
                     vcf_line[11] = '.'  # gene name
                     vcf_line[12] = '.'  # aa position
                     vcf_line[13] = '.'  # reference aa
