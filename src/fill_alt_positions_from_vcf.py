@@ -13,7 +13,10 @@ def main():
             ref = line[1]
             alt = line[2].split(",")
             if "N" in alt:
-                alt.remove("N")
+                if len(alt) > 1:
+                    alt.remove("N")
+                else:
+                    alt[0] = "."
             alt = ",".join(alt)
             pos_info[int(pos)] = (ref, alt)
 
