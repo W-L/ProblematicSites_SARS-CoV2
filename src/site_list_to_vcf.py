@@ -84,7 +84,7 @@ def main():
     # files used to create new VCF
     current_vcf = "problematic_sites_sarsCov2.vcf"
     #site_tsv = "data/update_sites.txt"
-    site_tsv = "dodgy.tsv"
+    site_tsv = "data/problematic_sites.tsv"
 
 
     # back up VCF with dated filename
