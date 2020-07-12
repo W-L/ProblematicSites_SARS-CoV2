@@ -108,11 +108,18 @@ def main():
     # split coord ranges into individual entries
     for site_line in tmp_update_lines:
         line_coord = site_line[0]
+        # handle MNM ranges
         if "-" in line_coord:
             range_split = [int(i) for i in line_coord.split("-")]
             start_pos, end_pos = range_split[0], range_split[1]
             line_content = site_line[1:]
             for i in range(start_pos, end_pos+1):
+                update_lines.append([str(i)] + line_content)
+        # handle MNM coord lists
+        elif ";" in line_coord:
+            range_split = [int(i) for i in line_coord.split(";")]
+            line_content = site_line[1:]
+            for i in range_split:
                 update_lines.append([str(i)] + line_content)
         else:
             update_lines.append(site_line)
