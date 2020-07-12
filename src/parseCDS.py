@@ -111,8 +111,10 @@ def main():
                         codon_pos = getCodonPos(pos=pos, gene_start=gene_start)
                         codon = getCodon(genome=genome, pos=pos, codon_pos=codon_pos)
                         alt_nuc = vcf_line[4].split(',')
-                        alt_aa = getAltAA(codon=codon, codon_pos=codon_pos, alt_nuc=alt_nuc)
-
+                        if len(alt_nuc) == 1 and alt_nuc[0] == ".":
+                            alt_aa = "."
+                        else:
+                            alt_aa = getAltAA(codon=codon, codon_pos=codon_pos, alt_nuc=alt_nuc)
                         vcf_line[11] = gene.id                                  # gene name
                         vcf_line[12] = vcf_aa                                   # aa position
                         vcf_line[13] = proteins[gene.id][int(vcf_aa) - 1]       # reference aa
