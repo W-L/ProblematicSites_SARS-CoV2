@@ -73,7 +73,7 @@ def generate_descriptions(vcf_header, unique_descriptions, context):
                 except ValueError:
                     manual_description = input('{0} "{1}" not in header, add brief description:\n>> '.format(context, desc))
                     new_descriptions.append("##\t{0}".format(desc) + " = " + manual_description)
-    return "\n".join(new_descriptions)
+    return "\n".join(sorted(new_descriptions))
 
 
 def main():
