@@ -16,7 +16,7 @@ def generate_vcf_header(current_date, submitters,
     ##reference=MN908947.3
     ##contig=<ID=MN908947.3,length=29903>
     ##FILTER=<Description="Masking recommendation"
-    ##\tcaution = Apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
+    ##\tcaution = Sites that should be interpreted carefully, but not necessarily masked
     ##\tmask = Sites we recommend to always mask
     ##INFO=<Description="Initials of submitter"
     '''.replace("\n    ", "\n")[:-1]
