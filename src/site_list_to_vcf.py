@@ -57,7 +57,7 @@ def generate_descriptions(vcf_header, unique_descriptions, context):
     new_descriptions = []
     seen = []
     for desc_val in unique_descriptions or desc_val in seen:
-        for desc in desc_val.split(","):
+        for desc in desc_val.split(";"):
             if desc in seen or desc == ".":
                 continue
             seen.append(desc)

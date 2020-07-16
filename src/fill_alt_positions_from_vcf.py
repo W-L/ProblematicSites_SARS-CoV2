@@ -44,14 +44,14 @@ def main():
                     # merge with seq_end annotations
                     if pos in genome_ends:
                         seen_ends.append(pos)
-                        tmp_subs = vcf_line[7].split(",")
+                        tmp_subs = vcf_line[7].split(";")
                         if "NDM" not in tmp_subs:
                             tmp_subs.insert(0, "NDM")
-                        vcf_line[7] = ",".join(tmp_subs)
-                        tmp_exc = vcf_line[8].split(",")
+                        vcf_line[7] = ";".join(tmp_subs)
+                        tmp_exc = vcf_line[8].split(";")
                         if "seq_end" not in tmp_exc:
                             tmp_exc.insert(0, "seq_end")
-                        vcf_line[8] = ",".join(tmp_exc)
+                        vcf_line[8] = ";".join(tmp_exc)
 
                     # add alt info
                     ref_base, alt_base = pos_info[pos][0], pos_info[pos][1]

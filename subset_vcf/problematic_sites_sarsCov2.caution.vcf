@@ -1,10 +1,10 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-07-14-13:59
+##fileDate=2020-07-15-13:19
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
 ##FILTER=<Description="Masking recommendation"
-##	caution = Apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
+##	caution = Sites that should be interpreted carefully, but not necessarily masked
 ##	mask = Sites we recommend to always mask
 ##INFO=<Description="Initials of submitter"
 ##	RCD = Russell Corbett-Detig
@@ -65,45 +65,45 @@
 ##REFAA=<Description="Reference amino acid residue">
 ##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC_COUNTRY	SRC_LAB	GENE	AAPOS	REFAA	ALTAA
-MN908947.3	76	.	T	W,A,C	.	caution	NDM	ambiguous,neighbour_linked,narrow_src	Singapore,India	NPHL,NCDC	.	.	.	.
-MN908947.3	78	.	T	Y,K,W,A,G,C	.	caution	NDM	ambiguous,neighbour_linked,narrow_src	Singapore,India	NPHL,NCDC	.	.	.	.
-MN908947.3	538	.	A	W	.	caution	NDM,RCD	ambiguous	Italy	IZSAM	gene-orf1ab	91	E	X
-MN908947.3	660	.	G	K	.	caution	NDM,RCD	ambiguous	Australia	Doherty	gene-orf1ab	132	G	X
-MN908947.3	1001	.	G	A	.	caution	NDM	ambiguous,amended	UK	Sanger_COG_UK	gene-orf1ab	246	E	K
-MN908947.3	1814	.	A	.	.	caution	NDM	ambiguous,amended	USA	Minnesota	gene-orf1ab	517	K	.
-MN908947.3	2087	.	T	C,Y	.	caution	NDM,RCD	ambiguous	India	NCDC	gene-orf1ab	608	L	L,L
-MN908947.3	5393	.	T	Y	.	caution	NDM	ambiguous,amended	USA,UK	Houston,Sheffield	gene-orf1ab	1710	F	X
-MN908947.3	5498	.	A	.	.	caution	NDM	ambiguous,amended	USA,UK	Houston,Sheffield	gene-orf1ab	1745	K	.
-MN908947.3	5765	.	G	A,K,R	.	caution	RCD	ambiguous,single_src,neighbour_linked	Australia	Doherty	gene-orf1ab	1834	G	S,X,X
-MN908947.3	5766	.	G	C,S	.	caution	RCD	ambiguous,single_src,neighbour_linked	Australia	Doherty	gene-orf1ab	1834	G	A,X
+MN908947.3	76	.	T	W,A,C	.	caution	NDM	ambiguous;neighbour_linked;narrow_src	Singapore;India	NPHL;NCDC	.	.	.	.
+MN908947.3	78	.	T	Y,K,W,A,G,C	.	caution	NDM	ambiguous;neighbour_linked;narrow_src	Singapore;India	NPHL;NCDC	.	.	.	.
+MN908947.3	538	.	A	W	.	caution	NDM;RCD	ambiguous	Italy	IZSAM	gene-orf1ab	91	E	X
+MN908947.3	660	.	G	K	.	caution	NDM;RCD	ambiguous	Australia	Doherty	gene-orf1ab	132	G	X
+MN908947.3	1001	.	G	A	.	caution	NDM	ambiguous;amended	UK	Sanger_COG_UK	gene-orf1ab	246	E	K
+MN908947.3	1814	.	A	.	.	caution	NDM	ambiguous;amended	USA	Minnesota	gene-orf1ab	517	K	.
+MN908947.3	2087	.	T	C,Y	.	caution	NDM;RCD	ambiguous	India	NCDC	gene-orf1ab	608	L	L,L
+MN908947.3	5393	.	T	Y	.	caution	NDM	ambiguous;amended	USA;UK	Houston;Sheffield	gene-orf1ab	1710	F	X
+MN908947.3	5498	.	A	.	.	caution	NDM	ambiguous;amended	USA;UK	Houston;Sheffield	gene-orf1ab	1745	K	.
+MN908947.3	5765	.	G	A,K,R	.	caution	RCD	ambiguous;single_src;neighbour_linked	Australia	Doherty	gene-orf1ab	1834	G	S,X,X
+MN908947.3	5766	.	G	C,S	.	caution	RCD	ambiguous;single_src;neighbour_linked	Australia	Doherty	gene-orf1ab	1834	G	A,X
 MN908947.3	6309	.	G	T,A,R	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	2015	S	I,N,X
 MN908947.3	6310	.	C	A,T,M	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	2015	S	R,S,X
 MN908947.3	6312	.	C	A,Y,M,T,G	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	2016	T	K,X,X,I,R
-MN908947.3	6866	.	A	W	.	caution	NDM,RCD	ambiguous	Italy	IZSAM	gene-orf1ab	2201	N	X
-MN908947.3	6971	.	T	C,K	.	caution	NDM	neighbour_linked,single_src	Australia	VIDRL	gene-orf1ab	2236	L	L,X
-MN908947.3	6975	.	G	T	.	caution	NDM	neighbour_linked,single_src	Australia	VIDRL	gene-orf1ab	2237	S	I
-MN908947.3	6977	.	G	A	.	caution	NDM	neighbour_linked,single_src	Australia	VIDRL	gene-orf1ab	2238	V	I
-MN908947.3	7090	.	T	K	.	caution	RCD	ambiguous,single_src	UK	Public_Health_England	gene-orf1ab	2275	N	X
-MN908947.3	7305	.	T	K	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-orf1ab	2347	M	X
-MN908947.3	7396	.	T	W	.	caution	NDM,RCD	ambiguous	Italy	IZSAM	gene-orf1ab	2377	I	I
-MN908947.3	12506	.	A	R	.	caution	RCD	ambiguous,single_src	Chile	ISPC	gene-orf1ab	4081	K	X
+MN908947.3	6866	.	A	W	.	caution	NDM;RCD	ambiguous	Italy	IZSAM	gene-orf1ab	2201	N	X
+MN908947.3	6971	.	T	C,K	.	caution	NDM	neighbour_linked;single_src	Australia	VIDRL	gene-orf1ab	2236	L	L,X
+MN908947.3	6975	.	G	T	.	caution	NDM	neighbour_linked;single_src	Australia	VIDRL	gene-orf1ab	2237	S	I
+MN908947.3	6977	.	G	A	.	caution	NDM	neighbour_linked;single_src	Australia	VIDRL	gene-orf1ab	2238	V	I
+MN908947.3	7090	.	T	K	.	caution	RCD	ambiguous;single_src	UK	Public_Health_England	gene-orf1ab	2275	N	X
+MN908947.3	7305	.	T	K	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	2347	M	X
+MN908947.3	7396	.	T	W	.	caution	NDM;RCD	ambiguous	Italy	IZSAM	gene-orf1ab	2377	I	I
+MN908947.3	12506	.	A	R	.	caution	RCD	ambiguous;single_src	Chile	ISPC	gene-orf1ab	4081	K	X
 MN908947.3	13512	.	A	T	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4416	T	L
 MN908947.3	13513	.	G	T,K	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4416	T	H,X
 MN908947.3	13514	.	G	A,K	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4417	G	T,X
-MN908947.3	13650	.	T	K	.	caution	RCD	ambiguous,single_src	India	CSIR	gene-orf1ab	4462	F	X
+MN908947.3	13650	.	T	K	.	caution	RCD	ambiguous;single_src	India	CSIR	gene-orf1ab	4462	F	X
 MN908947.3	13686	.	T	D,A,Y	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4474	H	X,K,X
 MN908947.3	13687	.	G	T	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4474	H	I
 MN908947.3	13693	.	A	T,G	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4476	E	N,K
-MN908947.3	15771	.	T	Y,K,W,D,H	.	caution	RCD	ambiguous,single_src	USA	Chan_Zuckerberg_Biohub	gene-orf1ab	5169	A	X,X,X,X,X
-MN908947.3	16210	.	A	W,D	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-orf1ab	5315	A	L,L
-MN908947.3	16537	.	G	R	.	caution	RCD	ambiguous,single_src	Qatar	BRC	gene-orf1ab	5424	S	A
-MN908947.3	18505	.	G	R	.	caution	NDM,RCD	ambiguous,neighbour_linked	USA	CDC_DVD	gene-orf1ab	6080	K	K
-MN908947.3	18506	.	G	K	.	caution	NDM,RCD	ambiguous,neighbour_linked	USA	CDC_DVD	gene-orf1ab	6081	G	X
-MN908947.3	18690	.	T	K	.	caution	RCD	ambiguous,single_src	India	NCDC	gene-orf1ab	6142	F	X
-MN908947.3	19339	.	A	M,W,R	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-orf1ab	6358	K	X,X,K
-MN908947.3	19344	.	T	Y,C,K	.	caution	NDM	ambiguous,amended	USA,UK	Houston,Nottingham	gene-orf1ab	6360	A	X,P,X
-MN908947.3	19369	.	T	C,Y	.	caution	NDM	ambiguous,amended	USA,UK	Houston,Nottingham	gene-orf1ab	6368	P	H,H
-MN908947.3	19482	.	T	K	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-orf1ab	6406	G	X
+MN908947.3	15771	.	T	Y,K,W,D,H	.	caution	RCD	ambiguous;single_src	USA	Chan_Zuckerberg_Biohub	gene-orf1ab	5169	A	X,X,X,X,X
+MN908947.3	16210	.	A	W,D	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	5315	A	L,L
+MN908947.3	16537	.	G	R	.	caution	RCD	ambiguous;single_src	Qatar	BRC	gene-orf1ab	5424	S	A
+MN908947.3	18505	.	G	R	.	caution	NDM;RCD	ambiguous;neighbour_linked	USA	CDC_DVD	gene-orf1ab	6080	K	K
+MN908947.3	18506	.	G	K	.	caution	NDM;RCD	ambiguous;neighbour_linked	USA	CDC_DVD	gene-orf1ab	6081	G	X
+MN908947.3	18690	.	T	K	.	caution	RCD	ambiguous;single_src	India	NCDC	gene-orf1ab	6142	F	X
+MN908947.3	19339	.	A	M,W,R	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	6358	K	X,X,K
+MN908947.3	19344	.	T	Y,C,K	.	caution	NDM	ambiguous;amended	USA;UK	Houston;Nottingham	gene-orf1ab	6360	A	X,P,X
+MN908947.3	19369	.	T	C,Y	.	caution	NDM	ambiguous;amended	USA;UK	Houston;Nottingham	gene-orf1ab	6368	P	H,H
+MN908947.3	19482	.	T	K	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	6406	G	X
 MN908947.3	21302	.	C	M,T,S	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	X,Y,X
 MN908947.3	21302	.	C	M,T,S	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	X,Y,X
 MN908947.3	21303	.	A	.	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	.
@@ -111,34 +111,34 @@ MN908947.3	21304	.	C	A,M,T,Y	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013
 MN908947.3	21304	.	C	A,M,T,Y	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	Q,X,H,H
 MN908947.3	21305	.	G	A,S,R	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7014	R	T,X,X
 MN908947.3	21305	.	G	A,S,R	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7014	R	T,X,X
-MN908947.3	21379	.	T	Y,K	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-orf1ab	7038	S	L,L
-MN908947.3	21609	.	T	K,W	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-S	16	V	X,X
+MN908947.3	21379	.	T	Y,K	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	7038	S	L,L
+MN908947.3	21609	.	T	K,W	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-S	16	V	X,X
 MN908947.3	21658	.	C	M,Y,H,T,G	.	caution	RCD	ambiguous	Switzerland	ETH_Zurich	gene-S	32	F	X,F,X,F,L
-MN908947.3	22389	.	T	Y,C	.	caution	RCD	ambiguous,single_src	UK	Public_Health_England	gene-S	276	L	X,P
-MN908947.3	22393	.	A	G	.	caution	NDM	ambiguous,amended	UK,USA,UK	Public_Health_England,Houston,Edinburgh	gene-S	277	L	L
-MN908947.3	22416	.	T	Y,C	.	caution	RCD	ambiguous,neighbour_linked,single_src	UK	Public_Health_England	gene-S	285	I	X,T
-MN908947.3	22420	.	A	W,T	.	caution	RCD	ambiguous,neighbour_linked,single_src	UK	Public_Health_England	gene-S	286	T	T,T
-MN908947.3	22488	.	A	R,C	.	caution	NDM	ambiguous,amended	UK,UK,USA,USA	Edinburgh,Sheffield,Minnesota,Houston	gene-S	309	E	X,A
-MN908947.3	22500	.	A	W	.	caution	RCD	ambiguous,single_src	UK	Public_Health_England	gene-S	313	Y	X
-MN908947.3	22515	.	T	K,Y	.	caution	NDM	ambiguous,narrow_src	India,Switzerland	NCDC,.	gene-S	318	F	X,X
-MN908947.3	23116	.	A	W,T	.	caution	RCD	ambiguous,single_src	India	NCDC	gene-S	518	L	L,L
-MN908947.3	23144	.	A	.	.	caution	NDM	ambiguous,amended	UK,USA,USA	Sheffield,Houston,Minnesota	gene-S	528	K	.
-MN908947.3	24673	.	A	.	.	caution	NDM	ambiguous,amended	USA	Minnesota	gene-S	1037	S	.
-MN908947.3	24942	.	A	W,G,R	.	caution	NDM	ambiguous,single_src	Australia	Doherty	gene-S	1127	D	X,G,X
-MN908947.3	25798	.	A	G,M	.	caution	NDM	ambiguous,amended	UK	Edinburgh	gene-ORF3a	136	K	E,X
-MN908947.3	26709	.	G	T,R,A	.	caution	NDM	ambiguous,amended	India	NCDC	gene-M	63	A	S,X,T
-MN908947.3	27534	.	T	W,Y	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-ORF7a	47	H	X,H
-MN908947.3	27720	.	T	K	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-ORF7a	109	F	X
-MN908947.3	27792	.	T	W,A,Y	.	caution	NDM	ambiguous,amended	UK	Edinburgh	.	.	.	.
-MN908947.3	28004	.	T	C	.	caution	NDM	neighbour_linked,single_src	Luxembourg	LNS	gene-ORF8	37	C	C
-MN908947.3	28005	.	C	T,G	.	caution	NDM	neighbour_linked,single_src	Luxembourg	LNS	gene-ORF8	38	P	S,A
-MN908947.3	28006	.	C	T	.	caution	NDM	neighbour_linked,single_src	Luxembourg	LNS	gene-ORF8	38	P	L
-MN908947.3	28008	.	A	G	.	caution	NDM	neighbour_linked,single_src	Luxembourg	LNS	gene-ORF8	39	I	V
-MN908947.3	28780	.	A	W,D,R	.	caution	RCD	ambiguous,single_src	Switzerland	ETH_Zurich	gene-N	169	K	X,X,K
+MN908947.3	22389	.	T	Y,C	.	caution	RCD	ambiguous;single_src	UK	Public_Health_England	gene-S	276	L	X,P
+MN908947.3	22393	.	A	G	.	caution	NDM	ambiguous;amended	UK;USA;UK	Public_Health_England;Houston;Edinburgh	gene-S	277	L	L
+MN908947.3	22416	.	T	Y,C	.	caution	RCD	ambiguous;neighbour_linked;single_src	UK	Public_Health_England	gene-S	285	I	X,T
+MN908947.3	22420	.	A	W,T	.	caution	RCD	ambiguous;neighbour_linked;single_src	UK	Public_Health_England	gene-S	286	T	T,T
+MN908947.3	22488	.	A	R,C	.	caution	NDM	ambiguous;amended	UK;UK;USA;USA	Edinburgh;Sheffield;Minnesota;Houston	gene-S	309	E	X,A
+MN908947.3	22500	.	A	W	.	caution	RCD	ambiguous;single_src	UK	Public_Health_England	gene-S	313	Y	X
+MN908947.3	22515	.	T	K,Y	.	caution	NDM	ambiguous;narrow_src	India;Switzerland	NCDC;.	gene-S	318	F	X,X
+MN908947.3	23116	.	A	W,T	.	caution	RCD	ambiguous;single_src	India	NCDC	gene-S	518	L	L,L
+MN908947.3	23144	.	A	.	.	caution	NDM	ambiguous;amended	UK;USA;USA	Sheffield;Houston;Minnesota	gene-S	528	K	.
+MN908947.3	24673	.	A	.	.	caution	NDM	ambiguous;amended	USA	Minnesota	gene-S	1037	S	.
+MN908947.3	24942	.	A	W,G,R	.	caution	NDM	ambiguous;single_src	Australia	Doherty	gene-S	1127	D	X,G,X
+MN908947.3	25798	.	A	G,M	.	caution	NDM	ambiguous;amended	UK	Edinburgh	gene-ORF3a	136	K	E,X
+MN908947.3	26709	.	G	T,R,A	.	caution	NDM	ambiguous;amended	India	NCDC	gene-M	63	A	S,X,T
+MN908947.3	27534	.	T	W,Y	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-ORF7a	47	H	X,H
+MN908947.3	27720	.	T	K	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-ORF7a	109	F	X
+MN908947.3	27792	.	T	W,A,Y	.	caution	NDM	ambiguous;amended	UK	Edinburgh	.	.	.	.
+MN908947.3	28004	.	T	C	.	caution	NDM	neighbour_linked;single_src	Luxembourg	LNS	gene-ORF8	37	C	C
+MN908947.3	28005	.	C	T,G	.	caution	NDM	neighbour_linked;single_src	Luxembourg	LNS	gene-ORF8	38	P	S,A
+MN908947.3	28006	.	C	T	.	caution	NDM	neighbour_linked;single_src	Luxembourg	LNS	gene-ORF8	38	P	L
+MN908947.3	28008	.	A	G	.	caution	NDM	neighbour_linked;single_src	Luxembourg	LNS	gene-ORF8	39	I	V
+MN908947.3	28780	.	A	W,D,R	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-N	169	K	X,X,K
 MN908947.3	28881	.	G	A,R,T,K	.	caution	NDM	neighbour_linked	.	.	gene-N	203	R	K,X,M,X
 MN908947.3	28882	.	G	A,R,T,K,S	.	caution	NDM	neighbour_linked	.	.	gene-N	203	R	R,R,S,X,X
 MN908947.3	28883	.	G	C,S,R,A	.	caution	NDM	neighbour_linked	.	.	gene-N	204	G	R,X,X,R
-MN908947.3	29378	.	A	W	.	caution	NDM	ambiguous,amended	USA	Minnesota	gene-N	369	K	X
-MN908947.3	29427	.	G	S,R,T,K,C,A	.	caution	RCD	ambiguous,neighbour_linked,single_src	Singapore	NPHL	gene-N	385	R	X,X,I,X,T,K
-MN908947.3	29428	.	A	G,R,C	.	caution	RCD	ambiguous,neighbour_linked,single_src	Singapore	NPHL	gene-N	385	R	R,R,S
-MN908947.3	29737	.	G	K,A,T,S,C	.	caution	RCD	ambiguous,single_src	UK	Public_Health_Wales	.	.	.	.
+MN908947.3	29378	.	A	W	.	caution	NDM	ambiguous;amended	USA	Minnesota	gene-N	369	K	X
+MN908947.3	29427	.	G	S,R,T,K,C,A	.	caution	RCD	ambiguous;neighbour_linked;single_src	Singapore	NPHL	gene-N	385	R	X,X,I,X,T,K
+MN908947.3	29428	.	A	G,R,C	.	caution	RCD	ambiguous;neighbour_linked;single_src	Singapore	NPHL	gene-N	385	R	R,R,S
+MN908947.3	29737	.	G	K,A,T,S,C	.	caution	RCD	ambiguous;single_src	UK	Public_Health_Wales	.	.	.	.
