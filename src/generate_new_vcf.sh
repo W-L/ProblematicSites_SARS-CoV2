@@ -1,12 +1,13 @@
 # path to alignment as first argument
 #alignment_path=$1;
 alt_sites_vcf=$1;
+v="v"$2;
 
 # path variables
 subset_caution=subset_vcf/problematic_sites_sarsCov2.caution.vcf;
 subset_mask=subset_vcf/problematic_sites_sarsCov2.mask.vcf;
-compressed_caution=compressed_vcf/problematic_sites_sarsCov2.caution.vcf.gz;
-compressed_mask=compressed_vcf/problematic_sites_sarsCov2.mask.vcf.gz;
+compressed_caution=compressed_vcf/problematic_sites_sarsCov2."$v".caution.vcf.gz;
+compressed_mask=compressed_vcf/problematic_sites_sarsCov2."$v".mask.vcf.gz;
 
 
 # generate new vcf
