@@ -1,17 +1,16 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-07-15-13:19
+##fileDate=2020-07-24-14:11
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
-##FILTER=<Description="Masking recommendation"
-##	caution = Sites that should be interpreted carefully, but not necessarily masked
-##	mask = Sites we recommend to always mask
-##INFO=<Description="Initials of submitter"
+##FILTER=<ID=caution,Description="Sites that should be interpreted carefully, but not necessarily masked">
+##FILTER=<ID=mask,Description="Sites we recommend to always mask">
+##INFO=<ID=SUB,Number=.,Type=String,Description="Initials of submitter">
 ##	RCD = Russell Corbett-Detig
 ## 	MP = Matthew Parker
 ## 	NDM = Nicola De Maio
-##EXC=<Description="List of reasons for suggested exclusion">
-##	seq_end = Alignment ends are affected by low coverage and high error rates (masking recommended, but might be more stringent than necessary)
+##INFO=<ID=EXC,Number=.,Type=String,Description="List of reasons for mask/caution">
+##	seq_end = Alignment ends are affected by low coverage and high error rates(masking recommended, but might be more stringent than necessary)
 ##	ambiguous = Sites which show an excess of ambiguous basecalls relative to the number of alternative alleles, often emerging from a single country or sequencing laboratory
 ##	amended = Previous sequencing errors which now appear to have been fixed in the latest versions of the GISAID sequences, at least in sequences from some of the sequencing laboratories
 ##	highly_ambiguous = Sites with a very high proportion of ambiguous characters, relative to the number of alternative alleles
@@ -22,8 +21,8 @@
 ##	narrow_src = Variants which are found in sequences from only a few sequencing labs (usually two or three), possibly as a consequence of the same artefact reproduced independently
 ##	neighbour_linked = Proximal variants displaying near perfect linkage
 ##	single_src = Only observed in samples from a single laboratory
-##SRC_COUNTRY=<Description="Source country/countries of samples with the variant">
-##SRC_LAB=<Description="Source laboratory/laboratories of samples with the variant (ordered to match the respective values in SRC_COUNTRY)">
+##INFO=<ID=SRC_COUNTRY,Number=.,Type=String,Description="Source country/countries of samples with the variant">
+##INFO=<ID=SRC_LAB,Number=.,Type=String,Description="Source laboratory/laboratories of samples with the variant (ordered to match the respective values in SRC_COUNTRY)">
 ##	BRC = Biomedical Research Center
 ##	CDC_DVD = Centers for Disease Control and Prevention, Division of Viral Diseases
 ##	COG_UK = COVID-19 Genomics UK (COG-UK) Consortium
@@ -35,6 +34,7 @@
 ##	ETH_Zurich = Department of Biosystems Science and Engineering, ETH Zürich
 ##	Edinburgh = Virology Department, Royal Infirmary of Edinburgh
 ##	Erasmus = Erasmus Medical Center
+##	FIOCRUZ = Oswaldo Cruz Foundation
 ##	Houston = Houston Methodist Hospital
 ##	ICMR = Indian Council of Medical Research
 ##	ISPC = Instituto de Salud Publica de Chile
@@ -60,85 +60,82 @@
 ##	TGEN = The Translational Genomics Research Institute
 ##	University_of_Washington = University of Washington
 ##	VIDRL = Victorian Infectious Diseases Reference Laboratory
-##GENE=<Decription="Position falls into range of this gene">
-##AAPOS=<Description="Position of amino acid residue within gene">
-##REFAA=<Description="Reference amino acid residue">
-##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC_COUNTRY	SRC_LAB	GENE	AAPOS	REFAA	ALTAA
-MN908947.3	76	.	T	W,A,C	.	caution	NDM	ambiguous;neighbour_linked;narrow_src	Singapore;India	NPHL;NCDC	.	.	.	.
-MN908947.3	78	.	T	Y,K,W,A,G,C	.	caution	NDM	ambiguous;neighbour_linked;narrow_src	Singapore;India	NPHL;NCDC	.	.	.	.
-MN908947.3	538	.	A	W	.	caution	NDM;RCD	ambiguous	Italy	IZSAM	gene-orf1ab	91	E	X
-MN908947.3	660	.	G	K	.	caution	NDM;RCD	ambiguous	Australia	Doherty	gene-orf1ab	132	G	X
-MN908947.3	1001	.	G	A	.	caution	NDM	ambiguous;amended	UK	Sanger_COG_UK	gene-orf1ab	246	E	K
-MN908947.3	1814	.	A	.	.	caution	NDM	ambiguous;amended	USA	Minnesota	gene-orf1ab	517	K	.
-MN908947.3	2087	.	T	C,Y	.	caution	NDM;RCD	ambiguous	India	NCDC	gene-orf1ab	608	L	L,L
-MN908947.3	5393	.	T	Y	.	caution	NDM	ambiguous;amended	USA;UK	Houston;Sheffield	gene-orf1ab	1710	F	X
-MN908947.3	5498	.	A	.	.	caution	NDM	ambiguous;amended	USA;UK	Houston;Sheffield	gene-orf1ab	1745	K	.
-MN908947.3	5765	.	G	A,K,R	.	caution	RCD	ambiguous;single_src;neighbour_linked	Australia	Doherty	gene-orf1ab	1834	G	S,X,X
-MN908947.3	5766	.	G	C,S	.	caution	RCD	ambiguous;single_src;neighbour_linked	Australia	Doherty	gene-orf1ab	1834	G	A,X
-MN908947.3	6309	.	G	T,A,R	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	2015	S	I,N,X
-MN908947.3	6310	.	C	A,T,M	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	2015	S	R,S,X
-MN908947.3	6312	.	C	A,Y,M,T,G	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	2016	T	K,X,X,I,R
-MN908947.3	6866	.	A	W	.	caution	NDM;RCD	ambiguous	Italy	IZSAM	gene-orf1ab	2201	N	X
-MN908947.3	6971	.	T	C,K	.	caution	NDM	neighbour_linked;single_src	Australia	VIDRL	gene-orf1ab	2236	L	L,X
-MN908947.3	6975	.	G	T	.	caution	NDM	neighbour_linked;single_src	Australia	VIDRL	gene-orf1ab	2237	S	I
-MN908947.3	6977	.	G	A	.	caution	NDM	neighbour_linked;single_src	Australia	VIDRL	gene-orf1ab	2238	V	I
-MN908947.3	7090	.	T	K	.	caution	RCD	ambiguous;single_src	UK	Public_Health_England	gene-orf1ab	2275	N	X
-MN908947.3	7305	.	T	K	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	2347	M	X
-MN908947.3	7396	.	T	W	.	caution	NDM;RCD	ambiguous	Italy	IZSAM	gene-orf1ab	2377	I	I
-MN908947.3	12506	.	A	R	.	caution	RCD	ambiguous;single_src	Chile	ISPC	gene-orf1ab	4081	K	X
-MN908947.3	13512	.	A	T	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4416	T	L
-MN908947.3	13513	.	G	T,K	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4416	T	H,X
-MN908947.3	13514	.	G	A,K	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4417	G	T,X
-MN908947.3	13650	.	T	K	.	caution	RCD	ambiguous;single_src	India	CSIR	gene-orf1ab	4462	F	X
-MN908947.3	13686	.	T	D,A,Y	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4474	H	X,K,X
-MN908947.3	13687	.	G	T	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4474	H	I
-MN908947.3	13693	.	A	T,G	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	4476	E	N,K
-MN908947.3	15771	.	T	Y,K,W,D,H	.	caution	RCD	ambiguous;single_src	USA	Chan_Zuckerberg_Biohub	gene-orf1ab	5169	A	X,X,X,X,X
-MN908947.3	16210	.	A	W,D	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	5315	A	L,L
-MN908947.3	16537	.	G	R	.	caution	RCD	ambiguous;single_src	Qatar	BRC	gene-orf1ab	5424	S	A
-MN908947.3	18505	.	G	R	.	caution	NDM;RCD	ambiguous;neighbour_linked	USA	CDC_DVD	gene-orf1ab	6080	K	K
-MN908947.3	18506	.	G	K	.	caution	NDM;RCD	ambiguous;neighbour_linked	USA	CDC_DVD	gene-orf1ab	6081	G	X
-MN908947.3	18690	.	T	K	.	caution	RCD	ambiguous;single_src	India	NCDC	gene-orf1ab	6142	F	X
-MN908947.3	19339	.	A	M,W,R	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	6358	K	X,X,K
-MN908947.3	19344	.	T	Y,C,K	.	caution	NDM	ambiguous;amended	USA;UK	Houston;Nottingham	gene-orf1ab	6360	A	X,P,X
-MN908947.3	19369	.	T	C,Y	.	caution	NDM	ambiguous;amended	USA;UK	Houston;Nottingham	gene-orf1ab	6368	P	H,H
-MN908947.3	19482	.	T	K	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	6406	G	X
-MN908947.3	21302	.	C	M,T,S	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	X,Y,X
-MN908947.3	21302	.	C	M,T,S	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	X,Y,X
-MN908947.3	21303	.	A	.	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	.
-MN908947.3	21304	.	C	A,M,T,Y	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	Q,X,H,H
-MN908947.3	21304	.	C	A,M,T,Y	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7013	P	Q,X,H,H
-MN908947.3	21305	.	G	A,S,R	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7014	R	T,X,X
-MN908947.3	21305	.	G	A,S,R	.	caution	NDM	neighbour_linked	.	.	gene-orf1ab	7014	R	T,X,X
-MN908947.3	21379	.	T	Y,K	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-orf1ab	7038	S	L,L
-MN908947.3	21609	.	T	K,W	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-S	16	V	X,X
-MN908947.3	21658	.	C	M,Y,H,T,G	.	caution	RCD	ambiguous	Switzerland	ETH_Zurich	gene-S	32	F	X,F,X,F,L
-MN908947.3	22389	.	T	Y,C	.	caution	RCD	ambiguous;single_src	UK	Public_Health_England	gene-S	276	L	X,P
-MN908947.3	22393	.	A	G	.	caution	NDM	ambiguous;amended	UK;USA;UK	Public_Health_England;Houston;Edinburgh	gene-S	277	L	L
-MN908947.3	22416	.	T	Y,C	.	caution	RCD	ambiguous;neighbour_linked;single_src	UK	Public_Health_England	gene-S	285	I	X,T
-MN908947.3	22420	.	A	W,T	.	caution	RCD	ambiguous;neighbour_linked;single_src	UK	Public_Health_England	gene-S	286	T	T,T
-MN908947.3	22488	.	A	R,C	.	caution	NDM	ambiguous;amended	UK;UK;USA;USA	Edinburgh;Sheffield;Minnesota;Houston	gene-S	309	E	X,A
-MN908947.3	22500	.	A	W	.	caution	RCD	ambiguous;single_src	UK	Public_Health_England	gene-S	313	Y	X
-MN908947.3	22515	.	T	K,Y	.	caution	NDM	ambiguous;narrow_src	India;Switzerland	NCDC;.	gene-S	318	F	X,X
-MN908947.3	23116	.	A	W,T	.	caution	RCD	ambiguous;single_src	India	NCDC	gene-S	518	L	L,L
-MN908947.3	23144	.	A	.	.	caution	NDM	ambiguous;amended	UK;USA;USA	Sheffield;Houston;Minnesota	gene-S	528	K	.
-MN908947.3	24673	.	A	.	.	caution	NDM	ambiguous;amended	USA	Minnesota	gene-S	1037	S	.
-MN908947.3	24942	.	A	W,G,R	.	caution	NDM	ambiguous;single_src	Australia	Doherty	gene-S	1127	D	X,G,X
-MN908947.3	25798	.	A	G,M	.	caution	NDM	ambiguous;amended	UK	Edinburgh	gene-ORF3a	136	K	E,X
-MN908947.3	26709	.	G	T,R,A	.	caution	NDM	ambiguous;amended	India	NCDC	gene-M	63	A	S,X,T
-MN908947.3	27534	.	T	W,Y	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-ORF7a	47	H	X,H
-MN908947.3	27720	.	T	K	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-ORF7a	109	F	X
-MN908947.3	27792	.	T	W,A,Y	.	caution	NDM	ambiguous;amended	UK	Edinburgh	.	.	.	.
-MN908947.3	28004	.	T	C	.	caution	NDM	neighbour_linked;single_src	Luxembourg	LNS	gene-ORF8	37	C	C
-MN908947.3	28005	.	C	T,G	.	caution	NDM	neighbour_linked;single_src	Luxembourg	LNS	gene-ORF8	38	P	S,A
-MN908947.3	28006	.	C	T	.	caution	NDM	neighbour_linked;single_src	Luxembourg	LNS	gene-ORF8	38	P	L
-MN908947.3	28008	.	A	G	.	caution	NDM	neighbour_linked;single_src	Luxembourg	LNS	gene-ORF8	39	I	V
-MN908947.3	28780	.	A	W,D,R	.	caution	RCD	ambiguous;single_src	Switzerland	ETH_Zurich	gene-N	169	K	X,X,K
-MN908947.3	28881	.	G	A,R,T,K	.	caution	NDM	neighbour_linked	.	.	gene-N	203	R	K,X,M,X
-MN908947.3	28882	.	G	A,R,T,K,S	.	caution	NDM	neighbour_linked	.	.	gene-N	203	R	R,R,S,X,X
-MN908947.3	28883	.	G	C,S,R,A	.	caution	NDM	neighbour_linked	.	.	gene-N	204	G	R,X,X,R
-MN908947.3	29378	.	A	W	.	caution	NDM	ambiguous;amended	USA	Minnesota	gene-N	369	K	X
-MN908947.3	29427	.	G	S,R,T,K,C,A	.	caution	RCD	ambiguous;neighbour_linked;single_src	Singapore	NPHL	gene-N	385	R	X,X,I,X,T,K
-MN908947.3	29428	.	A	G,R,C	.	caution	RCD	ambiguous;neighbour_linked;single_src	Singapore	NPHL	gene-N	385	R	R,R,S
-MN908947.3	29737	.	G	K,A,T,S,C	.	caution	RCD	ambiguous;single_src	UK	Public_Health_Wales	.	.	.	.
+##INFO=<ID=GENE,Number=1,Type=String,Description="Position falls into range of this gene">
+##INFO=<ID=AA_POS,Number=1,Type=Integer,Description="Position of amino acid residue within gene">
+##INFO=<ID=AA_REF,Number=1,Type=String,Description="Reference amino acid residue">
+##INFO=<ID=AA_ALT,Number=.,Type=String,Description="List of alternative amino acid residues (IUPAC ambiguity code)">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+MN908947.3	76	.	T	W,A,C	.	caution	SUB=NDM;EXC=ambiguous,neighbour_linked,narrow_src;SRC_COUNTRY=Singapore,India;SRC_LAB=NPHL,NCDC;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
+MN908947.3	78	.	T	Y,K,W,A,G,C	.	caution	SUB=NDM;EXC=ambiguous,neighbour_linked,narrow_src;SRC_COUNTRY=Singapore,India;SRC_LAB=NPHL,NCDC;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
+MN908947.3	538	.	A	W	.	caution	SUB=NDM,RCD;EXC=ambiguous;SRC_COUNTRY=Italy;SRC_LAB=IZSAM;GENE=gene-orf1ab;AA_POS=91;AA_REF=E;AA_ALT=X
+MN908947.3	660	.	G	K	.	caution	SUB=NDM,RCD;EXC=ambiguous;SRC_COUNTRY=Australia;SRC_LAB=Doherty;GENE=gene-orf1ab;AA_POS=132;AA_REF=G;AA_ALT=X
+MN908947.3	1001	.	G	A	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=UK;SRC_LAB=Sanger_COG_UK;GENE=gene-orf1ab;AA_POS=246;AA_REF=E;AA_ALT=K
+MN908947.3	1814	.	A	.	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=USA;SRC_LAB=Minnesota;GENE=gene-orf1ab;AA_POS=517;AA_REF=K;AA_ALT=.
+MN908947.3	2087	.	T	C,Y	.	caution	SUB=NDM,RCD;EXC=ambiguous;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-orf1ab;AA_POS=608;AA_REF=L;AA_ALT=L,L
+MN908947.3	5393	.	T	Y	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=USA,UK;SRC_LAB=Houston,Sheffield;GENE=gene-orf1ab;AA_POS=1710;AA_REF=F;AA_ALT=X
+MN908947.3	5498	.	A	.	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=USA,UK;SRC_LAB=Houston,Sheffield;GENE=gene-orf1ab;AA_POS=1745;AA_REF=K;AA_ALT=.
+MN908947.3	5765	.	G	A,K,R	.	caution	SUB=RCD;EXC=ambiguous,single_src,neighbour_linked;SRC_COUNTRY=Australia;SRC_LAB=Doherty;GENE=gene-orf1ab;AA_POS=1834;AA_REF=G;AA_ALT=S,X,X
+MN908947.3	5766	.	G	C,S	.	caution	SUB=RCD;EXC=ambiguous,single_src,neighbour_linked;SRC_COUNTRY=Australia;SRC_LAB=Doherty;GENE=gene-orf1ab;AA_POS=1834;AA_REF=G;AA_ALT=A,X
+MN908947.3	6309	.	G	T,A,R	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=2015;AA_REF=S;AA_ALT=I,N,X
+MN908947.3	6310	.	C	A,T,M	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=2015;AA_REF=S;AA_ALT=R,S,X
+MN908947.3	6312	.	C	A,Y,M,T,G	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=2016;AA_REF=T;AA_ALT=K,X,X,I,R
+MN908947.3	6866	.	A	W	.	caution	SUB=NDM,RCD;EXC=ambiguous;SRC_COUNTRY=Italy;SRC_LAB=IZSAM;GENE=gene-orf1ab;AA_POS=2201;AA_REF=N;AA_ALT=X
+MN908947.3	6971	.	T	C,K	.	caution	SUB=NDM;EXC=neighbour_linked,single_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-orf1ab;AA_POS=2236;AA_REF=L;AA_ALT=L,X
+MN908947.3	6975	.	G	T	.	caution	SUB=NDM;EXC=neighbour_linked,single_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-orf1ab;AA_POS=2237;AA_REF=S;AA_ALT=I
+MN908947.3	6977	.	G	A	.	caution	SUB=NDM;EXC=neighbour_linked,single_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-orf1ab;AA_POS=2238;AA_REF=V;AA_ALT=I
+MN908947.3	7090	.	T	K	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-orf1ab;AA_POS=2275;AA_REF=N;AA_ALT=X
+MN908947.3	7305	.	T	K	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=2347;AA_REF=M;AA_ALT=X
+MN908947.3	7396	.	T	W	.	caution	SUB=NDM,RCD;EXC=ambiguous;SRC_COUNTRY=Italy;SRC_LAB=IZSAM;GENE=gene-orf1ab;AA_POS=2377;AA_REF=I;AA_ALT=I
+MN908947.3	12506	.	A	R	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Chile;SRC_LAB=ISPC;GENE=gene-orf1ab;AA_POS=4081;AA_REF=K;AA_ALT=X
+MN908947.3	13512	.	A	T	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=4416;AA_REF=T;AA_ALT=L
+MN908947.3	13513	.	G	T,K	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=4416;AA_REF=T;AA_ALT=H,X
+MN908947.3	13514	.	G	A,K	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=4417;AA_REF=G;AA_ALT=T,X
+MN908947.3	13650	.	T	K	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=India;SRC_LAB=CSIR;GENE=gene-orf1ab;AA_POS=4462;AA_REF=F;AA_ALT=X
+MN908947.3	13686	.	T	D,A,Y	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=4474;AA_REF=H;AA_ALT=X,K,X
+MN908947.3	13687	.	G	T	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=4474;AA_REF=H;AA_ALT=I
+MN908947.3	13693	.	A	T,G	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=4476;AA_REF=E;AA_ALT=N,K
+MN908947.3	15771	.	T	Y,K,W,D,H	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=USA;SRC_LAB=Chan_Zuckerberg_Biohub;GENE=gene-orf1ab;AA_POS=5169;AA_REF=A;AA_ALT=X,X,X,X,X
+MN908947.3	16210	.	A	W,D	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=5315;AA_REF=A;AA_ALT=L,L
+MN908947.3	16537	.	G	R	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Qatar;SRC_LAB=BRC;GENE=gene-orf1ab;AA_POS=5424;AA_REF=S;AA_ALT=A
+MN908947.3	18505	.	G	R	.	caution	SUB=NDM,RCD;EXC=ambiguous,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=CDC_DVD;GENE=gene-orf1ab;AA_POS=6080;AA_REF=K;AA_ALT=K
+MN908947.3	18506	.	G	K	.	caution	SUB=NDM,RCD;EXC=ambiguous,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=CDC_DVD;GENE=gene-orf1ab;AA_POS=6081;AA_REF=G;AA_ALT=X
+MN908947.3	18690	.	T	K	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-orf1ab;AA_POS=6142;AA_REF=F;AA_ALT=X
+MN908947.3	19339	.	A	M,W,R	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=6358;AA_REF=K;AA_ALT=X,X,K
+MN908947.3	19344	.	T	Y,C,K	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=USA,UK;SRC_LAB=Houston,Nottingham;GENE=gene-orf1ab;AA_POS=6360;AA_REF=A;AA_ALT=X,P,X
+MN908947.3	19369	.	T	C,Y	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=USA,UK;SRC_LAB=Houston,Nottingham;GENE=gene-orf1ab;AA_POS=6368;AA_REF=P;AA_ALT=H,H
+MN908947.3	19482	.	T	K	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=6406;AA_REF=G;AA_ALT=X
+MN908947.3	21302	.	C	M,T,S	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=7013;AA_REF=P;AA_ALT=X,Y,X
+MN908947.3	21304	.	C	A,M,T,Y	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=7013;AA_REF=P;AA_ALT=Q,X,H,H
+MN908947.3	21305	.	G	A,S,R	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=7014;AA_REF=R;AA_ALT=T,X,X
+MN908947.3	21379	.	T	Y,K	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=7038;AA_REF=S;AA_ALT=L,L
+MN908947.3	21609	.	T	K,W	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-S;AA_POS=16;AA_REF=V;AA_ALT=X,X
+MN908947.3	21658	.	C	M,Y,H,T,G	.	caution	SUB=RCD;EXC=ambiguous;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-S;AA_POS=32;AA_REF=F;AA_ALT=X,F,X,F,L
+MN908947.3	22389	.	T	Y,C	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-S;AA_POS=276;AA_REF=L;AA_ALT=X,P
+MN908947.3	22393	.	A	G	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=UK,USA,UK;SRC_LAB=Public_Health_England,Houston,Edinburgh;GENE=gene-S;AA_POS=277;AA_REF=L;AA_ALT=L
+MN908947.3	22416	.	T	Y,C	.	caution	SUB=RCD;EXC=ambiguous,neighbour_linked,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-S;AA_POS=285;AA_REF=I;AA_ALT=X,T
+MN908947.3	22420	.	A	W,T	.	caution	SUB=RCD;EXC=ambiguous,neighbour_linked,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-S;AA_POS=286;AA_REF=T;AA_ALT=T,T
+MN908947.3	22488	.	A	R,C	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=UK,UK,USA,USA;SRC_LAB=Edinburgh,Sheffield,Minnesota,Houston;GENE=gene-S;AA_POS=309;AA_REF=E;AA_ALT=X,A
+MN908947.3	22500	.	A	W	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-S;AA_POS=313;AA_REF=Y;AA_ALT=X
+MN908947.3	22515	.	T	K,Y	.	caution	SUB=NDM;EXC=ambiguous,narrow_src;SRC_COUNTRY=India,Switzerland;SRC_LAB=NCDC,.;GENE=gene-S;AA_POS=318;AA_REF=F;AA_ALT=X,X
+MN908947.3	23116	.	A	W,T	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-S;AA_POS=518;AA_REF=L;AA_ALT=L,L
+MN908947.3	23144	.	A	.	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=UK,USA,USA;SRC_LAB=Sheffield,Houston,Minnesota;GENE=gene-S;AA_POS=528;AA_REF=K;AA_ALT=.
+MN908947.3	24673	.	A	.	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=USA;SRC_LAB=Minnesota;GENE=gene-S;AA_POS=1037;AA_REF=S;AA_ALT=.
+MN908947.3	24942	.	A	W,G,R	.	caution	SUB=NDM;EXC=ambiguous,single_src;SRC_COUNTRY=Australia;SRC_LAB=Doherty;GENE=gene-S;AA_POS=1127;AA_REF=D;AA_ALT=X,G,X
+MN908947.3	25798	.	A	G,M	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=UK;SRC_LAB=Edinburgh;GENE=gene-ORF3a;AA_POS=136;AA_REF=K;AA_ALT=E,X
+MN908947.3	26709	.	G	T,R,A	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-M;AA_POS=63;AA_REF=A;AA_ALT=S,X,T
+MN908947.3	27534	.	T	W,Y	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-ORF7a;AA_POS=47;AA_REF=H;AA_ALT=X,H
+MN908947.3	27720	.	T	K	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-ORF7a;AA_POS=109;AA_REF=F;AA_ALT=X
+MN908947.3	27792	.	T	W,A,Y	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=UK;SRC_LAB=Edinburgh;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
+MN908947.3	28004	.	T	C	.	caution	SUB=NDM;EXC=neighbour_linked,single_src;SRC_COUNTRY=Luxembourg;SRC_LAB=LNS;GENE=gene-ORF8;AA_POS=37;AA_REF=C;AA_ALT=C
+MN908947.3	28005	.	C	T,G	.	caution	SUB=NDM;EXC=neighbour_linked,single_src;SRC_COUNTRY=Luxembourg;SRC_LAB=LNS;GENE=gene-ORF8;AA_POS=38;AA_REF=P;AA_ALT=S,A
+MN908947.3	28006	.	C	T	.	caution	SUB=NDM;EXC=neighbour_linked,single_src;SRC_COUNTRY=Luxembourg;SRC_LAB=LNS;GENE=gene-ORF8;AA_POS=38;AA_REF=P;AA_ALT=L
+MN908947.3	28008	.	A	G	.	caution	SUB=NDM;EXC=neighbour_linked,single_src;SRC_COUNTRY=Luxembourg;SRC_LAB=LNS;GENE=gene-ORF8;AA_POS=39;AA_REF=I;AA_ALT=V
+MN908947.3	28780	.	A	W,D,R	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-N;AA_POS=169;AA_REF=K;AA_ALT=X,X,K
+MN908947.3	28881	.	G	A,R,T,K	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-N;AA_POS=203;AA_REF=R;AA_ALT=K,X,M,X
+MN908947.3	28882	.	G	A,R,T,K,S	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-N;AA_POS=203;AA_REF=R;AA_ALT=R,R,S,X,X
+MN908947.3	28883	.	G	C,S,R,A	.	caution	SUB=NDM;EXC=neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-N;AA_POS=204;AA_REF=G;AA_ALT=R,X,X,R
+MN908947.3	29378	.	A	W	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=USA;SRC_LAB=Minnesota;GENE=gene-N;AA_POS=369;AA_REF=K;AA_ALT=X
+MN908947.3	29427	.	G	S,R,T,K,C,A	.	caution	SUB=RCD;EXC=ambiguous,neighbour_linked,single_src;SRC_COUNTRY=Singapore;SRC_LAB=NPHL;GENE=gene-N;AA_POS=385;AA_REF=R;AA_ALT=X,X,I,X,T,K
+MN908947.3	29428	.	A	G,R,C	.	caution	SUB=RCD;EXC=ambiguous,neighbour_linked,single_src;SRC_COUNTRY=Singapore;SRC_LAB=NPHL;GENE=gene-N;AA_POS=385;AA_REF=R;AA_ALT=R,R,S
+MN908947.3	29737	.	G	K,A,T,S,C	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_Wales;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
+MN908947.3	29786	.	G	K,C	.	caution	SUB=RCD;EXC=homoplasic,single_src;SRC_COUNTRY=Brazil;SRC_LAB=FIOCRUZ;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.

@@ -133,6 +133,8 @@
 |26709      |G  |T,R,A      |caution|ambiguous<br>amended                                                   |gene-M     |63   |A    |S,X,T      |
 |27534      |T  |W,Y        |caution|ambiguous<br>single_src                                                |gene-ORF7a |47   |H    |X,H        |
 |27720      |T  |K          |caution|ambiguous<br>single_src                                                |gene-ORF7a |109  |F    |X          |
+|27760      |T  |K,Y,W,A    |mask   |homoplasic<br>neighbour_linked                                         |.          |.    |.    |.          |
+|27761      |T  |C          |mask   |homoplasic<br>neighbour_linked                                         |.          |.    |.    |.          |
 |27784      |A  |W,G        |mask   |ambiguous<br>single_src                                                |.          |.    |.    |.          |
 |27792      |T  |W,A,Y      |caution|ambiguous<br>amended                                                   |.          |.    |.    |.          |
 |28004      |T  |C          |caution|neighbour_linked<br>single_src                                         |gene-ORF8  |37   |C    |C          |
@@ -153,6 +155,7 @@
 |29428      |A  |G,R,C      |caution|ambiguous<br>neighbour_linked<br>single_src                            |gene-N     |385  |R    |R,R,S      |
 |29553      |G  |A          |mask   |highly_homoplasic<br>single_src                                        |.          |.    |.    |.          |
 |29737      |G  |K,A,T,S,C  |caution|ambiguous<br>single_src                                                |.          |.    |.    |.          |
+|29786      |G  |K,C        |caution|homoplasic<br>single_src                                               |.          |.    |.    |.          |
 |29804-29826|.  |.          |mask   |seq_end                                                                |.          |.    |.    |.          |
 |29827      |A  |C,G,T      |mask   |seq_end<br>highly_homoplasic<br>single_src                             |.          |.    |.    |.          |
 |29828-29829|.  |.          |mask   |seq_end                                                                |.          |.    |.    |.          |
