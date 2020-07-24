@@ -11,13 +11,20 @@ def readCustomVCF(fname, keep_cols):
             elif line.startswith('#C'):
                 header_line = line.rstrip('\n').split('\t')
                 header = [header_line[i] for i in keep_cols]
+                header += ["EXC", "GENE", "AA_POS", "AA_REF", "AA_ALT"]
             # all other lines that contain data
             elif len(line) != 0:
                 data_line = line.rstrip('\n').split(sep='\t')
+                new_data_line = [data_line[i] for i in keep_cols]
                 # but skip the ones of the sequence ends
-                if "seq_end" not in data_line:
-                    data_line[8] = "<br>".join(data_line[8].split(","))
-                    data.append([data_line[i] for i in keep_cols])
+                if data_line[-1].split(";")[1].split("=")[1] != "seq_end":
+                    new_data_line.append("<br>".join(data_line[-1].split(";")[1].split("=")[1].split(",")))
+                    new_data_line.append(data_line[-1].split(";")[-4].split("=")[1])
+                    new_data_line.append(data_line[-1].split(";")[-3].split("=")[1])
+                    new_data_line.append(data_line[-1].split(";")[-2].split("=")[1])
+                    new_data_line.append(data_line[-1].split(";")[-1].split("=")[1])
+                    data.append(new_data_line)
+                    #data.append([data_line[i] for i in range(len(header)-1)])
             else:
                 break
 
@@ -28,7 +35,7 @@ def main():
 
     # name of the vcf file to parse and which columns to select from the file
     filename = "problematic_sites_sarsCov2.vcf"
-    keep = [1, 3, 4, 6, 8, 11, 12, 13, 14]
+    keep = [1, 3, 4, 6]
     # title of the table - printed as markdown header before the table
     writer.table_name = "Human-friendly version of the vcf file"
 
