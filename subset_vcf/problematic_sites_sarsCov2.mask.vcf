@@ -1,5 +1,5 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-07-24-14:11
+##fileDate=2020-07-24-16:04
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
@@ -27,6 +27,7 @@
 ##	CDC_DVD = Centers for Disease Control and Prevention, Division of Viral Diseases
 ##	COG_UK = COVID-19 Genomics UK (COG-UK) Consortium
 ##	CSIR = The Council of Scientific and Industrial Research
+##	CUB = Charité-Universitätsmedizin Berlin
 ##	CeMM = The CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences
 ##	Chan_Zuckerberg_Biohub = Chan Zuckerberg Biohub
 ##	Ditan = Beijing Ditan Hospital
@@ -58,6 +59,8 @@
 ##	Seattle_Flu_Study = Seattle Flu Study
 ##	Sheffield = The Florey Institute, University of Sheffield Medical School
 ##	TGEN = The Translational Genomics Research Institute
+##	UNMHSC = Center for Global Health, University of New Mexico Health Sciences Center
+##	UW Virology = University of Washington, Department of Virology
 ##	University_of_Washington = University of Washington
 ##	VIDRL = Victorian Infectious Diseases Reference Laboratory
 ##INFO=<ID=GENE,Number=1,Type=String,Description="Position falls into range of this gene">
@@ -123,6 +126,7 @@ MN908947.3	55	.	A	.	.	mask	SUB=NDM;EXC=seq_end
 MN908947.3	150	.	T	C,Y	.	mask	SUB=RCD;EXC=homoplasic,single_src,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
 MN908947.3	153	.	T	G,Y	.	mask	SUB=RCD;EXC=homoplasic,single_src,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
 MN908947.3	635	.	C	Y,T	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,homoplasic,narrow_src;SRC_COUNTRY=Switzerland,Australia,UK;SRC_LAB=ETH_Zurich,Doherty,COG_UK;GENE=gene-orf1ab;AA_POS=124;AA_REF=R;AA_ALT=X,C
+MN908947.3	1707	.	C	Y,T,A	.	mask	SUB=RCD;EXC=highly_ambiguous,homoplasic,narrow_src;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-orf1ab;AA_POS=481;AA_REF=S;AA_ALT=X,F,Y
 MN908947.3	1895	.	G	T,K	.	mask	SUB=NDM,RCD;EXC=ambiguous;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-orf1ab;AA_POS=544;AA_REF=V;AA_ALT=L,X
 MN908947.3	2091	.	C	T,Y	.	mask	SUB=NDM;EXC=highly_ambiguous,homoplasic,narrow_src;SRC_COUNTRY=India,UK;SRC_LAB=NCDC,NU-OMICS;GENE=gene-orf1ab;AA_POS=609;AA_REF=T;AA_ALT=I,X
 MN908947.3	2094	.	C	T,Y	.	mask	SUB=NDM;EXC=highly_ambiguous,narrow_src;SRC_COUNTRY=Belgium,India;SRC_LAB=KU_Leuven,NCDC;GENE=gene-orf1ab;AA_POS=610;AA_REF=S;AA_ALT=L,X
@@ -162,10 +166,12 @@ MN908947.3	15922	.	T	Y,C	.	mask	SUB=NDM,RCD;EXC=ambiguous,homoplasic,single_src;
 MN908947.3	16290	.	T	K,Y	.	mask	SUB=RCD;EXC=highly_ambiguous,single_src;SRC_COUNTRY=UK;SRC_LAB=Sanger_COG_UK;GENE=gene-orf1ab;AA_POS=5342;AA_REF=A;AA_ALT=X,X
 MN908947.3	16887	.	C	T,Y	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=5541;AA_REF=Y;AA_ALT=I,X
 MN908947.3	19298	.	A	R,W,D,G	.	mask	SUB=RCD;EXC=highly_ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=6345;AA_REF=Y;AA_ALT=X,X,X,V
+MN908947.3	19299	.	T	Y,G,K	.	mask	SUB=RCD;EXC=homoplasic,ambiguous,narrow_src;SRC_COUNTRY=China;SRC_LAB=Ditan;GENE=gene-orf1ab;AA_POS=6345;AA_REF=Y;AA_ALT=X,R,X
 MN908947.3	19484	.	C	T,Y	.	mask	SUB=NDM;EXC=highly_ambiguous,amended;SRC_COUNTRY=UK;SRC_LAB=COG_UK;GENE=gene-orf1ab;AA_POS=6407;AA_REF=A;AA_ALT=L,L
 MN908947.3	19548	.	A	R,W,G,T	.	mask	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=6428;AA_REF=S;AA_ALT=X,X,R,L
 MN908947.3	20056	.	G	K,T,A	.	mask	SUB=RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-orf1ab;AA_POS=6597;AA_REF=E;AA_ALT=X,N,K
 MN908947.3	20123	.	T	Y,C,W	.	mask	SUB=RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-orf1ab;AA_POS=6620;AA_REF=I;AA_ALT=L,L,X
+MN908947.3	20465	.	A	W,R,G	.	mask	SUB=RCD;EXC=highly_homoplasic,single_src;SRC_COUNTRY=USA;SRC_LAB=UNMHSC;GENE=gene-orf1ab;AA_POS=6734;AA_REF=D;AA_ALT=X,X,V
 MN908947.3	21550	.	A	M,C	.	mask	SUB=NDM,RCD;EXC=ambiguous,homoplasic,narrow_src;SRC_COUNTRY=India;SRC_LAB=CSIR;GENE=gene-orf1ab;AA_POS=7095;AA_REF=N;AA_ALT=T,T
 MN908947.3	21551	.	A	W,T,R	.	mask	SUB=NDM,RCD;EXC=ambiguous,homoplasic,narrow_src;SRC_COUNTRY=India;SRC_LAB=CSIR;GENE=gene-orf1ab;AA_POS=7096;AA_REF=N;AA_ALT=X,S,X
 MN908947.3	21575	.	C	Y,T	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-S;AA_POS=5;AA_REF=L;AA_ALT=X,F
