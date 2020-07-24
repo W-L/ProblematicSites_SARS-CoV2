@@ -15,24 +15,23 @@ def generate_vcf_header(current_date, submitters,
     fixed2 = '''##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
     ##reference=MN908947.3
     ##contig=<ID=MN908947.3,length=29903>
-    ##FILTER=<Description="Masking recommendation"
-    ##\tcaution = Sites that should be interpreted carefully, but not necessarily masked
-    ##\tmask = Sites we recommend to always mask
-    ##INFO=<Description="Initials of submitter"
+    ##FILTER=<ID=caution,Description="Sites that should be interpreted carefully, but not necessarily masked">
+    ##FILTER=<ID=mask,Description="Sites we recommend to always mask">
+    ##INFO=<ID=SUB,Number=.,Type=String,Description="Initials of submitter">
     '''.replace("\n    ", "\n")[:-1]
-    fixed3 = '##EXC=<Description="List of reasons for suggested exclusion">'
-    seq_end_p1 = '##\tseq_end = Alignment ends are affected by low coverage and high error rates '
+    fixed3 = '##INFO=<ID=EXC,Number=.,Type=String,Description="List of reasons for mask/caution">'
+    seq_end_p1 = '##\tseq_end = Alignment ends are affected by low coverage and high error rates'
     seq_end_p2 = '(masking recommended, but might be more stringent than necessary)'
     # exclusion reasons
-    fixed4 = '##SRC_COUNTRY=<Description="Source country/countries of samples with the variant">'
+    fixed4 = '##INFO=<ID=SRC_COUNTRY,Number=.,Type=String,Description="Source country/countries of samples with the variant">'
     # fixed_countries
-    fixed5 = '##SRC_LAB=<Description="Source laboratory/laboratories of samples with the variant (ordered to match the respective values in SRC_COUNTRY)">'
+    fixed5 = '##INFO=<ID=SRC_LAB,Number=.,Type=String,Description="Source laboratory/laboratories of samples with the variant (ordered to match the respective values in SRC_COUNTRY)">'
     # fixed_labs
-    fixed6 = '''##GENE=<Decription="Position falls into range of this gene">
-    ##AAPOS=<Description="Position of amino acid residue within gene">
-    ##REFAA=<Description="Reference amino acid residue">
-    ##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
-    #CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tEXC\tSRC_COUNTRY\tSRC_LAB\tGENE\tAAPOS\tREFAA\tALTAA
+    fixed6 = '''##INFO=<ID=GENE,Number=1,Type=String,Description="Position falls into range of this gene">
+    ##INFO=<ID=AA_POS,Number=1,Type=Integer,Description="Position of amino acid residue within gene">
+    ##INFO=<ID=AA_REF,Number=1,Type=String,Description="Reference amino acid residue">
+    ##INFO=<ID=AA_ALT,Number=.,Type=String,Description="List of alternative amino acid residues (IUPAC ambiguity code)">
+    #CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO
     '''.replace("\n    ", "\n")[:-1]
     full_header = "\n".join([fixed1,
                              fidate,
@@ -57,7 +56,7 @@ def generate_descriptions(vcf_header, unique_descriptions, context):
     new_descriptions = []
     seen = []
     for desc_val in unique_descriptions or desc_val in seen:
-        for desc in desc_val.split(";"):
+        for desc in desc_val.split(","):
             if desc in seen or desc == ".":
                 continue
             seen.append(desc)
@@ -116,8 +115,8 @@ def main():
             for i in range(start_pos, end_pos+1):
                 update_lines.append([str(i)] + line_content)
         # handle MNM coord lists
-        elif ";" in line_coord:
-            range_split = [int(i) for i in line_coord.split(";")]
+        elif "," in line_coord:
+            range_split = [int(i) for i in line_coord.split(",")]
             line_content = site_line[1:]
             for i in range_split:
                 update_lines.append([str(i)] + line_content)
@@ -158,7 +157,12 @@ def main():
             src_country = line[3]
             src_lab = line[4]
             submitter = line[5]
-            out_vcf.write("MN908947.3\t{0}\t.\t.\t.\t.\t{1}\t{2}\t{3}\t{4}\t{5}\t.\t.\t.\t.".format(pos, mask_rec, submitter, exc_reason, src_country, src_lab) + "\n")
+            # tentative changes
+            submitter = "SUB=" + submitter
+            exc_reason = "EXC=" + exc_reason
+            src_country = "SRC_COUNTRY=" + src_country
+            src_lab = "SRC_LAB=" + src_lab
+            out_vcf.write("MN908947.3\t{0}\t.\t.\t.\t.\t{1}\t{2};{3};{4};{5};GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.".format(pos, mask_rec, submitter, exc_reason, src_country, src_lab) + "\n")
 
 
 if __name__ == "__main__":

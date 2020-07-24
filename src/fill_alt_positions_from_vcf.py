@@ -8,6 +8,8 @@ def main():
     pos_info = {}
     with open(argv[2], "r") as alt_vcf_fi:
         for line in alt_vcf_fi.readlines():
+            if line.startswith("#"):
+                continue
             line = line.strip().split("\t")
             pos = line[0]
             ref = line[1]
@@ -37,21 +39,24 @@ def main():
         if not vcf_line.startswith("#"):
             vcf_line = vcf_line.split("\t")
             pos = int(vcf_line[1])
-            if pos in genome_ends and vcf_line[8] == "seq_end":
+            if pos in genome_ends and "seq_end" in vcf_line[7]:
                 genome_end_line_dic[pos] = "\t".join(vcf_line)
             else:
                 try:
                     # merge with seq_end annotations
                     if pos in genome_ends:
                         seen_ends.append(pos)
-                        tmp_subs = vcf_line[7].split(";")
-                        if "NDM" not in tmp_subs:
-                            tmp_subs.insert(0, "NDM")
-                        vcf_line[7] = ";".join(tmp_subs)
-                        tmp_exc = vcf_line[8].split(";")
-                        if "seq_end" not in tmp_exc:
-                            tmp_exc.insert(0, "seq_end")
-                        vcf_line[8] = ";".join(tmp_exc)
+                        tmp_subs = vcf_line[7].split(";")[0].split("SUB=")[1]
+                        if tmp_subs[:3] != "NDM":
+                            tmp_subs = "SUB=NDM," + tmp_subs
+                        else:
+                            tmp_subs = "SUB=" + tmp_subs
+                        #vcf_line[7] = ";".join(tmp_subs)
+                        tmp_exc = vcf_line[7].split(";")[1:]
+                        tmp_exc_first = tmp_exc[0].split("EXC=")[1]
+                        if tmp_exc_first[:7] != "seq_end":
+                            tmp_exc[0] = "EXC=seq_end," + tmp_exc_first
+                        vcf_line[7] = tmp_subs + ";" + ";".join(tmp_exc)
 
                     # add alt info
                     ref_base, alt_base = pos_info[pos][0], pos_info[pos][1]

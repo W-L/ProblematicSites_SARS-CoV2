@@ -1,6 +1,6 @@
 # path to alignment as first argument
-alignment_path=$1;
-alt_sites_vcf=$2;
+#alignment_path=$1;
+alt_sites_vcf=$1;
 
 # path variables
 subset_caution=subset_vcf/problematic_sites_sarsCov2.caution.vcf;

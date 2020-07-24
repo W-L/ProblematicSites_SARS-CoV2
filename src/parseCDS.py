@@ -6,10 +6,8 @@ from Bio.Alphabet import IUPAC
 from copy import copy
 from Bio.Seq import Seq
 
-#%%
 
 def readGFF(gff):
-
     with open(gff, 'r') as gff_file:
         for rec in GFF.parse(gff_file, limit_info=dict(gff_type = ["gene"])):
             genes = rec.features
@@ -59,10 +57,8 @@ def getCodon(genome, pos, codon_pos):
         codon = genome[pos - 2: pos + 1]
     else:
         print("broken codon")
-
     if len(codon) != 3:
         print("weird codon")
-
     return codon
 
 
@@ -102,6 +98,7 @@ def main():
             if not line.startswith('#'):
                 vcf_line = line.rstrip('\n').split('\t')
                 pos = int(vcf_line[1])
+                vcf_line_aa_info = vcf_line[-1].split(";")
 
                 ingene = False
                 for gene in genes:
@@ -115,18 +112,24 @@ def main():
                             alt_aa = "."
                         else:
                             alt_aa = getAltAA(codon=codon, codon_pos=codon_pos, alt_nuc=alt_nuc)
-                        vcf_line[11] = gene.id                                  # gene name
-                        vcf_line[12] = vcf_aa                                   # aa position
-                        vcf_line[13] = proteins[gene.id][int(vcf_aa) - 1]       # reference aa
-                        vcf_line[14] = alt_aa                                      # alternative aa
+                        # last 4 should be GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
+                        vcf_line_aa_info[-4] = "GENE=" + gene.id
+                        vcf_line_aa_info[-3] = "AA_POS=" + vcf_aa
+                        vcf_line_aa_info[-2] = "AA_REF=" + proteins[gene.id][int(vcf_aa) - 1]
+                        vcf_line_aa_info[-1] = "AA_ALT=" + alt_aa
+                        vcf_line[-1] = ";".join(vcf_line_aa_info)
+                        #vcf_line[11] = gene.id                                  # gene name
+                        #vcf_line[12] = vcf_aa                                   # aa position
+                        #vcf_line[13] = proteins[gene.id][int(vcf_aa) - 1]       # reference aa
+                        #vcf_line[14] = alt_aa                                      # alternative aa
                         ingene = True
                         break
                 
-                if not ingene:
-                    vcf_line[11] = '.'  # gene name
-                    vcf_line[12] = '.'  # aa position
-                    vcf_line[13] = '.'  # reference aa
-                    vcf_line[14] = '.'  # alternative aa
+                #if not ingene:
+                #    vcf_line[11] = '.'  # gene name
+                #    vcf_line[12] = '.'  # aa position
+                #    vcf_line[13] = '.'  # reference aa
+                #    vcf_line[14] = '.'  # alternative aa
 
                 vcf_rebuild.append("\t".join(vcf_line))
 
