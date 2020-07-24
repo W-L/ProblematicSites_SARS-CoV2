@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/github/W-L/ProblematicSites_SARS-CoV2.svg?branch=master)](https://travis-ci.com/github/W-L/ProblematicSites_SARS-CoV2) 
+[![Build Status](https://travis-ci.com/W-L/ProblematicSites_SARS-CoV2.svg?branch=master)](https://travis-ci.com/W-L/ProblematicSites_SARS-CoV2)
 
 - [Human-friendly version of the vcf file](#human-friendly-version-of-the-vcf-file)
 - [Description of the columns in the vcf-version](#description-of-the-columns-in-the-vcf-version)
