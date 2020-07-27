@@ -1,5 +1,5 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-07-24-16:04
+##fileDate=2020-07-27-21:12
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
@@ -60,7 +60,7 @@
 ##	Sheffield = The Florey Institute, University of Sheffield Medical School
 ##	TGEN = The Translational Genomics Research Institute
 ##	UNMHSC = Center for Global Health, University of New Mexico Health Sciences Center
-##	UW Virology = University of Washington, Department of Virology
+##	UW_Virology = University of Washington, Department of Virology
 ##	University_of_Washington = University of Washington
 ##	VIDRL = Victorian Infectious Diseases Reference Laboratory
 ##INFO=<ID=GENE,Number=1,Type=String,Description="Position falls into range of this gene">
@@ -130,7 +130,7 @@ MN908947.3	153	.	T	G,Y	.	mask	SUB=RCD;EXC=homoplasic,single_src,neighbour_linked
 MN908947.3	538	.	A	W	.	caution	SUB=NDM,RCD;EXC=ambiguous;SRC_COUNTRY=Italy;SRC_LAB=IZSAM;GENE=gene-orf1ab;AA_POS=91;AA_REF=E;AA_ALT=X
 MN908947.3	635	.	C	Y,T	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,homoplasic,narrow_src;SRC_COUNTRY=Switzerland,Australia,UK;SRC_LAB=ETH_Zurich,Doherty,COG_UK;GENE=gene-orf1ab;AA_POS=124;AA_REF=R;AA_ALT=X,C
 MN908947.3	660	.	G	K	.	caution	SUB=NDM,RCD;EXC=ambiguous;SRC_COUNTRY=Australia;SRC_LAB=Doherty;GENE=gene-orf1ab;AA_POS=132;AA_REF=G;AA_ALT=X
-MN908947.3	759	.	A	T	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=USA;SRC_LAB=UW Virology;GENE=gene-orf1ab;AA_POS=165;AA_REF=H;AA_ALT=L
+MN908947.3	759	.	A	T	.	caution	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=USA;SRC_LAB=UW_Virology;GENE=gene-orf1ab;AA_POS=165;AA_REF=H;AA_ALT=L
 MN908947.3	1001	.	G	A	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=UK;SRC_LAB=Sanger_COG_UK;GENE=gene-orf1ab;AA_POS=246;AA_REF=E;AA_ALT=K
 MN908947.3	1707	.	C	Y,T,A	.	mask	SUB=RCD;EXC=highly_ambiguous,homoplasic,narrow_src;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-orf1ab;AA_POS=481;AA_REF=S;AA_ALT=X,F,Y
 MN908947.3	1814	.	A	.	.	caution	SUB=NDM;EXC=ambiguous,amended;SRC_COUNTRY=USA;SRC_LAB=Minnesota;GENE=gene-orf1ab;AA_POS=517;AA_REF=K;AA_ALT=.

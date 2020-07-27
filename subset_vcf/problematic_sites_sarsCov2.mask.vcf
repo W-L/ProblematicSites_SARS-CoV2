@@ -1,5 +1,5 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-07-24-16:04
+##fileDate=2020-07-27-21:12
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
@@ -60,7 +60,7 @@
 ##	Sheffield = The Florey Institute, University of Sheffield Medical School
 ##	TGEN = The Translational Genomics Research Institute
 ##	UNMHSC = Center for Global Health, University of New Mexico Health Sciences Center
-##	UW Virology = University of Washington, Department of Virology
+##	UW_Virology = University of Washington, Department of Virology
 ##	University_of_Washington = University of Washington
 ##	VIDRL = Victorian Infectious Diseases Reference Laboratory
 ##INFO=<ID=GENE,Number=1,Type=String,Description="Position falls into range of this gene">

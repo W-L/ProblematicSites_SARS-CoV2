@@ -27,15 +27,15 @@ fi
 # subset vcfs
 egrep -h "#|caution" problematic_sites_sarsCov2.vcf > $subset_caution
 egrep -h "#|mask" problematic_sites_sarsCov2.vcf > $subset_mask
-
+cp problematic_sites_sarsCov2.vcf test/
 # compress vcfs
-bgzip -c problematic_sites_sarsCov2.vcf > compressed_vcf/problematic_sites_sarsCov2.vcf.gz
+bgzip -c problematic_sites_sarsCov2.vcf > compressed_vcf/problematic_sites_sarsCov2."$v".vcf.gz
 bgzip -c $subset_caution > $compressed_caution
 bgzip -c $subset_mask > $compressed_mask
 
 # tabix index vcfs
-tabix -f compressed_vcf/problematic_sites_sarsCov2.vcf.gz
-tabix -f --csi compressed_vcf/problematic_sites_sarsCov2.vcf.gz
+tabix -f compressed_vcf/problematic_sites_sarsCov2."$v".vcf.gz
+tabix -f --csi compressed_vcf/problematic_sites_sarsCov2."$v".vcf.gz
 
 tabix -f $compressed_caution
 tabix -f --csi $compressed_caution
