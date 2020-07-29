@@ -128,6 +128,8 @@ def main():
     unique_exclusion = list(set([i[2] for i in update_lines]))
     #unique_countries = list(set([i[3] for i in update_lines]))
     unique_labs = list(set([i[4] for i in update_lines]))
+    # splits labs up that have a narrow source from multiple labs
+    unique_labs = [y for x in unique_labs for y in x.split("/")]
     unique_submitters = list(set([i[5] for i in update_lines]))
 
     all_exclusions = generate_descriptions(vcf_header, unique_exclusion, "Exclusion")
