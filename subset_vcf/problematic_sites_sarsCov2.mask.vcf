@@ -1,11 +1,12 @@
 ##fileformat=VCFv4.3
-##fileDate=2020-07-29-17:27
+##fileDate=2020-12-22-11:15
 ##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
 ##reference=MN908947.3
 ##contig=<ID=MN908947.3,length=29903>
 ##FILTER=<ID=caution,Description="Sites that should be interpreted carefully, but not necessarily masked">
 ##FILTER=<ID=mask,Description="Sites we recommend to always mask">
 ##INFO=<ID=SUB,Number=.,Type=String,Description="Initials of submitter">
+##	LG = Landen Gozashti
 ##	RCD = Russell Corbett-Detig
 ## 	MP = Matthew Parker
 ## 	NDM = Nicola De Maio
@@ -40,6 +41,7 @@
 ##	ICMR = Indian Council of Medical Research
 ##	ISPC = Instituto de Salud Publica de Chile
 ##	IZSAM = Istituto zooprofilattico sperimentale dell'Abruzzo e del Molise
+##	India = Multiple sources in India
 ##	KU_Leuven = KU Leuven
 ##	LNS = Laboratoire National de Santé
 ##	Michigan_Health_Dept = Michigan Department of Health and Human Services
@@ -47,6 +49,7 @@
 ##	Minnesota = Minnesota Department of Health, Public Health Laboratory
 ##	NCDC = National Centre for Disease Control
 ##	NHLS = National Health Laboratory Service
+##	NICDNHLS = National Institute for Communicable Diseases of the National Health Laboratory Service
 ##	NIV = National Institute of Virology
 ##	NPHL = National Public Health Laboratory
 ##	NU-OMICS = NU-OMICS, Northumbria University
@@ -55,15 +58,19 @@
 ##	Public_Health_Scotland = Public Health Scotland
 ##	Public_Health_Wales = Public Health Wales
 ##	SSI = Statens Serum Institut
+##	Sanger = Wellcome Sanger Institute
 ##	Sanger_COG_UK = Wellcome Sanger Institute, COG-UK Consortium
 ##	Seattle_Flu_Study = Seattle Flu Study
 ##	Sheffield = The Florey Institute, University of Sheffield Medical School
+##	Sichuan_University = State Key Laboratory of Biotherapy of Sichuan University
 ##	TGEN = The Translational Genomics Research Institute
 ##	UNMHSC = Center for Global Health, University of New Mexico Health Sciences Center
 ##	UW_CFAR = University of Washington, Center for AIDS Research
 ##	UW_Virology = University of Washington, Department of Virology
+##	University_of_Melbourne = University of Melbourne, Microbiological Diagnostic Unit Public Health Laboratory
 ##	University_of_Washington = University of Washington
 ##	VIDRL = Victorian Infectious Diseases Reference Laboratory
+##	WHO_Russia = WHO National Influenza Centre Russian Federation
 ##INFO=<ID=GENE,Number=1,Type=String,Description="Position falls into range of this gene">
 ##INFO=<ID=AA_POS,Number=1,Type=Integer,Description="Position of amino acid residue within gene">
 ##INFO=<ID=AA_REF,Number=1,Type=String,Description="Reference amino acid residue">
@@ -138,6 +145,7 @@ MN908947.3	3564	.	G	T,K	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,highly_homoplasi
 MN908947.3	3639	.	G	R,A	.	mask	SUB=RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_Wales;GENE=gene-orf1ab;AA_POS=1125;AA_REF=G;AA_ALT=X,D
 MN908947.3	3778	.	A	G	.	mask	SUB=RCD;EXC=homoplasic,single_src;SRC_COUNTRY=Netherlands;SRC_LAB=Erasmus;GENE=gene-orf1ab;AA_POS=1171;AA_REF=T;AA_ALT=T
 MN908947.3	4050	.	A	C	.	mask	SUB=NDM,RCD;EXC=homoplasic,single_src,amended;SRC_COUNTRY=Belgium;SRC_LAB=KU_Leuven;GENE=gene-orf1ab;AA_POS=1262;AA_REF=N;AA_ALT=T
+MN908947.3	4221	.	A	T,D,W	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=1319;AA_REF=K;AA_ALT=I,X,X
 MN908947.3	5011	.	A	M,C	.	mask	SUB=RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=USA;SRC_LAB=Michigan_Health_Dept;GENE=gene-orf1ab;AA_POS=1582;AA_REF=Q;AA_ALT=X,H
 MN908947.3	5257	.	A	W,G,M	.	mask	SUB=RCD;EXC=highly_ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=1664;AA_REF=L;AA_ALT=X,L,X
 MN908947.3	5736	.	C	T,Y	.	mask	SUB=NDM,RCD;EXC=homoplasic,single_src;SRC_COUNTRY=Turkey;SRC_LAB=Ministry_of_Health;GENE=gene-orf1ab;AA_POS=1824;AA_REF=A;AA_ALT=V,X
@@ -146,14 +154,19 @@ MN908947.3	5744	.	T	Y	.	mask	SUB=RCD;EXC=highly_ambiguous,neighbour_linked,narro
 MN908947.3	6167	.	G	R,K	.	mask	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=1968;AA_REF=V;AA_ALT=X,X
 MN908947.3	6255	.	C	T	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic,narrow_src;SRC_COUNTRY=Netherlands,South_Africa;SRC_LAB=Erasmus,NHLS;GENE=gene-orf1ab;AA_POS=1997;AA_REF=A;AA_ALT=V
 MN908947.3	6869	.	A	W,T	.	mask	SUB=NDM,RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=Italy;SRC_LAB=IZSAM;GENE=gene-orf1ab;AA_POS=2202;AA_REF=T;AA_ALT=X,S
+MN908947.3	6874	.	T	G,Y,C	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=Russia;SRC_LAB=WHO_Russia;GENE=gene-orf1ab;AA_POS=2203;AA_REF=V;AA_ALT=V,V,V
 MN908947.3	8022	.	T	K,G,C	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,highly_homoplasic,narrow_src;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-orf1ab;AA_POS=2586;AA_REF=V;AA_ALT=X,G,A
 MN908947.3	8026	.	A	W,G,T	.	mask	SUB=RCD;EXC=ambiguous,homoplasic,narrow_src;SRC_COUNTRY=South_Africa,India;SRC_LAB=NHLS,NCDC;GENE=gene-orf1ab;AA_POS=2587;AA_REF=A;AA_ALT=A,A,A
+MN908947.3	8328	.	T	G	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=South Africa;SRC_LAB=NICDNHLS;GENE=gene-orf1ab;AA_POS=2688;AA_REF=L;AA_ALT=R
 MN908947.3	8790	.	G	T,K	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,homoplasic,single_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-orf1ab;AA_POS=2842;AA_REF=G;AA_ALT=V,X
 MN908947.3	8827	.	T	W	.	mask	SUB=RCD;EXC=ambiguous,neighbour_linked;SRC_COUNTRY=Italy;SRC_LAB=IZSAM;GENE=gene-orf1ab;AA_POS=2854;AA_REF=I;AA_ALT=I
 MN908947.3	8828	.	G	K,A	.	mask	SUB=RCD;EXC=ambiguous,neighbour_linked;SRC_COUNTRY=Italy;SRC_LAB=IZSAM;GENE=gene-orf1ab;AA_POS=2855;AA_REF=A;AA_ALT=X,T
+MN908947.3	8886	.	T	A,Y,C,W	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=2874;AA_REF=L;AA_ALT=*,X,S,X
+MN908947.3	8887	.	A	C,G,R	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=Russia;SRC_LAB=WHO_Russia;GENE=gene-orf1ab;AA_POS=2874;AA_REF=L;AA_ALT=F,L,L
 MN908947.3	9039	.	C	Y,M,T	.	mask	SUB=NDM;EXC=ambiguous,single_src;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-orf1ab;AA_POS=2925;AA_REF=A;AA_ALT=X,X,V
 MN908947.3	10129	.	T	Y,C,W	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,homoplasic,single_src;SRC_COUNTRY=USA;SRC_LAB=Chan_Zuckerberg_Biohub;GENE=gene-orf1ab;AA_POS=3288;AA_REF=T;AA_ALT=T,T,T
 MN908947.3	10239	.	C	M,A	.	mask	SUB=RCD;EXC=homoplasic,single_src;SRC_COUNTRY=UK;SRC_LAB=Sanger_COG_UK;GENE=gene-orf1ab;AA_POS=3325;AA_REF=S;AA_ALT=X,Y
+MN908947.3	10554	.	T	D,A	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=3430;AA_REF=L;AA_ALT=X,*
 MN908947.3	11074	.	C	T,Y	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=3603;AA_REF=F;AA_ALT=F,F
 MN908947.3	11083	.	G	T,K,A	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=3606;AA_REF=L;AA_ALT=F,X,L
 MN908947.3	11535	.	G	T,K	.	mask	SUB=NDM,RCD;EXC=ambiguous,highly_homoplasic,single_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-orf1ab;AA_POS=3757;AA_REF=G;AA_ALT=V,X
@@ -161,11 +174,19 @@ MN908947.3	13402	.	T	G,K,C	.	mask	SUB=NDM,RCD;EXC=homoplasic,narrow_src,amended;
 MN908947.3	13408	.	T	K	.	mask	SUB=NDM,RCD;EXC=homoplasic,narrow_src,amended;SRC_COUNTRY=Belgium,India,South_Africa;SRC_LAB=KU_Leuven,NCDC,SSI;GENE=gene-orf1ab;AA_POS=4381;AA_REF=C;AA_ALT=X
 MN908947.3	13476	.	C	T,Y	.	mask	SUB=NDM;EXC=highly_ambiguous,narrow_src;SRC_COUNTRY=Turkey;SRC_LAB=Ministry_of_Health;GENE=gene-orf1ab;AA_POS=4404;AA_REF=C;AA_ALT=V,X
 MN908947.3	13571	.	G	T,K	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,homoplasic,single_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-orf1ab;AA_POS=4436;AA_REF=G;AA_ALT=F,X
+MN908947.3	13599	.	T	C,Y	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=Russia;SRC_LAB=WHO_Russia;GENE=gene-orf1ab;AA_POS=4445;AA_REF=C;AA_ALT=A,X
+MN908947.3	13687	.	G	T	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=4474;AA_REF=H;AA_ALT=I
+MN908947.3	14222	.	T	G,B	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=4653;AA_REF=L;AA_ALT=E,X
+MN908947.3	14223	.	A	C,G	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=4653;AA_REF=L;AA_ALT=S,*
+MN908947.3	14225	.	C	T,A,B,M	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=4654;AA_REF=T;AA_ALT=*,K,X,X
 MN908947.3	14277	.	G	T,K	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,homoplasic,single_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-orf1ab;AA_POS=4671;AA_REF=R;AA_ALT=V,X
 MN908947.3	15435	.	A	R,G	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,homoplasic,single_src;SRC_COUNTRY=India;SRC_LAB=NCDC;GENE=gene-orf1ab;AA_POS=5057;AA_REF=E;AA_ALT=X,R
 MN908947.3	15922	.	T	Y,C	.	mask	SUB=NDM,RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=USA;SRC_LAB=Chan_Zuckerberg_Biohub;GENE=gene-orf1ab;AA_POS=5219;AA_REF=V;AA_ALT=C,C
 MN908947.3	16290	.	T	K	.	mask	SUB=RCD;EXC=highly_ambiguous,single_src;SRC_COUNTRY=UK;SRC_LAB=Sanger_COG_UK;GENE=gene-orf1ab;AA_POS=5342;AA_REF=A;AA_ALT=X
 MN908947.3	16887	.	C	T,Y	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-orf1ab;AA_POS=5541;AA_REF=Y;AA_ALT=I,X
+MN908947.3	17178	.	T	C,G	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=5638;AA_REF=V;AA_ALT=S,W
+MN908947.3	17179	.	G	T,S	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=5638;AA_REF=V;AA_ALT=F,X
+MN908947.3	17182	.	G	A	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=5639;AA_REF=D;AA_ALT=I
 MN908947.3	19298	.	A	D,W,T,R	.	mask	SUB=RCD;EXC=highly_ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-orf1ab;AA_POS=6345;AA_REF=Y;AA_ALT=X,X,L,X
 MN908947.3	19299	.	T	Y,G	.	mask	SUB=RCD;EXC=homoplasic,ambiguous,narrow_src;SRC_COUNTRY=China;SRC_LAB=Ditan;GENE=gene-orf1ab;AA_POS=6345;AA_REF=Y;AA_ALT=X,R
 MN908947.3	19484	.	C	T,Y	.	mask	SUB=NDM;EXC=highly_ambiguous,amended;SRC_COUNTRY=UK;SRC_LAB=COG_UK;GENE=gene-orf1ab;AA_POS=6407;AA_REF=A;AA_ALT=L,L
@@ -173,6 +194,10 @@ MN908947.3	19548	.	A	R,W,G,T,D	.	mask	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNT
 MN908947.3	20056	.	G	K,A	.	mask	SUB=RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-orf1ab;AA_POS=6597;AA_REF=E;AA_ALT=X,K
 MN908947.3	20123	.	T	Y,C	.	mask	SUB=RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=UK;SRC_LAB=Public_Health_England;GENE=gene-orf1ab;AA_POS=6620;AA_REF=I;AA_ALT=L,L
 MN908947.3	20465	.	A	G,R,W	.	mask	SUB=RCD;EXC=highly_homoplasic,single_src;SRC_COUNTRY=USA;SRC_LAB=UNMHSC;GENE=gene-orf1ab;AA_POS=6734;AA_REF=D;AA_ALT=V,X,X
+MN908947.3	21149	.	G	A	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=6962;AA_REF=G;AA_ALT=K
+MN908947.3	21151	.	G	T,D	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=6962;AA_REF=G;AA_ALT=D,X
+MN908947.3	21209	.	T	C,H	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=6982;AA_REF=M;AA_ALT=R,X
+MN908947.3	21212	.	G	A	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-orf1ab;AA_POS=6983;AA_REF=G;AA_ALT=N
 MN908947.3	21550	.	A	M,C	.	mask	SUB=NDM,RCD;EXC=ambiguous,homoplasic,narrow_src;SRC_COUNTRY=India;SRC_LAB=CSIR;GENE=gene-orf1ab;AA_POS=7095;AA_REF=N;AA_ALT=T,T
 MN908947.3	21551	.	A	W,T,R	.	mask	SUB=NDM,RCD;EXC=ambiguous,homoplasic,narrow_src;SRC_COUNTRY=India;SRC_LAB=CSIR;GENE=gene-orf1ab;AA_POS=7096;AA_REF=N;AA_ALT=X,S,X
 MN908947.3	21575	.	C	T,Y	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-S;AA_POS=5;AA_REF=L;AA_ALT=F,X
@@ -187,16 +212,21 @@ MN908947.3	24622	.	T	Y	.	mask	SUB=RCD;EXC=highly_ambiguous,single_src;SRC_COUNTR
 MN908947.3	24933	.	G	K,T	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,highly_homoplasic,narrow_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-S;AA_POS=1124;AA_REF=G;AA_ALT=X,V
 MN908947.3	25202	.	T	K	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous;SRC_COUNTRY=UK;SRC_LAB=Sanger_COG_UK;GENE=gene-S;AA_POS=1214;AA_REF=W;AA_ALT=X
 MN908947.3	25381	.	A	C,R,M	.	mask	SUB=RCD;EXC=homoplasic,single_src;SRC_COUNTRY=India;SRC_LAB=ICMR;GENE=gene-S;AA_POS=1273;AA_REF=T;AA_ALT=T,T,T
+MN908947.3	25382	.	T	C	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=China;SRC_LAB=Sichuan_University;GENE=gene-S;AA_POS=1274;AA_REF=T;AA_ALT=Q
 MN908947.3	26549	.	C	T,Y	.	mask	SUB=NDM,RCD;EXC=homoplasic,single_src;SRC_COUNTRY=Turkey;SRC_LAB=Ministry_of_Health;GENE=gene-M;AA_POS=9;AA_REF=T;AA_ALT=T,T
+MN908947.3	27658	.	A	T,W,D,G	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-ORF7a;AA_POS=89;AA_REF=R;AA_ALT=*,X,X,G
+MN908947.3	27660	.	A	G,V,C,T	.	mask	SUB=LG;EXC=single_src,highly_homoplasic,neighbour_linked;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-ORF7a;AA_POS=89;AA_REF=R;AA_ALT=R,X,S,S
 MN908947.3	27760	.	T	K,Y,A	.	mask	SUB=RCD;EXC=homoplasic,neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
 MN908947.3	27761	.	T	C	.	mask	SUB=RCD;EXC=homoplasic,neighbour_linked;SRC_COUNTRY=.;SRC_LAB=.;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
 MN908947.3	27784	.	A	W,G,T	.	mask	SUB=RCD;EXC=ambiguous,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
+MN908947.3	28184	.	T	C,H	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-ORF8;AA_POS=97;AA_REF=S;AA_ALT=S,X
 MN908947.3	28253	.	C	Y,T,G,A,S	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic;SRC_COUNTRY=.;SRC_LAB=.;GENE=gene-ORF8;AA_POS=120;AA_REF=F;AA_ALT=F,F,L,L,X
 MN908947.3	28985	.	G	R,D,T,K,A	.	mask	SUB=NDM,RCD;EXC=highly_ambiguous,homoplasic,single_src;SRC_COUNTRY=Switzerland;SRC_LAB=ETH_Zurich;GENE=gene-N;AA_POS=238;AA_REF=G;AA_ALT=X,X,C,X,S
 MN908947.3	29037	.	C	T,Y,M	.	mask	SUB=RCD;EXC=homoplasic,ambiguous,single_src;SRC_COUNTRY=Australia;SRC_LAB=VIDRL;GENE=gene-N;AA_POS=255;AA_REF=S;AA_ALT=F,X,X
 MN908947.3	29039	.	A	T,W	.	mask	SUB=RCD;EXC=homoplasic,ambiguous,single_src;SRC_COUNTRY=Australia,India;SRC_LAB=VIDRL,ICMR;GENE=gene-N;AA_POS=256;AA_REF=K;AA_ALT=*,X
 MN908947.3	29425	.	G	T,S,A	.	mask	SUB=NDM,RCD;EXC=ambiguous,homoplasic,single_src;SRC_COUNTRY=Singapore;SRC_LAB=NPHL;GENE=gene-N;AA_POS=384;AA_REF=Q;AA_ALT=H,X,Q
 MN908947.3	29553	.	G	A,T	.	mask	SUB=NDM,RCD;EXC=highly_homoplasic,single_src;SRC_COUNTRY=USA,USA;SRC_LAB=University_of_Washington,Seattle_Flu_Study;GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
+MN908947.3	29594	.	A	T,C	.	mask	SUB=LG;EXC=single_src,highly_homoplasic;SRC_COUNTRY=USA;SRC_LAB=University_of_Washington;GENE=gene-ORF10;AA_POS=13;AA_REF=I;AA_ALT=L,L
 MN908947.3	29804	.	T	.	.	mask	SUB=NDM;EXC=seq_end
 MN908947.3	29805	.	A	.	.	mask	SUB=NDM;EXC=seq_end
 MN908947.3	29806	.	A	.	.	mask	SUB=NDM;EXC=seq_end
