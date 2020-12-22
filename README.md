@@ -6,7 +6,6 @@
 
 # Human-friendly version of the vcf file
 
-# Human-friendly version of the vcf file
 |    POS    |REF|     ALT     |FILTER |                                  EXC                                  |   GENE    |AA_POS|AA_REF|   AA_ALT    |
 |-----------|---|-------------|-------|-----------------------------------------------------------------------|-----------|------|------|-------------|
 |1-55       |.  |.            |mask   |seq_end                                                                |.          |.     |.     |.            |
