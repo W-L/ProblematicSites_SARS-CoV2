@@ -132,7 +132,10 @@ def main():
                         # last 4 should be GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.
                         vcf_line_aa_info[-4] = "GENE=" + gene.id
                         vcf_line_aa_info[-3] = "AA_POS=" + vcf_aa
-                        vcf_line_aa_info[-2] = "AA_REF=" + proteins[gene.id][int(vcf_aa) - 1]
+                        if int(vcf_aa) - 1 == len(proteins[gene.id]):
+                            vcf_line_aa_info[-2] = "AA_REF=" + proteins[gene.id][-1]
+                        else:
+                            vcf_line_aa_info[-2] = "AA_REF=" + proteins[gene.id][int(vcf_aa) - 1]
                         vcf_line_aa_info[-1] = "AA_ALT=" + alt_aa
                         vcf_line[-1] = ";".join(vcf_line_aa_info)
                         #vcf_line[11] = gene.id                                  # gene name
