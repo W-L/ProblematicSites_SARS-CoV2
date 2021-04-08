@@ -17,8 +17,8 @@
 
 # path to alignment as first argument
 #alignment_path=$1;
-alt_sites_vcf=$1;
-v="v"$2;
+v="v"$1;
+
 
 # path variables
 subset_caution=subset_vcf/problematic_sites_sarsCov2.caution.vcf;
@@ -28,9 +28,10 @@ compressed_mask=compressed_vcf/problematic_sites_sarsCov2."$v".mask.vcf.gz;
 
 
 # generate new vcf
-python src/site_list_to_vcf.py
+python src/site_list_to_vcf.py ../update_problematic_sites/problematic_sites.tsv
 #python src/parse_reference_to_vcf.py "$alignment_path"
-python src/fill_alt_positions_from_vcf.py problematic_sites_sarsCov2.vcf "$alt_sites_vcf"
+python src/add_new_sites_to_VCF_alignment.py ../update_alignments/gisaid_alignment_v"$(($1-1))".vcf ../update_new_variants/new_sites_"$v".csv ../update_alignments/gisaid_alignment_"$v".vcf
+python src/fill_alt_positions_from_vcf.py problematic_sites_sarsCov2.vcf ../update_alignments/gisaid_alignment_"$v".vcf
 python src/parseCDS.py
 
 # sort vcf, put into if statement to prevent accidental deletion
