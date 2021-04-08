@@ -20,6 +20,7 @@
 from os import makedirs, path
 from shutil import copyfile
 from datetime import datetime
+from sys import argv
 
 
 def generate_vcf_header(current_date, submitters,
@@ -100,7 +101,7 @@ def main():
     # files used to create new VCF
     current_vcf = "problematic_sites_sarsCov2.vcf"
     #site_tsv = "data/update_sites.txt"
-    site_tsv = "data/problematic_sites.tsv"
+    site_tsv = argv[1]
 
 
     # back up VCF with dated filename
