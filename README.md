@@ -237,6 +237,7 @@
 |21609      |T  |W,K          |caution|ambiguous<br>single_src                                                |gene-S     |16    |V     |X,X          |
 |21658      |C  |G,Y,M,T,H    |caution|ambiguous                                                              |gene-S     |32    |F     |L,F,X,F,X    |
 |21968      |T  |C,G          |mask   |single_src<br>highly_homoplasic                                        |gene-S     |136   |C     |R,G          |
+|21987      |G  |T,K,C,A      |mask   |amplicon_drop_or_primer_artefact<br>back_to_ref                        |gene-S     |142   |G     |V,X,A,D      |
 |22329      |C  |Y,M,T,V      |caution|ambiguous<br>single_src                                                |gene-S     |256   |S     |X,X,L,X      |
 |22335      |G  |A,K,T        |mask   |highly_ambiguous<br>amended                                            |gene-S     |258   |W     |*,X,L        |
 |22389      |T  |Y,W,C,K      |caution|ambiguous<br>single_src                                                |gene-S     |276   |L     |X,X,P,X      |
