@@ -383,7 +383,7 @@ Descriptions of reasons for mask/caution (values for EXC in the INFO column) are
 | neighbour_linked            | Proximal variants displaying near perfect linkage |
 | single_src                  | Only observed in samples from a single laboratory |
 | amplicon_drop_or_primer_artefact                  | Amplicon dropout and/or failed primer trimming |
-| back_to_ref                  | The alternate allele is not called for this position due to issues with amplicon dropout and/or primer trimming. For more details, see: https://github.com/W-L/ProblematicSites_SARS-CoV2/issues/7 and https://github.com/cov-lineages/pango-designation/issues/95 |
+| back_to_ref                  | The alternate allele is sometimes not called for this position due to issues with amplicon dropout and/or primer trimming. For more details, see: https://github.com/W-L/ProblematicSites_SARS-CoV2/issues/7 and https://github.com/cov-lineages/pango-designation/issues/95 |
 
 
 
