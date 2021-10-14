@@ -277,6 +277,7 @@
 |23855      |C  |Y,A,T        |caution|single_src<br>highly_ambiguous                                         |gene-S     |765   |R     |X,S,C        |
 |24389      |A  |W,C,M        |mask   |highly_homoplasic<br>highly_ambiguous<br>narrow_src<br>nanopore_adapter|gene-S     |943   |S     |X,R,X        |
 |24390      |G  |C,K,S,T      |mask   |highly_homoplasic<br>highly_ambiguous<br>narrow_src<br>nanopore_adapter|gene-S     |943   |S     |T,X,X,I      |
+|24410      |G  |C,A          |mask   |amplicon_drop_or_primer_artefact<br>back_to_ref                        |gene-S     |950   |D     |H,N          |
 |24497      |G  |K,C,T        |caution|single_src<br>highly_ambiguous                                         |gene-S     |979   |D     |X,H,Y        |
 |24557      |G  |A,K,T        |caution|single_src<br>highly_ambiguous                                         |gene-S     |999   |G     |S,X,C        |
 |24622      |T  |Y            |mask   |highly_ambiguous<br>single_src                                         |gene-S     |1020  |A     |A            |
