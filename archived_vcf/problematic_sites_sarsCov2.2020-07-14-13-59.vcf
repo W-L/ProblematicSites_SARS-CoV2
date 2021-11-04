@@ -1,0 +1,246 @@
+##fileformat=VCFv4.3
+##fileDate=2020-05-27-16:21
+##source=http://virological.org/t/masking-strategies-for-sars-cov-2-alignments/480
+##reference=MN908947.3
+##contig=<ID=MN908947.3,length=29903>
+##FILTER=<Description="Masking recommendation"
+##	caution = Apparent homoplasic sites that should be interpreted carefully, but not necessarily masked
+##	mask = Sites we recommend to always mask
+##INFO=<Description="Initials of submitter"
+## 	NDM = Nicola De Maio
+## 	MP = Matthew Parker
+##EXC=<Description="List of reasons for suggested exclusion">
+##	seq_end = Alignment ends are affected by low coverage and high error rates
+##	neighbour_linked = Proximal variants displaying near perfect linkage
+##	highly_homoplasic = Positions which are highly homoplasic, and it is unclear if these variants are true frequent mutations or sequencing artefacts
+##	highly_ambiguous = Sites with a high proportion of ambiguous characters, often emerging from a single country or sequencing laboratory
+##	homoplasic = Apparent homoplasic site
+##	single_src = Only observed in samples from a single laboratory
+##	MNM = Apparent multinucleotide mutations
+##SRC=<Description="Source laboratory or study of samples showing the variant">
+##	India_NCDC = India, National Centre for Disease Control
+##	Turkey_Ministry-of-Health = Turkey, Ministry of Health
+##	Belgium_KU-Leuven = Belgium, KU-Leuven
+##	Australia_VIDRL = Australia, Victorian Infectious Diseases Reference Laboratory
+##	UK_COG-UK = UK, COVID-19 Genomics UK Consortium
+##	Italy_IZSAM = Italy, Istituto zooprofilattico sperimentale dell'Abruzzo e del Molise
+##	USA_Washington-UW = USA, University of Washington
+##	USA_Seattle_Flu_Study = USA, Seattle Flu Study
+##	USA_California-Chan-Zuckerberg-Biohub = USA, Chan Zuckerberg Biohub
+##	Luxembourg_LNS = Luxembourg, Laboratoire National de Sante
+##	Netherlands_Erasmus = Netherlands, Erasmus University Rotterdam
+##GENE=<Decription="Position falls into range of this gene">
+##AAPOS=<Description="Position of amino acid residue within gene">
+##REFAA=<Description="Reference amino acid residue">
+##ALTAA=<Description="List of alternative amino acid residues (IUPAC ambiguity code)">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	EXC	SRC	GENE	AAPOS	REFAA	ALTAA
+MN908947.3	1	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	2	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	3	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	4	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	5	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	6	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	7	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	8	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	9	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	10	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	11	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	12	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	13	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	14	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	15	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	16	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	17	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	18	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	19	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	20	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	21	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	22	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	23	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	24	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	25	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	26	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	27	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	28	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	30	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	31	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	32	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	33	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	34	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	35	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	36	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	37	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	38	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	39	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	40	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	41	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	42	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	43	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	44	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	45	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	46	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	47	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	48	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	49	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	50	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	51	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	52	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	53	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	54	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	55	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	635	.	C	Y,T	.	mask	NDM	highly_ambiguous	UK_COG-UK	gene-orf1ab	124	R	X,C
+MN908947.3	2091	.	C	T,Y	.	mask	NDM	highly_ambiguous	India_NCDC	gene-orf1ab	609	T	I,X
+MN908947.3	2094	.	C	T,Y	.	mask	NDM	highly_ambiguous	Belgium_KU-Leuven	gene-orf1ab	610	S	L,X
+MN908947.3	3145	.	G	T	.	mask	NDM	homoplasic;single_src	Netherlands_Erasmus	gene-orf1ab	960	L	F
+MN908947.3	3564	.	G	T,K	.	mask	NDM	highly_ambiguous	Australia_VIDRL	gene-orf1ab	1100	G	V,X
+MN908947.3	4050	.	A	C	.	mask	NDM	homoplasic;single_src	Belgium_KU-Leuven	gene-orf1ab	1262	N	T
+MN908947.3	5736	.	C	T,Y	.	mask	NDM	homoplasic;single_src	Turkey_Ministry-of-Health	gene-orf1ab	1824	A	V,X
+MN908947.3	6309	.	G	T,A,R	.	caution	NDM	neighbour_linked	.	gene-orf1ab	2015	S	I,N,X
+MN908947.3	6310	.	C	T,A,M	.	caution	NDM	neighbour_linked	.	gene-orf1ab	2015	S	S,R,X
+MN908947.3	6312	.	C	A,T,G,M	.	caution	NDM	neighbour_linked	.	gene-orf1ab	2016	T	K,I,R,X
+MN908947.3	6869	.	A	T,W,R	.	mask	NDM	highly_ambiguous	Italy_IZSAM	gene-orf1ab	2202	T	S,X,X
+MN908947.3	6971	.	T	C	.	caution	NDM	neighbour_linked;single_src	Australia_VIDRL	gene-orf1ab	2236	L	L
+MN908947.3	6975	.	G	T	.	caution	NDM	neighbour_linked;single_src	Australia_VIDRL	gene-orf1ab	2237	S	I
+MN908947.3	6977	.	G	A	.	caution	NDM	neighbour_linked;single_src	Australia_VIDRL	gene-orf1ab	2238	V	I
+MN908947.3	8022	.	T	K,G	.	mask	NDM	highly_ambiguous	India_NCDC;Belgium_KU-Leuven	gene-orf1ab	2586	V	X,G
+MN908947.3	8790	.	G	K,T	.	mask	NDM	highly_ambiguous	Australia_VIDRL	gene-orf1ab	2842	G	X,V
+MN908947.3	10129	.	T	C,Y	.	mask	NDM	highly_ambiguous	USA_California-Chan-Zuckerberg-Biohub	gene-orf1ab	3288	T	T,T
+MN908947.3	11074	.	C	Y,T	.	mask	NDM	highly_homoplasic	.	gene-orf1ab	3603	F	F,F
+MN908947.3	11083	.	G	T,K,A	.	mask	NDM	highly_homoplasic	.	gene-orf1ab	3606	L	F,X,L
+MN908947.3	11535	.	G	T,K	.	mask	NDM	homoplasic;single_src	Australia_VIDRL	gene-orf1ab	3757	G	V,X
+MN908947.3	13402	.	T	G,K	.	mask	NDM	homoplasic;single_src	Belgium_KU-Leuven	gene-orf1ab	4379	Y	*,X
+MN908947.3	13408	.	T	C,K	.	mask	NDM	homoplasic;single_src	Belgium_KU-Leuven	gene-orf1ab	4381	C	C,X
+MN908947.3	13476	.	C	Y,T	.	mask	NDM	highly_ambiguous	Turkey_Ministry-of-Health	gene-orf1ab	4404	C	X,V
+MN908947.3	13512	.	A	T	.	caution	NDM	neighbour_linked	.	gene-orf1ab	4416	T	L
+MN908947.3	13513	.	G	T	.	caution	NDM	neighbour_linked	.	gene-orf1ab	4416	T	H
+MN908947.3	13514	.	G	A	.	caution	NDM	neighbour_linked	.	gene-orf1ab	4417	G	T
+MN908947.3	13571	.	G	K,T	.	mask	NDM	highly_ambiguous	Australia_VIDRL	gene-orf1ab	4436	G	X,F
+MN908947.3	13686	.	T	Y,A	.	caution	NDM	neighbour_linked	.	gene-orf1ab	4474	H	X,K
+MN908947.3	13687	.	G	T	.	caution	NDM	neighbour_linked	.	gene-orf1ab	4474	H	I
+MN908947.3	13693	.	A	T	.	caution	NDM	neighbour_linked	.	gene-orf1ab	4476	E	N
+MN908947.3	14277	.	G	T,K	.	mask	NDM	homoplasic;single_src	Australia_VIDRL	gene-orf1ab	4671	R	V,X
+MN908947.3	15922	.	T	C,Y	.	mask	NDM	highly_ambiguous	USA_California-Chan-Zuckerberg-Biohub	gene-orf1ab	5219	V	C,C
+MN908947.3	16887	.	C	T	.	mask	NDM	highly_homoplasic	.	gene-orf1ab	5541	Y	I
+MN908947.3	19484	.	C	T,Y	.	mask	NDM	highly_ambiguous	UK_COG-UK	gene-orf1ab	6407	A	L,L
+MN908947.3	21302	.	C	T	.	caution	NDM	neighbour_linked	.	gene-orf1ab	7013	P	Y
+MN908947.3	21304	.	C	Y,A,T	.	caution	NDM	neighbour_linked	.	gene-orf1ab	7013	P	H,Q,H
+MN908947.3	21305	.	G	A	.	caution	NDM	neighbour_linked	.	gene-orf1ab	7014	R	T
+MN908947.3	21575	.	C	T,Y	.	mask	NDM	highly_homoplasic	.	gene-S	5	L	F,X
+MN908947.3	22335	.	G	T	.	mask	NDM	highly_ambiguous	UK_COG-UK	gene-S	258	W	L
+MN908947.3	24389	.	A	M,C	.	mask	MP	homoplasic;single_src	Belgium_KU-Leuven	gene-S	943	S	X,R
+MN908947.3	24390	.	G	S,C,T	.	mask	MP	homoplasic;single_src	Belgium_KU-Leuven	gene-S	943	S	X,T,I
+MN908947.3	24933	.	G	K,T	.	mask	NDM	highly_ambiguous	Australia_VIDRL	gene-S	1124	G	X,V
+MN908947.3	26549	.	C	T,Y	.	mask	NDM	homoplasic;single_src	Turkey_Ministry-of-Health	gene-M	9	T	T,T
+MN908947.3	27382	.	G	C,T,K	.	caution	NDM	neighbour_linked	.	gene-ORF6	61	D	H,Y,X
+MN908947.3	27383	.	A	T	.	caution	NDM	neighbour_linked	.	gene-ORF6	61	D	V
+MN908947.3	27384	.	T	C,Y	.	caution	NDM	neighbour_linked	.	gene-ORF6	61	D	D,D
+MN908947.3	28004	.	T	C	.	caution	NDM	neighbour_linked;single_src	Luxembourg_LNS	gene-ORF8	37	C	C
+MN908947.3	28005	.	C	T,G	.	caution	NDM	neighbour_linked;single_src	Luxembourg_LNS	gene-ORF8	38	P	S,A
+MN908947.3	28006	.	C	T	.	caution	NDM	neighbour_linked;single_src	Luxembourg_LNS	gene-ORF8	38	P	L
+MN908947.3	28008	.	A	G	.	caution	NDM	neighbour_linked;single_src	Luxembourg_LNS	gene-ORF8	39	I	V
+MN908947.3	28881	.	G	A,R,T,K	.	caution	NDM	MNM	.	gene-N	203	R	K,X,M,X
+MN908947.3	28882	.	G	A,R,T	.	caution	NDM	MNM	.	gene-N	203	R	R,R,S
+MN908947.3	28883	.	G	C,S,A	.	caution	NDM	MNM	.	gene-N	204	G	R,X,R
+MN908947.3	29037	.	C	T,Y	.	mask	NDM	homoplasic;single_src	Australia_VIDRL	gene-N	255	S	F,X
+MN908947.3	29553	.	G	A	.	mask	NDM	homoplasic;single_src	USA_Washington-UW;USA_Seattle_Flu_Study	.	.	.	.
+MN908947.3	29804	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29805	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29806	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29807	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29808	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29809	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29810	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29811	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29812	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29813	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29814	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29815	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29816	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29817	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29818	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29819	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29820	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29821	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29822	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29823	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29824	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29825	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29826	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29827	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29828	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29829	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29830	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29831	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29832	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29833	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29834	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29835	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29836	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29837	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29838	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29839	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29840	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29841	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29842	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29843	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29844	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29845	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29846	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29847	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29848	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29849	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29850	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29851	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29852	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29853	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29854	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29855	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29856	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29857	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29858	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29859	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29860	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29861	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29862	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29863	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29864	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29865	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29866	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29867	.	T	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29868	.	G	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29869	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29870	.	C	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29871	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29872	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29873	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29874	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29875	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29876	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29877	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29878	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29879	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29880	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29881	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29882	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29883	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29884	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29885	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29886	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29887	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29888	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29889	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29890	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29891	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29892	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29893	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29894	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29895	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29896	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29897	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29898	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29899	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29900	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29901	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29902	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
+MN908947.3	29903	.	A	.	.	mask	NDM	seq_end	.	.	.	.	.
