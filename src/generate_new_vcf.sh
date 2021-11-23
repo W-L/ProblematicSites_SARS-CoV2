@@ -28,10 +28,10 @@ compressed_mask=compressed_vcf/problematic_sites_sarsCov2."$v".mask.vcf.gz;
 
 
 # generate new vcf
-python src/site_list_to_vcf.py ../update_problematic_sites/problematic_sites.tsv
+python src/site_list_to_vcf.py data/problematic_sites.tsv
 #python src/parse_reference_to_vcf.py "$alignment_path"
-python src/add_new_sites_to_VCF_alignment.py ../update_alignments/gisaid_alignment_v"$(($1-1))".vcf ../update_new_variants/new_sites_"$v".csv ../update_alignments/gisaid_alignment_"$v".vcf
-python src/fill_alt_positions_from_vcf.py problematic_sites_sarsCov2.vcf ../update_alignments/gisaid_alignment_"$v".vcf
+#python src/add_new_sites_to_VCF_alignment.py ../update_alignments/gisaid_alignment_v"$(($1-1))".vcf ../update_new_variants/new_sites_"$v".csv ../update_alignments/gisaid_alignment_"$v".vcf
+python src/fill_alt_positions_from_vcf.py problematic_sites_sarsCov2.vcf data/problematic_sites.tsv 
 python src/parseCDS.py
 
 # sort vcf, put into if statement to prevent accidental deletion
@@ -42,10 +42,14 @@ if [ -f problematic_sites_sarsCov2_genes.vcf ]; then
     rm problematic_sites_sarsCov2_genes.vcf
 fi
 
+# generate new readme
+sh src/generate_readme.sh > README.md
+
 # subset vcfs
 egrep -h "#|caution" problematic_sites_sarsCov2.vcf > $subset_caution
 egrep -h "#|mask" problematic_sites_sarsCov2.vcf > $subset_mask
-cp problematic_sites_sarsCov2.vcf test/
+cp problematic_sites_sarsCov2.vcf test/tst.vcf
+
 # compress vcfs
 bgzip -c problematic_sites_sarsCov2.vcf > compressed_vcf/problematic_sites_sarsCov2."$v".vcf.gz
 bgzip -c $subset_caution > $compressed_caution

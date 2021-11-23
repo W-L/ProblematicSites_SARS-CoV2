@@ -143,12 +143,12 @@ def main():
     del tmp_update_lines
 
     # get unique: exclusion reasons, labs, submitters
-    unique_exclusion = list(set([i[2] for i in update_lines]))
+    unique_exclusion = list(set([i[4] for i in update_lines]))
     #unique_countries = list(set([i[3] for i in update_lines]))
-    unique_labs = list(set([i[4] for i in update_lines]))
+    unique_labs = list(set([i[6] for i in update_lines]))
     # splits labs up that have a narrow source from multiple labs
     unique_labs = [y for x in unique_labs for y in x.split("/")]
-    unique_submitters = list(set([i[5] for i in update_lines]))
+    unique_submitters = list(set([i[7] for i in update_lines]))
 
     all_exclusions = generate_descriptions(vcf_header, unique_exclusion, "Exclusion")
     #all_countries = generate_descriptions(vcf_header, unique_countries, "Country")
@@ -172,16 +172,16 @@ def main():
             out_vcf.write(line + "\n")
         for line in update_lines:
             pos = line[0]
-            mask_rec = line[1]
-            exc_reason = line[2]
-            src_country = line[3]
-            src_lab = line[4]
-            submitter = line[5]
+            mask_rec = line[3]
+            exc_reason = "EXC=" + line[4]
+            src_country = "SRC_COUNTRY=" + line[5]
+            src_lab = "SRC_LAB=" + line[6]
+            submitter = "SUB=" + line[7]
             # tentative changes
-            submitter = "SUB=" + submitter
-            exc_reason = "EXC=" + exc_reason
-            src_country = "SRC_COUNTRY=" + src_country
-            src_lab = "SRC_LAB=" + src_lab
+            #submitter = "SUB=" + submitter
+            #exc_reason = "EXC=" + exc_reason
+            #src_country = "SRC_COUNTRY=" + src_country
+            #src_lab = "SRC_LAB=" + src_lab
             out_vcf.write("MN908947.3\t{0}\t.\t.\t.\t.\t{1}\t{2};{3};{4};{5};GENE=.;AA_POS=.;AA_REF=.;AA_ALT=.".format(pos, mask_rec, submitter, exc_reason, src_country, src_lab) + "\n")
 
 

@@ -25,9 +25,14 @@ def main():
     pos_info = {}
     with open(argv[2], "r") as alt_vcf_fi:
         for line in alt_vcf_fi.readlines():
-            if line.startswith("#"):
-                continue
+            #if line.startswith("#"):
+            #    continue
             line = line.strip().split("\t")
+            # skip header lines without assuming number of header lines
+            try:
+                int(line[0])
+            except:
+                continue
             pos = line[0]
             ref = line[1]
             alt = line[2].split(",")
