@@ -31,6 +31,7 @@ def read_fasta_keep_name(file, cli_args):
     sample_sequences = []
     line_count = 0
     line = file.readline()
+    ref_index = None
     while line != "" and line != "\n":
         if line[0] == ">":
             name = line.replace("\n","").replace(">","")
@@ -49,6 +50,10 @@ def read_fasta_keep_name(file, cli_args):
             print("problem with fasta format: line not recognised")
             print(line)
             exit()
+    if ref_index is None:
+        print("reference sequence ID not found:")
+        print(cli_args.reference_id)
+        exit()
     return sample_headers, sample_sequences, ref_index
 
 
